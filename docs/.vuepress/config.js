@@ -2,7 +2,10 @@ module.exports = {
   lang: "zh-CN",
   title: "Just Laws",
   description: "法律和法律都是相互依存的",
-  head: [["link", { rel: "icon", href: "/images/logo.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/images/logo.png" }],
+    ["script", { src: "https://hm.baidu.com/hm.js?f1b6f06a4a48c2db87fcba1a4b3c3ac4" }],
+  ],
 
   themeConfig: {
     logo: "/images/logo.png",
