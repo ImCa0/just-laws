@@ -28,7 +28,11 @@ module.exports = {
       },
       {
         text: "社会法",
-        children: [{ text: "劳动法", link: "/social/labor-law/" }],
+        children: [
+          { text: "劳动法", link: "/social/labor-law/" },
+          { text: "未成年人保护法", link: "/social/protection-of-minors/" },
+          { text: "预防未成年人犯罪法", link: "/social/prevention-of-juvenile-delinquency/" },
+        ],
       },
       {
         text: "刑法",
