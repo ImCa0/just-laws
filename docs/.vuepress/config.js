@@ -20,7 +20,10 @@ module.exports = {
       },
       {
         text: "行政法",
-        children: [{ text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security" }],
+        children: [
+          { text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security" },
+          { text: "传染病防治法", link: "/administrative/prevention-and-treatment-of-infections-diseases" },
+        ],
       },
       {
         text: "经济法",
