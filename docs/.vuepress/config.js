@@ -39,7 +39,10 @@ module.exports = {
       },
       {
         text: "刑法",
-        children: [{ text: "刑法", link: "/criminal-law/" }],
+        children: [
+          { text: "刑法", link: "/criminal-law/criminal-law/" },
+          { text: "刑法修正案", link: "/criminal-law/amendment/" },
+        ],
       },
       {
         text: "程序法",
@@ -63,10 +66,32 @@ module.exports = {
           ],
         },
       ],
-      "/criminal-law/": [
+      "/criminal-law/criminal-law/": [
         {
           text: "中华人民共和国刑法",
-          children: ["/criminal-law/第一编 总则.md", "/criminal-law/第二编 分则.md", "/criminal-law/附则.md"],
+          children: [
+            "/criminal-law/criminal-law/第一编 总则.md",
+            "/criminal-law/criminal-law/第二编 分则.md",
+            "/criminal-law/criminal-law/附则.md",
+          ],
+        },
+      ],
+      "/criminal-law/amendment/": [
+        {
+          text: "目录",
+          children: [
+            "/criminal-law/amendment/中华人民共和国刑法修正案.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（二）.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（三）.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（四）.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（五）.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（六）.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（七）.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（八）.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（九）.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（十）.md",
+            "/criminal-law/amendment/中华人民共和国刑法修正案（十一）.md",
+          ],
         },
       ],
       "/procedural/criminal-procedure/": [
