@@ -1,7 +1,7 @@
 # Just Laws
 
 <p align="center">
-  <a href="https://www.justlaws.cn"><img width="60%" src="https://cdn.jsdelivr.net/gh/ImCa0/image-hosting/just-laws/exhibition.png"></a>
+  <a href="https://www.justlaws.cn"><img src="https://cdn.jsdelivr.net/gh/ImCa0/image-hosting/just-laws/exhibition.png"></a>
 </p>
 
 一个简洁且便捷的中华人民共和国法律文库
@@ -22,7 +22,7 @@
 
   保持每周一到两部法律的新增收录，并且在已收录法律完成修正或修订后及时进行更新，保证内容的时效性。
 
-## 已收录法律（12/291）
+## 已收录法律（13/291）
 
 ### 宪法及宪法相关法
 
@@ -33,6 +33,8 @@
 - [x] 中华人民共和国民法典
 
 ### 行政法
+
+- [x] 中华人民共和国行政处罚法
 
 - [x] 中华人民共和国治安管理处罚法
 
@@ -54,7 +56,7 @@
 
 - [x] 中华人民共和国刑法
 
-- [x] 中华人民共和国刑法修正案
+  - 中华人民共和国刑法修正案
 
 ### 程序法
 
