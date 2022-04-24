@@ -12,7 +12,10 @@ module.exports = {
     navbar: [
       {
         text: "宪法",
-        link: "/constitution/",
+        children: [
+          { text: "宪法", link: "/constitution/", activeMatch: "/constitution/[^(amendment)]" },
+          { text: "宪法修正案", link: "/constitution/amendment/" },
+        ],
       },
       {
         text: "民商法",
