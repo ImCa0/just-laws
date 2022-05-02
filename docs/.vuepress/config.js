@@ -46,6 +46,7 @@ module.exports = {
         children: [
           { text: "刑法", link: "/criminal-law/criminal-law/" },
           { text: "刑法修正案", link: "/criminal-law/amendment/" },
+          { text: "反有组织犯罪法", link: "/criminal-law/anti-organized-crime-law/" },
         ],
       },
       {
