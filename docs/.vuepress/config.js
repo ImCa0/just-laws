@@ -31,7 +31,10 @@ module.exports = {
       },
       {
         text: "经济法",
-        children: [{ text: "个人所得税法", link: "/economic/individual-income-tax-law/" }],
+        children: [
+          { text: "个人所得税法", link: "/economic/individual-income-tax-law/" },
+          { text: "种子法", link: "/economic/seed-law/" },
+        ],
       },
       {
         text: "社会法",
