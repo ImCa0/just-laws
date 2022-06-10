@@ -1,0 +1,34 @@
+name: Bulid and Deploy
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Build
+        run: |
+          npm install yarn -g
+          yarn
+          yarn docs:build
+        env:
+          CI: true
+      - name: Deploy
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
+          ARGS: "-rltgoDzvO --delete"
+          SOURCE: "/docs/.vuepress/dist/"
+          REMOTE_HOST: "${{ secrets.SERVER_HOST }}"
+          REMOTE_USER: "${{ secrets.USER_NAME }}"
+          TARGET: "/usr/local/nginx/html/justlaws"
