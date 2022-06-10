@@ -19,7 +19,10 @@ module.exports = {
       },
       {
         text: "民商法",
-        children: [{ text: "民法典", link: "/civil-and-commercial/civil-code/" }],
+        children: [
+          { text: "民法典", link: "/civil-and-commercial/civil-code/" },
+          { text: "消费者权益保护法", link: "/civil-and-commercial/protection-of-the-rights-and-interests-of-consumers/" },
+        ],
       },
       {
         text: "行政法",
