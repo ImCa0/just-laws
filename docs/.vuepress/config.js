@@ -27,9 +27,9 @@ module.exports = {
       {
         text: "行政法",
         children: [
+          { text: "传染病防治法", link: "/administrative/prevention-and-treatment-of-infections-diseases" },
           { text: "行政处罚法", link: "/administrative/administrative-penalty" },
           { text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security" },
-          { text: "传染病防治法", link: "/administrative/prevention-and-treatment-of-infections-diseases" },
         ],
       },
       {
@@ -42,9 +42,10 @@ module.exports = {
       {
         text: "社会法",
         children: [
-          { text: "劳动法", link: "/social/labor-law/" },
           { text: "未成年人保护法", link: "/social/protection-of-minors/" },
+          { text: "劳动法", link: "/social/labor-law/" },
           { text: "预防未成年人犯罪法", link: "/social/prevention-of-juvenile-delinquency/" },
+          { text: "安全生产法", link: "/social/work-safety-law/" },
         ],
       },
       {
