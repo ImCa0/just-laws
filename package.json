@@ -9,7 +9,8 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "@vuepress/plugin-search": "^2.0.0-beta.36",
-    "vuepress": "^2.0.0-beta.36"
+    "@vuepress/plugin-search": "^2.0.0-beta.48",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.48",
+    "vuepress": "^2.0.0-beta.48"
   }
 }
