@@ -18,6 +18,14 @@ module.exports = {
         ],
       },
       {
+        text: "宪法相关法",
+        children: [
+          { text: "国旗法", link: "/constitutional-relevance/national-flag-law/" },
+          { text: "国徽法", link: "/constitutional-relevance/national-emblem-law/" },
+          { text: "国歌法", link: "/constitutional-relevance/national-anthem-law/" },
+        ],
+      },
+      {
         text: "民商法",
         children: [
           { text: "民法典", link: "/civil-and-commercial/civil-code/" },
