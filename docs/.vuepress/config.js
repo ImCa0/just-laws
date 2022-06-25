@@ -33,6 +33,7 @@ module.exports = {
         children: [
           { text: "民法典", link: "/civil-and-commercial/civil-code/" },
           { text: "消费者权益保护法", link: "/civil-and-commercial/protection-of-the-rights-and-interests-of-consumers/" },
+          { text: "公司法", link: "/civil-and-commercial/company-law/" },
         ],
       },
       {
@@ -177,7 +178,7 @@ module.exports = {
       appId: "M6984MENBN",
       indexName: "just_laws",
       searchParameters: {
-        attributesToSnippet: ['lvl1:30', 'content:25']
+        attributesToSnippet: ["lvl1:30", "content:25"],
       },
       locales: {
         "/": {
