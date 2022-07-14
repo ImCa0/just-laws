@@ -7,7 +7,17 @@ module.exports = {
   description: "法律和法律都是相互依存的",
   head: [
     ["link", { rel: "icon", href: "/images/logo.png" }],
-    ["script", { src: "https://hm.baidu.com/hm.js?f1b6f06a4a48c2db87fcba1a4b3c3ac4" }],
+    [
+      "script",
+      {},
+      `var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement('script')
+        hm.src = 'https://hm.baidu.com/hm.js?f1b6f06a4a48c2db87fcba1a4b3c3ac4'
+        var s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(hm, s)
+      })()`,
+    ],
   ],
 
   theme: defaultTheme({
