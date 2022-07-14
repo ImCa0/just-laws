@@ -25,6 +25,7 @@ module.exports = {
         children: [
           { text: "国旗法", link: "/constitutional-relevance/national-flag-law/" },
           { text: "国徽法", link: "/constitutional-relevance/national-emblem-law/" },
+          { text: "立法法", link: "/constitutional-relevance/legislation-law/" },
           { text: "国歌法", link: "/constitutional-relevance/national-anthem-law/" },
         ],
       },
