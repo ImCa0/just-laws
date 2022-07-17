@@ -50,9 +50,9 @@ module.exports = {
       {
         text: "行政法",
         children: [
-          { text: "传染病防治法", link: "/administrative/prevention-and-treatment-of-infections-diseases" },
-          { text: "行政处罚法", link: "/administrative/administrative-penalty" },
-          { text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security" },
+          { text: "传染病防治法", link: "/administrative/prevention-and-treatment-of-infections-diseases/" },
+          { text: "行政处罚法", link: "/administrative/administrative-penalty/" },
+          { text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security/" },
         ],
       },
       {
@@ -60,6 +60,7 @@ module.exports = {
         children: [
           { text: "个人所得税法", link: "/economic/individual-income-tax-law/" },
           { text: "种子法", link: "/economic/seed-law/" },
+          { text: "个人信息保护法", link: "/economic/personal-information-protection-law/" },
         ],
       },
       {
@@ -169,6 +170,7 @@ module.exports = {
         },
       ],
     },
+    repo: "https://github.com/ImCa0/just-laws",
     docsRepo: "https://github.com/ImCa0/just-laws",
     docsBranch: "master",
     docsDir: "docs",
