@@ -60,6 +60,7 @@ module.exports = {
         children: [
           { text: "个人所得税法", link: "/economic/individual-income-tax-law/" },
           { text: "种子法", link: "/economic/seed-law/" },
+          { text: "网络安全法", link: "/economic/cybersecurity-law/" },
           { text: "个人信息保护法", link: "/economic/personal-information-protection-law/" },
         ],
       },
