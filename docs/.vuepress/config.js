@@ -65,7 +65,6 @@ module.exports = {
           { text: "网络安全法", link: "/economic/cybersecurity-law/" },
           { text: "数据安全法", link: "/economic/data-security-law/" },
           { text: "个人信息保护法", link: "/economic/personal-information-protection-law/" },
-          { text: "反电信网络诈骗法", link: "/economic/anti-telecom-network-fraud-law/" },
         ],
       },
       {
@@ -83,6 +82,7 @@ module.exports = {
           { text: "刑法", link: "/criminal-law/criminal-law/" },
           { text: "刑法修正案", link: "/criminal-law/amendment/" },
           { text: "反有组织犯罪法", link: "/criminal-law/anti-organized-crime-law/" },
+          { text: "反电信网络诈骗法", link: "/criminal-law/combating-telecom-and-online-fraud/" },
         ],
       },
       {
