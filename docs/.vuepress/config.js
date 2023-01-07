@@ -53,6 +53,7 @@ module.exports = {
         children: [
           { text: "野生动物保护法", link: "/administrative/protection-of-wildlife/" },
           { text: "传染病防治法", link: "/administrative/prevention-and-treatment-of-infections-diseases/" },
+          { text: "环境保护法", link: "/administrative/environment-protection/" },
           { text: "行政处罚法", link: "/administrative/administrative-penalty/" },
           { text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security/" },
         ],
