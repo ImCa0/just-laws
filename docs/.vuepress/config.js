@@ -65,7 +65,6 @@ module.exports = {
           { text: "种子法", link: "/economic/seed-law/" },
           { text: "网络安全法", link: "/economic/cybersecurity-law/" },
           { text: "数据安全法", link: "/economic/data-security-law/" },
-          { text: "个人信息保护法", link: "/economic/personal-information-protection-law/" },
         ],
       },
       {
@@ -75,6 +74,7 @@ module.exports = {
           { text: "劳动法", link: "/social/labor-law/" },
           { text: "预防未成年人犯罪法", link: "/social/prevention-of-juvenile-delinquency/" },
           { text: "安全生产法", link: "/social/work-safety-law/" },
+          { text: "个人信息保护法", link: "/social/personal-information-protection-law/" },
         ],
       },
       {
