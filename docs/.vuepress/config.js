@@ -56,6 +56,7 @@ module.exports = {
           { text: "环境保护法", link: "/administrative/environment-protection/" },
           { text: "行政处罚法", link: "/administrative/administrative-penalty/" },
           { text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security/" },
+          { text: "义务教育法", link: "/administrative/compulsory education-law/" },
         ],
       },
       {
@@ -65,6 +66,8 @@ module.exports = {
           { text: "种子法", link: "/economic/seed-law/" },
           { text: "网络安全法", link: "/economic/cybersecurity-law/" },
           { text: "数据安全法", link: "/economic/data-security-law/" },
+          { text: "个人信息保护法", link: "/economic/personal-information-protection-law/" },
+          { text: "反垄断法", link: "/economic/anti monopoly law/" },
         ],
       },
       {
