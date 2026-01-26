@@ -36,4 +36,4 @@ jobs:
           SOURCE: "/docs/.vuepress/dist/"
           REMOTE_HOST: "${{ secrets.SERVER_HOST }}"
           REMOTE_USER: "${{ secrets.USER_NAME }}"
-          TARGET: "/usr/local/nginx/html/justlaws"
+          TARGET: "/usr/share/nginx/html/justlaws"
