@@ -77,7 +77,6 @@ module.exports = {
           { text: "劳动法", link: "/social/labor-law/" },
           { text: "预防未成年人犯罪法", link: "/social/prevention-of-juvenile-delinquency/" },
           { text: "安全生产法", link: "/social/work-safety-law/" },
-          { text: "个人信息保护法", link: "/social/personal-information-protection-law/" },
         ],
       },
       {
