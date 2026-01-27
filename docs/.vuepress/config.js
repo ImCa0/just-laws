@@ -60,6 +60,7 @@ module.exports = {
           { text: "义务教育法", link: "/administrative/compulsory education-law/" },
           { text: "突发事件应对法", link: "/administrative/emergency-response-law/" },
           { text: "中医药法", link: "/administrative/traditional-chinese-medicine-law/" },
+          { text: "人口与计划生育法", link: "/administrative/population-and-family-planning-law/" },
         ],
       },
       {
