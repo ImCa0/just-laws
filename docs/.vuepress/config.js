@@ -58,6 +58,7 @@ module.exports = {
           { text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security/" },
           { text: "义务教育法", link: "/administrative/compulsory education-law/" },
           { text: "突发事件应对法", link: "/administrative/emergency-response-law/" },
+          { text: "中医药法", link: "/administrative/traditional-chinese-medicine-law/" },
         ],
       },
       {
