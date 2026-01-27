@@ -251,15 +251,21 @@ sidebar: auto
 
 ### 9. 提交代码
 
-**重要**：提交时必须排除临时文件和辅助文件，只提交正式的法律文件和配置修改。
+**重要**：提交时必须包含所有被修改的项目文件，并排除临时文件和辅助文件。
 
 执行以下 git 命令：
 
 ```bash
-# 只添加相关文件，排除临时文件
-git add docs/ README.md .claude/skills/add_law.md
+# 添加所有项目文件（被 .gitignore 排除的临时文件不会被添加）
+git add .
 git commit -m "📘 收录《{法律名称}》"
 ```
+
+**说明**：
+- 使用 `git add .` 可以自动添加所有修改的文件
+- `.gitignore` 中配置的临时文件和辅助脚本会被自动排除
+- 包括：`docs/`、`README.md`、`.gitignore`、`.claude/skills/add_law.md` 等所有项目文件
+- 排除：`.temp/`、转换脚本、临时列表文件等
 
 **或者使用 .gitignore 排除临时文件**：
 
