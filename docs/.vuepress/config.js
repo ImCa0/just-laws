@@ -64,6 +64,7 @@ module.exports = {
           { text: "中医药法", link: "/administrative/traditional-chinese-medicine-law/" },
           { text: "人口与计划生育法", link: "/administrative/population-and-family-planning-law/" },
           { text: "人民武装警察法", link: "/administrative/people-s-armed-police-law/" },
+          { text: "人民警察法", link: "/administrative/people-s-police-law/" },
         ],
       },
       {
