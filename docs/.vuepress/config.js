@@ -66,6 +66,7 @@ module.exports = {
           { text: "人民武装警察法", link: "/administrative/people-s-armed-police-law/" },
           { text: "人民警察法", link: "/administrative/people-s-police-law/" },
           { text: "人民警察警衔条例", link: "/administrative/people-s-police-rank-regulations/" },
+          { text: "人民防空法", link: "/administrative/civil-air-defense-law/" },
         ],
       },
       {
