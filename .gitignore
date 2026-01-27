@@ -15,12 +15,6 @@ format_*.py
 process_*.py
 batch_*.py
 
-# 临时列表文件
-docx_list.txt
-md_list.txt
-unconverted.txt
-law_translations.json
-
 # IDE 配置文件（个人配置）
 .vscode/
 .idea/
