@@ -37,6 +37,7 @@ module.exports = {
           { text: "国徽法", link: "/constitutional-relevance/national-emblem-law/" },
           { text: "立法法", link: "/constitutional-relevance/legislation-law/" },
           { text: "国歌法", link: "/constitutional-relevance/national-anthem-law/" },
+          { text: "专属经济区和大陆架法", link: "/constitutional-relevance/exclusive-economic-zone-and-continental-shelf-law/" },
         ],
       },
       {
