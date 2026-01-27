@@ -38,6 +38,7 @@ module.exports = {
           { text: "立法法", link: "/constitutional-relevance/legislation-law/" },
           { text: "国歌法", link: "/constitutional-relevance/national-anthem-law/" },
           { text: "专属经济区和大陆架法", link: "/constitutional-relevance/exclusive-economic-zone-and-continental-shelf-law/" },
+          { text: "人民检察院组织法", link: "/constitutional-relevance/people-s-procuratorate-organization-law/" },
         ],
       },
       {
