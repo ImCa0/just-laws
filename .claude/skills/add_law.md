@@ -251,11 +251,28 @@ sidebar: auto
 
 ### 9. 提交代码
 
+**重要**：提交时必须排除临时文件和辅助文件，只提交正式的法律文件和配置修改。
+
 执行以下 git 命令：
 
 ```bash
-git add .
+# 只添加相关文件，排除临时文件
+git add docs/ README.md .claude/skills/add_law.md
 git commit -m "📘 收录《{法律名称}》"
+```
+
+**或者使用 .gitignore 排除临时文件**：
+
+确保项目的 `.gitignore` 文件包含以下规则：
+```
+.temp/
+*.pyc
+__pycache__/
+*.log
+convert_*.py
+format_*.py
+process_*.py
+batch_*.py
 ```
 
 **提交信息规范**：
