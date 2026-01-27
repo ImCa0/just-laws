@@ -66,6 +66,7 @@ module.exports = {
         text: "经济法",
         children: [
           { text: "中国人民银行法", link: "/economic/peoples-bank-of-china-law/" },
+          { text: "中小企业促进法", link: "/economic/small-and-medium-sized-enterprises-promotion-law/" },
           { text: "个人所得税法", link: "/economic/individual-income-tax-law/" },
           { text: "种子法", link: "/economic/seed-law/" },
           { text: "网络安全法", link: "/economic/cybersecurity-law/" },
