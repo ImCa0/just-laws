@@ -83,6 +83,7 @@ module.exports = {
           { text: "数据安全法", link: "/economic/data-security-law/" },
           { text: "个人信息保护法", link: "/economic/personal-information-protection-law/" },
           { text: "反垄断法", link: "/economic/anti monopoly law/" },
+          { text: "价格法", link: "/economic/price-law/" },
         ],
       },
       {
