@@ -33,6 +33,7 @@ module.exports = {
       {
         text: "宪法相关法",
         children: [
+          { text: "地方各级人民代表大会和地方各级人民政府组织法", link: "/constitutional-relevance/local-people-congress-government-organization-law/" },
           { text: "国旗法", link: "/constitutional-relevance/national-flag-law/" },
           { text: "国徽法", link: "/constitutional-relevance/national-emblem-law/" },
           { text: "立法法", link: "/constitutional-relevance/legislation-law/" },
