@@ -138,13 +138,16 @@ sidebar: auto
 
 ### Critical Formatting Requirements
 
-1. **Frontmatter** (must start at line 1):
+1. **Frontmatter** (only include if document has secondary headings/chapters):
    ```markdown
    ---
    sidebar: auto
    ---
 
    ```
+   - **Important**: Only include `sidebar: auto` if the document has chapter titles (## level headings)
+   - For laws without chapters (only articles with **第X条** format), omit the entire frontmatter block
+   - Example law without chapters: `state-council-organization-law` (国务院组织法)
 
 2. **Title** (blank line after frontmatter):
    ```markdown
