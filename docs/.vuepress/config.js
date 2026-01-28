@@ -69,6 +69,7 @@ module.exports = {
           { text: "人民警察警衔条例", link: "/administrative/people-s-police-rank-regulations/" },
           { text: "人民防空法", link: "/administrative/civil-air-defense-law/" },
           { text: "体育法", link: "/administrative/sports-law/" },
+          { text: "促进科技成果转化法", link: "/administrative/promotion-of-transformation-of-scientific-and-technological-achievements-law/" },
         ],
       },
       {
