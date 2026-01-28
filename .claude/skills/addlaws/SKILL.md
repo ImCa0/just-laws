@@ -156,6 +156,7 @@ sidebar: auto
    - Each record on a separate line
    - **Blank line between each record** (critical!)
    - Remove spaces between Chinese characters and numbers
+   - **IMPORTANT: Must NOT contain full-width parentheses `（` or `）`**
    ```markdown
    2021年8月20日第十三届全国人民代表大会常务委员会第三十次会议通过
 
@@ -163,6 +164,8 @@ sidebar: auto
 
    ```
    - Blank line after last record
+   - ❌ Wrong: `（2021年8月20日...）`
+   - ✅ Correct: `2021年8月20日...`
 
 4. **Chapter Titles**:
    - Use `## ` level (secondary heading)
