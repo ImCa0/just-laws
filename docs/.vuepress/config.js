@@ -41,6 +41,7 @@ module.exports = {
           { text: "在沿海港口城市设立海事法院的决定", link: "/constitutional-relevance/decision-on-establishing-maritime-courts-in-coastal-port-cities/" },
           { text: "外交特权与豁免条例", link: "/constitutional-relevance/diplomatic-privileges-and-immunities-regulations/" },
           { text: "全国人民代表大会常务委员会议事规则", link: "/constitutional-relevance/npc-standing-committee-rules/" },
+          { text: "批准军队功勋荣誉章规定的决定", link: "/constitutional-relevance/decision-on-military-honorary-medal-regulations/" },
           { text: "县级以下人民代表大会代表直接选举的若干规定", link: "/constitutional-relevance/provisions-on-direct-election-of-people-s-congress-representatives-below-county-level/" },
           { text: "民族区域自治法", link: "/constitutional-relevance/law-on-regional-national-autonomy/" },
           { text: "国旗法", link: "/constitutional-relevance/national-flag-law/" },
