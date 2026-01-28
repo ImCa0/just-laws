@@ -36,6 +36,7 @@ module.exports = {
           { text: "地方各级人民代表大会和地方各级人民政府组织法", link: "/constitutional-relevance/local-people-congress-government-organization-law/" },
           { text: "全国人民代表大会和地方各级人民代表大会选举法", link: "/constitutional-relevance/electoral-law-of-national-and-local-people-s-congresses/" },
           { text: "国籍法", link: "/constitutional-relevance/nationality-law/" },
+          { text: "全国人民代表大会组织法", link: "/constitutional-relevance/npc-organization-law/" },
           { text: "国旗法", link: "/constitutional-relevance/national-flag-law/" },
           { text: "国徽法", link: "/constitutional-relevance/national-emblem-law/" },
           { text: "立法法", link: "/constitutional-relevance/legislation-law/" },
