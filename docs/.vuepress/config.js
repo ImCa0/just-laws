@@ -44,6 +44,7 @@ module.exports = {
           { text: "全国人民代表大会议事规则", link: "/constitutional-relevance/national-people-s-conference-rules-of-procedure/" },
           { text: "集会游行示威法", link: "/constitutional-relevance/assembly-procession-demonstration-law/" },
           { text: "城市居民委员会组织法", link: "/constitutional-relevance/urban-residents-committee-organization-law/" },
+          { text: "香港特别行政区基本法", link: "/constitutional-relevance/hong-kong-special-administrative-region-basic-law/" },
           { text: "批准军队功勋荣誉章规定的决定", link: "/constitutional-relevance/decision-on-military-honorary-medal-regulations/" },
           { text: "县级以下人民代表大会代表直接选举的若干规定", link: "/constitutional-relevance/provisions-on-direct-election-of-people-s-congress-representatives-below-county-level/" },
           { text: "民族区域自治法", link: "/constitutional-relevance/law-on-regional-national-autonomy/" },
