@@ -24,6 +24,10 @@ module.exports = {
     logo: "/images/logo.png",
     navbar: [
       {
+        text: "全部类别",
+        link: "/category/",
+      },
+      {
         text: "宪法",
         children: [
           { text: "宪法", link: "/constitution/", activeMatch: "/constitution/[^(amendment)]" },
@@ -33,30 +37,10 @@ module.exports = {
       {
         text: "宪法相关法",
         children: [
-          { text: "地方各级人民代表大会和地方各级人民政府组织法", link: "/constitutional-relevance/local-people-congress-government-organization-law/" },
-          { text: "全国人民代表大会和地方各级人民代表大会选举法", link: "/constitutional-relevance/electoral-law-of-national-and-local-people-s-congresses/" },
-          { text: "国籍法", link: "/constitutional-relevance/nationality-law/" },
           { text: "全国人民代表大会组织法", link: "/constitutional-relevance/npc-organization-law/" },
-          { text: "国务院组织法", link: "/constitutional-relevance/state-council-organization-law/" },
-          { text: "在沿海港口城市设立海事法院的决定", link: "/constitutional-relevance/decision-on-establishing-maritime-courts-in-coastal-port-cities/" },
-          { text: "外交特权与豁免条例", link: "/constitutional-relevance/diplomatic-privileges-and-immunities-regulations/" },
-          { text: "全国人民代表大会常务委员会议事规则", link: "/constitutional-relevance/npc-standing-committee-rules/" },
-          { text: "全国人民代表大会议事规则", link: "/constitutional-relevance/national-people-s-conference-rules-of-procedure/" },
-          { text: "集会游行示威法", link: "/constitutional-relevance/assembly-procession-demonstration-law/" },
-          { text: "城市居民委员会组织法", link: "/constitutional-relevance/urban-residents-committee-organization-law/" },
-          { text: "香港特别行政区基本法", link: "/constitutional-relevance/hong-kong-special-administrative-region-basic-law/" },
-          { text: "领事特权与豁免条例", link: "/constitutional-relevance/consular-privileges-and-immunities-regulations/" },
-          { text: "批准军队功勋荣誉章规定的决定", link: "/constitutional-relevance/decision-on-military-honorary-medal-regulations/" },
-          { text: "县级以下人民代表大会代表直接选举的若干规定", link: "/constitutional-relevance/provisions-on-direct-election-of-people-s-congress-representatives-below-county-level/" },
           { text: "民族区域自治法", link: "/constitutional-relevance/law-on-regional-national-autonomy/" },
-          { text: "国旗法", link: "/constitutional-relevance/national-flag-law/" },
-          { text: "国徽法", link: "/constitutional-relevance/national-emblem-law/" },
-          { text: "立法法", link: "/constitutional-relevance/legislation-law/" },
-          { text: "国歌法", link: "/constitutional-relevance/national-anthem-law/" },
-          { text: "专属经济区和大陆架法", link: "/constitutional-relevance/exclusive-economic-zone-and-continental-shelf-law/" },
-          { text: "人民检察院组织法", link: "/constitutional-relevance/people-s-procuratorate-organization-law/" },
-          { text: "人民法院组织法", link: "/constitutional-relevance/people-s-court-organization-law/" },
-          { text: "人民陪审员法", link: "/constitutional-relevance/people-s-assessors-law/" },
+          { text: "香港特别行政区基本法", link: "/constitutional-relevance/hong-kong-special-administrative-region-basic-law/" },
+          { text: "查看全部 24 部宪法相关法", link: "/category/constitutional-relevance" },
         ],
       },
       {
@@ -71,40 +55,19 @@ module.exports = {
       {
         text: "行政法",
         children: [
-          { text: "野生动物保护法", link: "/administrative/protection-of-wildlife/" },
-          { text: "传染病防治法", link: "/administrative/prevention-and-treatment-of-infections-diseases/" },
-          { text: "环境保护法", link: "/administrative/environment-protection/" },
           { text: "行政处罚法", link: "/administrative/administrative-penalty/" },
           { text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security/" },
           { text: "义务教育法", link: "/administrative/compulsory-education-law/" },
-          { text: "突发事件应对法", link: "/administrative/emergency-response-law/" },
-          { text: "中医药法", link: "/administrative/traditional-chinese-medicine-law/" },
-          { text: "人口与计划生育法", link: "/administrative/population-and-family-planning-law/" },
-          { text: "人民武装警察法", link: "/administrative/people-s-armed-police-law/" },
-          { text: "人民警察法", link: "/administrative/people-s-police-law/" },
-          { text: "人民警察警衔条例", link: "/administrative/people-s-police-rank-regulations/" },
-          { text: "人民防空法", link: "/administrative/civil-air-defense-law/" },
-          { text: "体育法", link: "/administrative/sports-law/" },
-          { text: "促进科技成果转化法", link: "/administrative/promotion-of-transformation-of-scientific-and-technological-achievements-law/" },
+          { text: "查看全部 15 部行政法", link: "/category/administrative" },
         ],
       },
       {
         text: "经济法",
         children: [
-          { text: "中国人民银行法", link: "/economic/peoples-bank-of-china-law/" },
-          { text: "中小企业促进法", link: "/economic/small-and-medium-sized-enterprises-promotion-law/" },
-          { text: "乡村振兴促进法", link: "/economic/rural-vitalization-promotion-law/" },
-          { text: "产品质量法", link: "/economic/product-quality-law/" },
           { text: "个人所得税法", link: "/economic/individual-income-tax-law/" },
-          { text: "种子法", link: "/economic/seed-law/" },
-          { text: "网络安全法", link: "/economic/cybersecurity-law/" },
-          { text: "数据安全法", link: "/economic/data-security-law/" },
+          { text: "中国人民银行法", link: "/economic/peoples-bank-of-china-law/" },
           { text: "个人信息保护法", link: "/economic/personal-information-protection-law/" },
-          { text: "反垄断法", link: "/economic/anti-monopoly-law/" },
-          { text: "价格法", link: "/economic/price-law/" },
-          { text: "企业国有资产法", link: "/economic/enterprise-state-owned-assets-law/" },
-          { text: "企业所得税法", link: "/economic/enterprise-income-tax-law/" },
-          { text: "会计法", link: "/economic/accounting-law/" },
+          { text: "查看全部 14 部经济法", link: "/category/economic" },
         ],
       },
       {
@@ -135,6 +98,20 @@ module.exports = {
       },
     ],
     sidebar: {
+      "/category/": [
+        {
+          text: "类别",
+          children: [
+            "/category/constitutional-relevance",
+            "/category/civil-and-commercial",
+            "/category/administrative",
+            "/category/economic",
+            "/category/social",
+            "/category/criminal-law",
+            "/category/procedural",
+          ]
+        }
+      ],
       "/constitution/": [
         {
           text: "中华人民共和国宪法",
