@@ -38,6 +38,7 @@ module.exports = {
           { text: "国籍法", link: "/constitutional-relevance/nationality-law/" },
           { text: "全国人民代表大会组织法", link: "/constitutional-relevance/npc-organization-law/" },
           { text: "国务院组织法", link: "/constitutional-relevance/state-council-organization-law/" },
+          { text: "县级以下人民代表大会代表直接选举的若干规定", link: "/constitutional-relevance/provisions-on-direct-election-of-people-s-congress-representatives-below-county-level/" },
           { text: "民族区域自治法", link: "/constitutional-relevance/law-on-regional-national-autonomy/" },
           { text: "国旗法", link: "/constitutional-relevance/national-flag-law/" },
           { text: "国徽法", link: "/constitutional-relevance/national-emblem-law/" },
