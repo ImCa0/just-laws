@@ -85,6 +85,7 @@ module.exports = {
           { text: "反垄断法", link: "/economic/anti monopoly law/" },
           { text: "价格法", link: "/economic/price-law/" },
           { text: "企业国有资产法", link: "/economic/enterprise-state-owned-assets-law/" },
+          { text: "企业所得税法", link: "/economic/enterprise-income-tax-law/" },
         ],
       },
       {
