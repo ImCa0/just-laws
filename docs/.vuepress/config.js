@@ -42,6 +42,7 @@ module.exports = {
           { text: "外交特权与豁免条例", link: "/constitutional-relevance/diplomatic-privileges-and-immunities-regulations/" },
           { text: "全国人民代表大会常务委员会议事规则", link: "/constitutional-relevance/npc-standing-committee-rules/" },
           { text: "全国人民代表大会议事规则", link: "/constitutional-relevance/national-people-s-conference-rules-of-procedure/" },
+          { text: "集会游行示威法", link: "/constitutional-relevance/assembly-procession-demonstration-law/" },
           { text: "批准军队功勋荣誉章规定的决定", link: "/constitutional-relevance/decision-on-military-honorary-medal-regulations/" },
           { text: "县级以下人民代表大会代表直接选举的若干规定", link: "/constitutional-relevance/provisions-on-direct-election-of-people-s-congress-representatives-below-county-level/" },
           { text: "民族区域自治法", link: "/constitutional-relevance/law-on-regional-national-autonomy/" },
