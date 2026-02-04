@@ -59,3 +59,4 @@ prev:
 [全国人民代表大会和地方各级人民代表大会代表法](../constitutional-relevance/national-and-local-people-s-congresses-representative-law/)
 
 [国家赔偿法](../constitutional-relevance/state-compensation-law/)
+[爱国主义教育法](../constitutional-relevance/patriotism-education-law/)
