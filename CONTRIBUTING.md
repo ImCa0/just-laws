@@ -1,130 +1,120 @@
 # JustLaws 法律文库贡献指南
 
-## 选择法律
+感谢您贡献法律到 JustLaws 项目！我们使用自动化工具简化收录流程，只需 4 步即可完成贡献。
 
-进入[全国人大网现行有效法律目录](http://www.npc.gov.cn/npc/c30834/202204/d221d65dc57f4c649886c15257cf8634.shtml)页面，挑选你想要收录的法律，记住法律的全名即可进入下一步，本文以《中华人民共和国种子法》为例。
+## 前提条件
 
-## 获取原文
+1. **已安装 [Claude Code](https://claude.ai/code)**：用于运行自动化技能
+2. **已 Fork 并 Clone 仓库**：`git clone https://github.com/{YOUR-USERNAME}/just-laws.git`
 
-进入[国家法律法规数据库](https://flk.npc.gov.cn/)，搜索法律原文。此时需要注意，搜索结果中可能包含多个版本，需要选择**时效性为有效，公布日期为最新**的版本。
+## 收录流程
 
-![搜索结果](https://npm.elemecdn.com/imcao-hexo/source/_posts/development/JustLaws/ContributionGuide/SearchResult.jpg)
+### 步骤 1：创建临时目录
 
-点击进入阅读页面，选择 WPS 版本，点击下载。
-
-![下载](https://npm.elemecdn.com/imcao-hexo/source/_posts/development/JustLaws/ContributionGuide/Download.jpg)
-
-## 获取代码
-
-进入 [JustLaws 仓库](https://github.com/ImCa0/just-laws)并 fork 到自己账号。`git clone` 自己的仓库到本地。
-
-## 创建文件
-
-推荐使用 VS Code 打开项目，后续操作快捷键以 VS Code 为例。在法律类型下创建法律名称的文件夹，例如种子法属于经济法，即在 economic 下创建 seed-law 文件夹，文件夹名称请百度该法律的英文对照，使用全小写字母，单词用 `-` 分隔，无需保留 `the People's Republic of China`。
-
-![创建文件](https://npm.elemecdn.com/imcao-hexo/source/_posts/development/JustLaws/ContributionGuide/CreateFile.jpg)
-
-![文件夹名称](https://npm.elemecdn.com/imcao-hexo/source/_posts/development/JustLaws/ContributionGuide/Translation.jpg)
-
-在新创建的文件夹下创建名为 `README.md` 的文件。
-
-> 注意：对于法律条文多余 200 条的法律需要创建多个 MarkDown 文件，其网页由多个页面组成，例如[民法典](https://www.justlaws.cn/civil-and-commercial/civil-code/)，每一编都是一个 MarkDown 文件。而大部分的法律都少于 200 条，因此本文只介绍这类法律的收录。
-
-## 编辑文件
-
-### Frontmatter
-
-对于少于 200 条的法律，其侧边栏自动生成，在 README.md 文件添加 Frontmatter。
-
-```markdown
----
-sidebar: auto
----
-```
-
-### 标题
-
-添加法律名称的一级标题
-
-```markdown
-# 中华人民共和国种子法
-```
-
-### 立法修法记录
-
-格式要求：每条记录单独成一行
-
-```markdown
-2000年7月8日第九届全国人民代表大会常务委员会第十六次会议通过
-
-根据2004年8月28日第十届全国人民代表大会常务委员会第十一次会议《关于修改〈中华人民共和国种子法〉的决定》第一次修正
-```
-
-### 正文
-
-复制粘贴下载的法律正文。
-
-`Ctrl + F` 打开搜索框，打开正则表达式模式，输入 `\n` 搜索换行符，光标回到文档，`Shift + Ctrl + L` 选中所有匹配项，连续按**两次** `回车`，`Shift + Alt + F` 格式化文档。此举操作是为了保证连续两行之间存在一个空行，这样才能在网页上真正分行。
-
-![搜索换行符](https://npm.elemecdn.com/imcao-hexo/source/_posts/development/JustLaws/ContributionGuide/Search.jpg)
-
-搜索框输入 `第[\u4e00-\u9fa5]*章　`，搜索所有二级标题，注意“章”字后的中文空格，防止搜索到正文中的“第X章”。`Shift + Ctrl + L` 选中所有匹配项后，按一次方向键 `←` 将所有光标移动到文字左侧，输入 `## ` 实现二级标题。
-
-同理，如果法律有三级标题，比如“第一节”，也用这个方法进行操作。
-
-搜索框输入 `第[\u4e00-\u9fa5]*条　`，搜索所有条目，`Shift + Ctrl + L` 选中所有匹配项后，按一次方向键 `→` 将所有光标移动到中文空格右侧，按一次方向键 `←` 将所有光标移动到“条”字右侧，`Shift + Ctrl + ←` 选中所有“第X条”，两次 `Shift + 8` 为文字包裹 `**`。
-
-搜索框输入 `\d | \d`，搜索所有相邻为数字的空格，手动删除所有中文字符与数字之间的空格（与原文格式保持一致）。
-
-```diff
-- 2000 年 7 月 8 日第九届全国人民代表大会常务委员会第十六次会议通过
-+ 2000年7月8日第九届全国人民代表大会常务委员会第十六次会议通过
-
-- 根据 2004 年 8 月 28 日第十届全国人民代表大会常务委员会第十一次会议《关于修改〈中华人民共和国种子法〉的决定》第一次修正
-+ 根据2004年8月28日第十届全国人民代表大会常务委员会第十一次会议《关于修改〈中华人民共和国种子法〉的决定》第一次修正
-```
-
-至此，Markdown 文件已编辑完成，完整示例可参考种子法文件，[GitHub 在线预览](https://github.dev/ImCa0/just-laws/tree/master/docs/economic/seed-law)。
-
-## 修改配置文件
-
-修改 `.vuepress/config.js` 中的导航栏配置，添加法律至相应栏目下。
-
-```diff
-themeConfig: {
-    navbar: [
-      {
-        text: "经济法",
-        children: [
-          { text: "个人所得税法", link: "/economic/individual-income-tax-law/" },
-+         { text: "种子法", link: "/economic/seed-law/" },
-        ],
-      },
-    ]
-}
-```
-
-## 修改项目 README
-
-修改根目录下的 README.md 文件，将 `已收录法律` 后的数量加一，并在下方相应分类下添加法律名称。
-
-```diff
-- ## 已收录法律（xx/292）
-+ ## 已收录法律（xx+1/292）
-
-### 经济法
-
-+ - [x] 中华人民共和国种子法
-```
-
-## 提交 Pull Request
-
-提交代码，提交信息格式为 `书本emoji + 空格 + 收录《XXX法》`，emoji 颜色自选 📗📘📙📕。
+`.temp` 目录在 `.gitignore` 中，不会被提交到 Git。您需要手动创建：
 
 ```bash
-git add .
-git commit -m "📗 收录《种子法》"
-git push https://github.com/{YOUR-USERNAME}/just-laws.git master
+mkdir -p .temp/laws_docs
+mkdir -p .temp/laws_md
 ```
 
-最后，在 GitHub 仓库页面提交 Pull Request。
+或者手动创建这两个文件夹。
+
+**目录结构**：
+```
+.just-laws/
+├── .temp/              # 临时文件（不提交到 Git）
+│   ├── laws_docs/      # 原始法律文档（DOCX/PDF）
+│   └── laws_md/        # 转换后的 Markdown 文件
+├── docs/               # 站点文档
+└── .claude/skills/     # 自动化技能
+```
+
+### 步骤 2：下载法律原文
+
+1. 进入[全国人大网现行有效法律目录](http://www.npc.gov.cn/npc/c2/c30834/202512/t20251231_450944.html)页面，选择要收录的法律
+2. 进入[国家法律法规数据库](https://flk.npc.gov.cn/)搜索法律
+3. **重要**：选择**时效性为有效，公布日期为最新**的版本
+4. 下载 WPS 版本（DOCX 格式）到 `.temp/laws_docs/` 目录
+
+**文件命名**：默认命名为中文全名 + 日期，请勿修改，如 `中华人民共和国种子法_20211224.docx`
+
+### 步骤 3：转换为 Markdown
+
+在 Claude Code 交互界面中，使用 markitdown 技能转换法律原文：
+
+```
+/markitdown .temp/laws_docs/中华人民共和国种子法_20211224.docx
+```
+
+**注意**：`/markitdown` 是 Claude Code 的技能命令，需要在 Claude Code 的终端/交互界面中执行，而非系统终端（bash/cmd）。
+
+**输出**：转换后的 Markdown 文件保存在 `.temp/laws_md/` 目录
+
+### 步骤 4：自动收录法律
+
+在 Claude Code 交互界面中，使用 addlaws 技能自动收录法律：
+
+```
+/addlaws .temp/laws_md/中华人民共和国种子法_20211224.md
+```
+
+**注意**：`/addlaws` 是 Claude Code 的技能命令，需要在 Claude Code 的终端/交互界面中执行，而非系统终端（bash/cmd）。
+
+**自动化处理**：
+- ✅ 自动识别法律分类
+- ✅ 自动格式化内容（空行、标题、条号等）
+- ✅ 自动创建文件和目录
+- ✅ 自动更新导航配置
+- ✅ 自动更新进度跟踪
+- ✅ 自动生成提交信息
+
+### 步骤 5：提交代码
+
+自动化工具会自动完成 Git 提交，您只需推送到自己的仓库：
+
+```bash
+git push origin master
+```
+
+然后在 GitHub 上提交 Pull Request。
+
+---
+
+## 批量收录模式
+
+如果您想收录多部法律，可以在 Claude Code 交互界面中使用批量模式：
+
+```
+/addlaws --batch
+```
+
+自动化工具会：
+1. 自动识别所有未收录的法律
+2. 按序处理每部法律
+3. 为每部法律创建独立的提交
+4. 更新进度跟踪
+
+---
+
+## 常见问题
+
+### Q：为什么要使用 `.temp` 目录？
+**A**：`.temp` 目录在 `.gitignore` 中，临时文件不会被提交到 Git 仓库，保持仓库整洁。
+
+### Q：如果法律条文过多怎么办？
+**A**：自动化工具会自动检测法律结构，如果包含"第一编、第二编"等结构，会自动拆分为多个文件。无需手动处理。
+
+### Q：如何知道法律的分类？
+**A**：自动化工具会自动从 `LAWS_PROGRESS.md` 中查找法律所在的分类，无需手动指定。
+
+### Q：如果法律已存在但版本更新怎么办？
+**A**：自动化工具会自动比较日期，如果新版本更新，会自动替换旧文件并备份。
+
+---
+
+## 技术支持
+
+如果遇到问题，请：
+1. 查看 [addlaws 技能文档](.claude/skills/addlaws/SKILL.md)
+2. 提交 [Issue](https://github.com/ImCa0/just-laws/issues)

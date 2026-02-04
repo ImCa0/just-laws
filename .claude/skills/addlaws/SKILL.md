@@ -1,124 +1,134 @@
 ---
 name: addlaws
-description: "Automatically format and add Chinese laws to VuePress-based legal library. Supports batch processing with progress tracking via LAWS_PROGRESS.md."
+description: "自动化格式化并添加中国法律到 VuePress 法律库。支持批量处理和通过 LAWS_PROGRESS.md 进行进度跟踪。"
 allowed-tools: [Read, Write, Edit, Glob, Grep, Bash]
 license: MIT
 source: https://github.com/justlaws/just-laws
 ---
 
-# AddLaws - Chinese Law Addition Skill
+# 录入法律技能
 
-## Overview
+你是一个专业的法律收录助手，负责将中国法律自动添加到 VuePress 法律库中。
 
-AddLaws is an automated skill for adding Chinese laws to the Just Laws VuePress-based legal documentation site. It handles the complete workflow from reading raw Markdown files to formatting, organizing, updating navigation configuration, tracking progress, and committing changes.
+## 使用模式
 
-**Key Features**:
-- Automatically format and structure Chinese legal documents
-- Support for single law and batch processing modes
-- Progress tracking via `LAWS_PROGRESS.md`
-- Automatic English name translation and directory naming
-- VuePress navigation configuration updates
-- Git commit automation with emoji markers
+### 单部收录
+用户提供 Markdown 文件路径，如：`.temp/laws_md/中华人民共和国爱国主义教育法_20231024.md`
 
-**Prerequisites**:
-- Raw law files must be converted from DOCX to Markdown using markitdown
-- Files located in `.temp/laws_md/` directory
-- `LAWS_PROGRESS.md` must exist in project root
+### 批量收录（推荐）
+无需参数，自动处理所有未收录法律。读取 `LAWS_PROGRESS.md`，按序处理每部未收录的法律。
 
----
+## 核心执行流程
 
-## Usage
+### 步骤 1：确定法律信息
 
-### Single Law Mode
+**提取全名**：从文件名提取（`中华人民共和国爱国主义教育法_20231024.md` → `中华人民共和国爱国主义教育法`），备选从 md 第一行提取
 
-To add a single law, provide the Markdown file path:
+**翻译英文名称**：全小写、连字符分隔、不含 "the"
+- `中华人民共和国爱国主义教育法` → `patriotism-education-law`
+- `中华人民共和国种子法` → `seed-law`
 
-```bash
-/addlaws .temp/laws_md/中华人民共和国爱国主义教育法_20231024.md
+**确定分类**：从 `LAWS_PROGRESS.md` 查找法律所在分类
+
+**分类映射**：
+| 中文 | 目录 |
+|-----|------|
+| 宪法相关法 | constitutional-relevance |
+| 民商法 | civil-and-commercial |
+| 行政法 | administrative |
+| 经济法 | economic |
+| 社会法 | social |
+| 刑法 | criminal-law |
+| 程序法 | procedural |
+
+### 步骤 2：检查是否已存在
+
+使用 Grep 搜索 `docs/` 目录（法律全名）和 `docs/.vuepress/config.js`（法律简称）
+
+**版本比较方法**：
+1. 从原文文件名提取日期（如 `中华人民共和国种子法_20211224.md` → `2021年12月24日`）
+2. 读取已收录法律 md 文件的立法记录
+3. 提取立法记录中的最后一条日期（最新的修订日期）
+4. 比较两个日期
+
+**示例**：
+```
+原文文件名：中华人民共和国种子法_20211224.md
+原文日期：2021年12月24日
+
+已收录文件立法记录最后一条：
+根据2021年12月24日第十三届全国人民代表大会常务委员会...修正
+提取日期：2021年12月24日
+
+比较：日期相同或更旧 → 不处理
+     日期更新 → 执行替换
 ```
 
-**Required Parameter**:
-- `file`: Path to Markdown file in `.temp/laws_md/` directory
+**已存在处理**：
+- 如果原文日期相同或更旧：跳过该法律收录并记录
+- 如果原文日期更新：备份旧文件（.old）并替换，保持原分类不变
 
-**What happens**:
-1. Extracts law name from filename or content
-2. Translates to English directory name
-3. Determines category from `LAWS_PROGRESS.md`
-4. Checks if law already exists
-5. Formats content according to specifications
-6. Creates directory and files
-7. Updates `docs/.vuepress/config.js`
-8. Updates `LAWS_PROGRESS.md`
-9. Commits changes with emoji marker
+### 步骤 3：读取并分析结构
 
-### Batch Mode (Recommended)
+在 `.temp/laws_md/` 查找文件名包含法律名称的 md 文件
 
-To process all unadded laws automatically:
+**分析结构**：
+- 检查是否有"第一编、第二编"等结构
+- 检查是否有"第一章、第二章"等二级标题（##）
+- 统计条文数量（搜索 "**第"）
 
-```bash
-/addlaws --batch
+**判断文件类型**：
+
+| 类型 | 结构特征 | 处理方式 | Frontmatter | 示例 |
+|-----|---------|---------|-------------|------|
+| A | 无任何章节标题 | 单个 README.md | ❌ 不需要 | 国旗法 |
+| B | 仅有章/节（##） | 单个 README.md | ✅ `sidebar: auto` | 种子法 |
+| C | 有编/章节结构 | 多个 md 文件 | 部分文件需要 | 民法典、刑法 |
+
+### 步骤 4：格式化并创建文件
+
+#### 通用格式化规则（所有类型适用）
+
+**参考示例**：[种子法](docs/economic/seed-law/README.md)
+
+1. **立法记录**：
+   - 每条单独成行
+   - **记录间必须空行**（关键！）
+   - 删除中文与数字间空格
+   - **不能包含全角括号 `（）`**
+
+2. **章节标题**：
+   - 章：`## 第一章　总则`（中文空格 `　`）
+   - 节：`### 第一节　一般规定`
+
+3. **条号**：`**第一条**　`（加粗+中文空格）
+
+4. **空行规则**：**所有元素之间必须有空行**（最重要）
+
+5. **数字格式**：数字与中文之间不要有空格（如 `2021年12月24日`，不是 `2021 年 12 月 24 日`）
+
+#### 类型 A：无章节法律（如国旗法）
+
+**参考示例**：[国旗法](docs/constitutional-relevance/national-flag-law/README.md)
+
+```markdown
+# 中华人民共和国{法律名称}
+
+{立法修法记录 - 每条记录单独一行，记录间有空行}
+
+**第一条**　条文内容...
+
+**第二条**　条文内容...
 ```
 
-**No parameters required**
+**类型 A 特殊规则**：
+- ❌ **不需要** frontmatter
+- ❌ **不需要** `sidebar: auto`
+- 其他遵循通用格式化规则（空行、立法记录格式等）
 
-**What happens**:
-1. Reads `LAWS_PROGRESS.md` to find all unadded laws
-2. Processes each law in order
-3. Finds corresponding `.md` file in `.temp/laws_md/`
-4. Executes complete workflow for each law
-5. Updates `LAWS_PROGRESS.md` after each law
-6. Creates individual git commit per law
+#### 类型 B：有章节法律（如种子法）
 
-**Batch Mode Advantages**:
-- Fully automated processing of all unadded laws
-- Real-time progress tracking
-- Individual commits for traceability
-- No manual file specification needed
-
----
-
-## Directory Structure
-
-```
-docs/
-├── .vuepress/
-│   └── config.js           # Navigation configuration
-├── constitution/              # 宪法
-├── constitutional-relevance/  # 宪法相关法 (54 laws)
-├── civil-and-commercial/      # 民商法 (25 laws)
-├── administrative/            # 行政法 (96 laws)
-├── economic/                  # 经济法 (88 laws)
-├── social/                    # 社会法 (30 laws)
-├── criminal-law/              # 刑法 (4 laws)
-└── procedural/                # 程序法 (10 laws)
-
-.temp/
-└── laws_md/                   # Source Markdown files
-    └── 中华人民共和国{法律名称}_{日期}.md
-
-LAWS_PROGRESS.md               # Progress tracking (308 total laws)
-```
-
----
-
-## Category Mapping
-
-| Chinese Name | Directory Name | Law Count |
-|--------------|----------------|-----------|
-| 宪法 | constitution | 1 |
-| 宪法相关法 | constitutional-relevance | 54 |
-| 民商法 | civil-and-commercial | 25 |
-| 行政法 | administrative | 96 |
-| 经济法 | economic | 88 |
-| 社会法 | social | 30 |
-| 刑法 | criminal-law | 4 |
-| 程序法 | procedural | 10 |
-
----
-
-## Formatting Rules
-
-### File Structure
+**参考示例**：[种子法](docs/economic/seed-law/README.md)
 
 ```markdown
 ---
@@ -127,434 +137,248 @@ sidebar: auto
 
 # 中华人民共和国{法律名称}
 
-{立法修法记录 - 每条记录单独一行}
+{立法修法记录 - 每条记录单独一行，记录间有空行}
 
 ## 第一章　总则
 
 **第一条**　条文内容...
-
-**第二条**　条文内容...
 ```
 
-### Critical Formatting Requirements
+**类型 B 特殊规则**：
+- 需要添加 frontmatter：`sidebar: auto`
+- 其他遵循通用格式化规则
 
-1. **Frontmatter** (only include if document has secondary headings/chapters):
+#### 类型 C：有编结构法律（如民法典、刑法）
+
+**参考示例**：
+- [民法典](docs/civil-and-commercial/civil-code/)（7编 + 附则）
+- [刑法](docs/criminal-law/criminal-law/)（2编 + 附则）
+
+**处理方式**：
+
+1. **拆分文件**：
+   - `README.md`（封面页：法律标题 + 立法记录）
+   - `01-general-principles.md`（第一编）
+   - `02-{英文名称}.md`（第二编）
+   - `03-{英文名称}.md`（第三编）
+   - ...（其他编）
+   - `00-supplementary.md`（附则，如有）
+
+2. **README.md 格式**（封面页）：
    ```markdown
    ---
-   sidebar: auto
+   next: /{分类}/{英文名称}/01-general-principles.md
    ---
 
-   ```
-   - **Important**: Only include `sidebar: auto` if the document has chapter titles (## level headings)
-   - For laws without chapters (only articles with **第X条** format), omit the entire frontmatter block
-   - Example law without chapters: `state-council-organization-law` (国务院组织法)
-
-2. **Title** (blank line after frontmatter):
-   ```markdown
    # 中华人民共和国{法律名称}
 
+   {立法修法记录}
    ```
 
-3. **Legislative Records**:
-   - Each record on a separate line
-   - **Blank line between each record** (critical!)
-   - Remove spaces between Chinese characters and numbers
-   - **IMPORTANT: Must NOT contain full-width parentheses `（` or `）`**
+   **注意**：README.md 只包含标题和立法记录，不包含章节和条文
+
+3. **第一编的格式**：
    ```markdown
-   2021年8月20日第十三届全国人民代表大会常务委员会第三十次会议通过
+   ---
+   prev: /{分类}/{英文名称}/
+   ---
 
-   根据2023年12月29日第十四届全国人民代表大会常务委员会第七次会议《关于修改〈中华人民共和国XXX法〉的决定》修正
+   # 第一编　总则
 
-   ```
-   - Blank line after last record
-   - ❌ Wrong: `（2021年8月20日...）`
-   - ✅ Correct: `2021年8月20日...`
+   ### 第一章　基本规定
 
-4. **Chapter Titles**:
-   - Use `## ` level (secondary heading)
-   - Preserve Chinese space after "章"
-   - Example: `## 第一章　总则` (Chinese space `　` after "章")
-   - Section title: `### 第一节　一般规定`
-   - Blank line after chapter title
-
-5. **Article Numbers**:
-   - Use bold: `**第X条**`
-   - Followed by Chinese space `　` (U+3000)
-   - Example: `**第一条**　为了保护个人信息权益...`
-
-6. **Blank Line Rule** (most important):
-   - **Blank line between ALL elements**
-   - Between frontmatter and title
-   - Between title and legislative records
-   - Between legislative records and first chapter
-   - Between chapter title and first article
-   - Between articles
-   - No blank line after last article
-
-7. **Number Format Cleanup**:
-   - Remove spaces between Chinese characters and numbers
-   - Regex: `(\d+)\s+年` → `$1年`
-   - Regex: `(\d+)\s+月` → `$1月`
-   - Regex: `(\d+)\s+日` → `$1日`
-
----
-
-## Workflow
-
-### Step 1: Determine Law Information
-
-**Extract Full Name**:
-- Priority: From filename (`中华人民共和国爱国主义教育法_20231024.md` → `中华人民共和国爱国主义教育法`)
-- Fallback: From first line or content
-- No user interaction required
-
-**Translate English Name**:
-- Automatically translate from full name
-- Naming convention: lowercase, hyphen-separated, without "the"
-- Examples:
-  - `中华人民共和国爱国主义教育法` → `patriotism-education-law`
-  - `中华人民共和国种子法` → `seed-law`
-  - `中华人民共和国个人信息保护法` → `personal-information-protection-law`
-
-**Determine Category**:
-- Look up directly from `LAWS_PROGRESS.md`
-- The category where the law appears is its category
-- No additional query needed
-
-### Step 2: Check if Law Exists
-
-**IMPORTANT**: Before creating content, must check if law is already added.
-
-1. **Check File System**
-   - Use Grep to search `docs/` directory for law full name
-   - If found, read content to confirm it's the same law
-
-2. **Check Configuration**
-   - Use Grep to search `docs/.vuepress/config.js` for law short name (without "中华人民共和国")
-   - Check if already in navigation configuration
-
-3. **Handle Existing Law**:
-   - **If law exists**:
-     - Extract effective date from current md file (usually in legislative records)
-     - Extract effective date from existing file
-     - Compare dates, use latest version
-     - **Default category is correct, do not modify**
-     - If newer version:
-       * Backup old file (add .old suffix)
-       * Replace with new file
-       * Update md content if needed
-       * Commit with update message
-     - If same or older version: Notify user and stop
-
-   - **If law does not exist**: Continue creation process
-
-### Step 3: Read and Format Markdown Content
-
-**IMPORTANT**:
-- ⚠️ **Must use AI model to directly understand raw md file and manually format, do not use script for auto-formatting**
-- AI has stronger context understanding for handling special cases (chapter titles, article nesting, list formats, etc.)
-- Scripts prone to format errors, require repeated debugging; AI can generate correct format in one pass
-- Use Read tool to read original file, then use Write tool to create formatted file according to format requirements below
-
-**Read Source File**:
-- **File Location**: Search in `.temp/laws_md/` directory, filename contains law name
-- Use Glob or Read tool to read corresponding md file
-- Save original content for reference
-
-**Analyze Law Structure**:
-- Count articles (search for "**第" to confirm)
-- Extract legislative records (usually at beginning of file)
-- Confirm chapter structure (chapters, sections)
-- Determine if file needs splitting (200+ articles)
-
-**Format Content** (strictly execute):
-
-For laws with **fewer than 200 articles**, create single `README.md` file.
-
-For laws with **200+ articles**:
-- Inform user that file needs to be split
-- Reference [Civil Code](docs/civil-and-commercial/civil-code/) structure
-- Create independent markdown file for each book (编)
-- Configure sidebar in config.js
-
-### Step 4: Create Law Directory
-
-Create directory: `docs/{category}/{english-name}/`
-
-**Directory Naming Convention**:
-- All lowercase letters
-- Separate words with hyphens `-`
-- Do not include "the" or "The People's Republic of China"
-- Examples: `personal-information-protection-law`, `seed-law`
-
-### Step 5: Create Formatted File
-
-Use Write tool to create `docs/{category}/{english-name}/README.md` file with formatted content.
-
-**Validation Points**:
-- Ensure file is created
-- Ensure format meets specifications
-- Ensure content is complete (all chapters, articles)
-
-### Step 6: Update Navigation Configuration
-
-Edit `docs/.vuepress/config.js`:
-
-1. **Find corresponding category** (in `navbar` array)
-2. **Add navigation item**:
-   ```javascript
-   { text: "{法律简称}", link: "/{category}/{english-name}/" },
+   **第一条**　条文内容...
    ```
 
-**Important Notes**:
-- `link` path must start with `/`
-- `link` path must end with `/` (indicating directory)
-- `link` path **must not contain spaces or Chinese characters**
-- `text` uses law short name, usually omitting "中华人民共和国"
-- Example: `{ text: "爱国主义教育法", link: "/social/patriotism-education-law/" }`
+4. **其他编的格式**（第二编及以后）：
+   ```markdown
+   # 第二编　XXX
 
-**Validation**:
-- Ensure added under correct category
-- Ensure no duplicate entries
-- Ensure file path matches actual created path
+   ### 第一章　XXX
 
-### Step 7: Update Progress Tracking
+   **第X条**　条文内容...
+   ```
 
-Edit root directory `LAWS_PROGRESS.md`:
+   **注意**：第二编及以后的文件 **不需要 frontmatter**
 
-1. **Update Law Status**:
-   - Find corresponding law entry
-   - Change `未收录` to `✅ 已收录`
+5. **标题级别**：
+   - 编标题使用 `# `（一级标题）
+   - 章标题使用 `## `（二级标题）
+   - 节标题使用 `### `（三级标题）
 
-2. **Update Category Progress**:
-   - Find corresponding category progress statistics
-   - Update numerator (added count)
-   - Update percentage
-   - Example: `**进度：14/88 (15.9%)**` → `**进度：15/88 (17.0%)**`
+6. **文件命名**：使用数字 + 英文
+   - 第一编：`01-general-principles.md`
+   - 第二编：`02-{英文名称}.md`（如 `02-property-rights.md`）
+   - 第三编：`03-{英文名称}.md`
+   - 附则：`00-supplementary.md`
+   - 命名规范：数字前缀 + 连字符 + 英文名称（全小写）
 
-3. **Update Total Progress**:
-   - Update total progress at top of file
-   - Update total statistics at bottom
-   - Example: `**收录进度：50/308 (16.2%)**` → `**收录进度：51/308 (16.6%)**`
+**类型 C 特殊规则**：
+- 拆分成多个文件，每个文件包含独立的编内容
+- README.md 仅包含封面信息（标题 + 立法记录）
+- Frontmatter 分配：README.md 有 `next`，第一编有 `prev`，其他编无
+- 标题级别：编→#、章→##、节→###
+- 其他遵循通用格式化规则（空行、立法记录格式等）
 
-4. **Update Statistics Table**:
-   - Update corresponding category progress in statistics section at end of file
-   - Example: `- **经济法**：14/88 (15.9%)` → `15/88 (17.0%)`
+### 步骤 5：更新导航配置
 
-### Step 8: Commit Code
+#### 5.1 更新 category 列表（所有类型）
 
-**IMPORTANT**: When committing, must include all modified project files and exclude temporary files and auxiliary files. Files to commit generally include:
-- `docs/.vuepress/config.js`
-- `docs/{category}/{english-name}/README.md`
-- `LAWS_PROGRESS.md` in root directory
+**重要**：navbar 每类法律最多展示 3 部，**不需要更新 navbar**
 
-**Commit Command**:
+编辑 `docs/category/{分类}.md`，在法律列表中添加：
+
+```markdown
+[{法律简称}](../{分类}/{英文名称}/)
+```
+
+**示例**：在 `docs/category/economic.md` 中添加：
+```markdown
+[种子法](../economic/seed-law/)
+```
+
+**注意**：链接末尾需要加 `/`
+
+#### 5.2 配置 sidebar（仅类型 C：有编结构的法律）
+
+编辑 `docs/.vuepress/config.js`，在 `sidebar` 对象中添加：
+
+```javascript
+sidebar: {
+  "/{分类}/{英文名称}/": [
+    {
+      text: "中华人民共和国{法律简称}",
+      children: [
+        "/{分类}/{英文名称}/01-general-principles.md",
+        "/{分类}/{英文名称}/02-property-rights.md",
+        "/{分类}/{英文名称}/03-contract.md",
+        // ... 其他编
+        "/{分类}/{英文名称}/00-supplementary.md",
+      ],
+    },
+  ],
+}
+```
+
+**注意**：
+- children 从"第一编"开始，**不包含** README.md
+- README.md 作为封面页，通过 `next` 链接到第一编
+- 第一编通过 `prev` 链接回 README.md
+
+**参考示例**：
+- [民法典 sidebar](docs/.vuepress/config.js)（搜索 `civil-code`）
+- [刑法 sidebar](docs/.vuepress/config.js)（搜索 `criminal-law/criminal-law`）
+
+### 步骤 6：更新进度
+
+编辑 `LAWS_PROGRESS.md`：
+- 法律状态：`未收录` → `✅ 已收录`
+- 分类进度：更新分子和百分比
+- 总计进度：更新顶部和底部统计
+- 统计表格：更新对应分类进度
+
+### 步骤 7：提交代码
+
 ```bash
-git add docs/{category}/{english-name}/README.md docs/.vuepress/config.js LAWS_PROGRESS.md
+# 类型 A 和 B
+git add docs/{分类}/{英文名称}/ docs/category/{分类}.md LAWS_PROGRESS.md
 git commit -m "📘 收录《{法律名称}》"
+
+# 类型 C（需要配置 sidebar）
+git add docs/{分类}/{英文名称}/ docs/category/{分类}.md docs/.vuepress/config.js LAWS_PROGRESS.md
+git commit -m "📕 收录《{法律名称}》"
 ```
 
-**Commit Message Specification**:
-- Use emoji book series (different colors available):
-  - 📘 (blue book) - New law
-  - 📗 (green book) - New law
-  - 📙 (orange book) - New law
-  - 📕 (red book) - New law
-- Use Chinese book title marks 《》 for law name
-- Format: `{emoji} 收录《{law_name}》`
+**注意**：类型 C 会自动添加该目录下的所有文件（README.md + 各编文件 + 附则）
 
-**Special Cases**:
-- If updating content: `git commit -m "📝 更新《{law_name}》"`
-- If fixing format: `git commit -m "🔧 修正《{law_name}》格式"`
-- If replacing version: `git commit -m "🔄 替换《{law_name}》为最新版本"`
+**提交规范**：
+- 新增：📘📗📙📕 `收录《》`
+- 更新：📝 `更新《》`
+- 格式修正：🔧 `修正《》格式`
+- 版本替换：🔄 `替换《》为最新版本`
 
----
+## 故障排除
 
-## Troubleshooting
+| 问题 | 处理 |
+|-----|------|
+| 版本更新 | 比较文件名日期与立法记录最后日期，新版本则备份旧文件（.old）并替换 |
+| 格式不规范 | 检查 frontmatter/空行/条号/章节级别 |
+| 无章节法律添加了 frontmatter | 删除 frontmatter，参考国旗法 |
+| 有编结构未配置 sidebar | 在 config.js 中添加 sidebar 配置 |
+| 链接错误 | 检查 `/` 开头结尾，无空格中文 |
+| category 链接末尾缺少 `/` | 添加 `/` 结尾 |
 
-### Issue 1: Law Exists But Version Updated
+## 关键注意事项
 
-**Handling Steps**:
-1. Compare effective dates of old and new files
-2. Backup old file (add .old suffix)
-3. Replace with new file
-4. Maintain original category and configuration
-5. Commit with version update message
+### AI 优先原则（重要！）
 
-### Issue 2: Markdown File Format Non-compliant
+**使用 AI 直接理解和格式化，不用脚本**
 
-**Handling Steps**:
-1. Check if frontmatter exists and format is correct
-2. Check if blank lines exist between all elements
-3. Check if article numbers are bold
-4. Check if chapter title levels are correct
-5. Use regex to batch fix common issues
+- AI 对上下文的理解能力更强，能够处理特殊情况（章节标题、条文嵌套、列表格式等）
+- 脚本容易出现格式错误，需要反复调试
+- AI 可以一次性生成正确格式
+- 使用 Read 工具读取原始文件，然后使用 Write 工具按照格式要求创建格式化文件
 
-### Issue 3: Article Count Exceeds 200
+### 最常见错误（必读！）
 
-**Handling Steps**:
-1. Inform user that file needs splitting
-2. Analyze law's book (编) and chapter structure
-3. Create independent markdown file for each book
-4. Configure sidebar in config.js
-5. Reference Civil Code implementation
+1. **空行遗漏**：所有元素之间必须有空行（立法记录、章节、条文之间）
+2. **全角括号**：立法记录中不能包含 `（）`（容易从原文复制过来）
+3. **Frontmatter 错误**：无章节法律不需要 frontmatter，有章节法律需要 `sidebar: auto`
+4. **链接路径**：category 链接末尾必须有 `/`，链接中不能有空格或中文
 
-### Issue 4: Link Path Error
+### Frontmatter 快速参考
 
-**Handling Steps**:
-1. Check if link path starts and ends with `/`
-2. Check if path contains spaces or Chinese characters
-3. Check if actual file path matches link
-4. Use forward slash `/` not backslash `\`
+| 法律类型 | 文件 | Frontmatter |
+|---------|------|-------------|
+| 无章节（如国旗法） | README.md | ❌ 不需要 |
+| 有章节（如种子法） | README.md | ✅ `sidebar: auto` |
+| 有编结构（如民法典） | README.md | ✅ `next: 01-general-principles.md` |
+| 有编结构（如民法典） | 第一编 | ✅ `prev: ../` |
+| 有编结构（如民法典） | 其他编 | ❌ 不需要 |
 
----
+### 文件结构判断流程
 
-## Notes
-
-### Data Sources
-- User has converted DOCX to Markdown via markitdown
-- Assume DOCX comes from authoritative sources (NPC official website or National Laws and Regulations Database)
-
-### Format Details
-- **Chinese Space**: Space after chapter title and article number is Chinese space `　` (U+3000)
-- **Blank Lines**: Most common error, ensure blank lines between all elements
-- **Number Format**: Remove spaces between Chinese characters and numbers
-- **Link Paths**: No spaces, Chinese characters; use lowercase and hyphens
-
-### Naming Conventions
-- **Folder**: All lowercase, hyphen-separated, without "the"
-- **Law Short Name**: Omit "中华人民共和国", keep core name
-- **File Paths**: Use forward slash `/`, not backslash `\`
-
-### Commit Specifications
-- **Emoji**: 📘 (new), 🔄 (fix), 📝 (update)
-- **Book Title Marks**: Use Chinese book title marks 《》 to wrap law name
-- **Clear and Concise**: Commit message should clearly explain what was done
-
----
-
-## Examples
-
-### Example 1: Add New Law (< 200 Articles)
-
-**User Input**:
 ```
-Markdown file: .temp/laws_md/中华人民共和国爱国主义教育法_20231024.md
+读取原始 md 文件
+    ↓
+检查是否有"第一编、第二编"
+    ↓
+  是 → 类型 C（有编结构）
+       → 创建 README.md（封面页，有 next frontmatter）
+       → 为每一编创建独立 md 文件
+       → 第一编有 prev frontmatter，其他编无 frontmatter
+       → 配置 sidebar（从第一编开始）
+    ↓
+  否 → 检查是否有"第一章、第二章"
+    ↓
+      是 → 类型 B（有章节）
+           → 单文件 + `sidebar: auto`
+    ↓
+      否 → 类型 A（无章节）
+           → 单文件 + 无 frontmatter
 ```
 
-**Execution Result**:
-1. Extract law name: From filename → `中华人民共和国爱国主义教育法`
-2. Translate English name: `patriotism-education-law`
-3. Query category: From LAWS_PROGRESS.md → 社会法
-4. Check existence: Does not exist
-5. Read md file and format:
-   - Extract legislative records
-   - Format chapter titles and article numbers
-   - Ensure blank lines between all elements
-   - Count articles: 40 articles (< 200, no split needed)
-6. Create directory: `docs/social/patriotism-education-law/`
-7. Create file: `docs/social/patriotism-education-law/README.md`
-8. Update config.js: Add under social law category `{ text: "爱国主义教育法", link: "/social/patriotism-education-law/" }`
-9. Update LAWS_PROGRESS.md:
-   - Law status: 未收录 → ✅ 已收录
-   - Social law progress: 3/30 → 4/30
-   - Total progress: 45/308 → 46/308
-10. Validate: File exists, link correct, format meets specifications
-11. Commit: `git commit -m "📘 收录《爱国主义教育法》"` (can use 📗📙📕)
+### 其他格式细节
+- **中文空格**：章节标题和条号后用 `　`（U+3000）
+- **链接路径**：小写、连字符、无空格中文
+- **命名规范**：
+  - 文件夹：全小写连字符，简称省略"中华人民共和国"
+  - 编文件：数字前缀 + 英文名称（如 `01-general-principles.md`）
 
-### Example 2: Add New Law (> 200 Articles)
+### 导航配置
+- **navbar**：❌ 不需要更新（每类最多展示 3 部）
+- **sidebar**：✅ 仅在有编结构时配置
+- **category**：✅ 所有类型都需要更新
 
-**User Input**:
-```
-Markdown file: .temp/laws_md/中华人民共和国民法典_20200528.md
-```
+## 完成标准
 
-**Execution Result**:
-1. Extract law name: From filename → `中华人民共和国民法典`
-2. Translate English name: `civil-code`
-3. Query category: From LAWS_PROGRESS.md → 民商法
-4. Check existence: Does not exist
-5. Read md file and format:
-   - Count articles: 1260 articles (> 200)
-   - Inform user that file needs splitting
-6. Analyze structure: 7 books total, create independent file for each
-7. Create directory: `docs/civil-and-commercial/civil-code/`
-8. Create files:
-   - `README.md` (General Provisions)
-   - `property-rights.md` (Property Rights)
-   - `contract.md` (Contract)
-   - `personality-rights.md` (Personality Rights)
-   - `marriage-and-family.md` (Marriage and Family)
-   - `succession.md` (Succession)
-   - `tort-liability.md` (Tort Liability)
-9. Update config.js: Configure sidebar
-10. Update LAWS_PROGRESS.md: Update law status and progress statistics
-11. Validate and commit: `git commit -m "📗 收录《民法典》"`
+- ✅ 文件在正确分类目录
+- ✅ 格式符合规范（frontmatter、空行、中文空格）
+- ✅ 内容完整（章节条文无缺失）
+- ✅ category 文件已更新（链接末尾有 `/`）
+- ✅ 有编结构的法律：sidebar 已配置
+- ✅ LAWS_PROGRESS.md 已更新（状态、分类、总计）
+- ✅ 无重复
+- ✅ 代码已提交
 
-### Example 3: Update Existing Law
-
-**User Input**:
-```
-Markdown file: .temp/laws_md/中华人民共和国个人信息保护法_20240430.md
-```
-
-**Execution Result**:
-1. Extract law name: From filename → `中华人民共和国个人信息保护法`
-2. Translate English name: `personal-information-protection-law`
-3. Query category: From LAWS_PROGRESS.md → 社会法
-4. Check existence: Exists in `docs/social/personal-information-protection-law/`
-5. Compare effective dates:
-   - Old file: 2021年8月20日
-   - New file: 2024年4月30日
-   - New file is newer, execute replacement
-6. Backup old file: `README.md` → `README.md.old`
-7. Format new file content and replace
-8. Validate: File format correct, content complete
-9. Commit: `git commit -m "🔄 替换《个人信息保护法》为最新版本"`
-
-### Example 4: Batch Processing Mode (Recommended)
-
-**User Input**:
-```
-(No parameters, automatic batch processing)
-```
-
-**Execution Result**:
-1. Read LAWS_PROGRESS.md, identify unadded laws (289 total)
-2. Process first unadded law in order (e.g., 保守国家秘密法):
-   - Read `.temp/laws_md/中华人民共和国保守国家秘密法_20240227.md`
-   - Format content and create file
-   - Update config.js
-   - Update LAWS_PROGRESS.md
-   - Commit: `git commit -m "📘 收录《保守国家秘密法》"`
-3. Process second unadded law (e.g., 公共图书馆法):
-   - Read source file
-   - Format content and create file
-   - Update config.js
-   - Update LAWS_PROGRESS.md
-   - Commit: `git commit -m "📘 收录《公共图书馆法》"`
-4. Process remaining 287 unadded laws in order
-5. After completion, LAWS_PROGRESS.md shows: `**收录进度：308/308 (100.0%)**`
-
-**Batch Mode Features**:
-- Fully automated, no manual intervention
-- Individual commits per law, clear traceability
-- Real-time progress updates, can check addition status anytime
-- Can pause on issues, continue processing remaining laws next time
-
----
-
-## Skill Completion Criteria
-
-Skill execution is successful when all following steps are complete:
-- ✅ Law file created in correct category directory
-- ✅ File format meets specifications (frontmatter, blank lines, Chinese space)
-- ✅ Content complete (all chapters, articles present)
-- ✅ config.js updated (link path correct)
-- ✅ LAWS_PROGRESS.md updated (law status, category progress, total progress)
-- ✅ No duplicate entries
-- ✅ Code committed (law file, config.js, LAWS_PROGRESS.md)
-
-**Batch Mode Additional Criteria**:
-- ✅ All unadded laws processed
-- ✅ LAWS_PROGRESS.md shows complete addition: `**收录进度：308/308 (100.0%)**`
+**批量模式额外**：所有未收录法律处理完毕，显示 308/308 (100.0%)
