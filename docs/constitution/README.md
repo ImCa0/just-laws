@@ -1,5 +1,5 @@
 ---
-next: /constitution/序言.md
+next: /constitution/preamble.md
 ---
 
 # 中华人民共和国宪法

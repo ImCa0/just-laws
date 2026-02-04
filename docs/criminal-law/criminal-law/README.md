@@ -1,5 +1,5 @@
 ---
-next: /criminal-law/criminal-law/第一编 总则.md
+next: /criminal-law/criminal-law/01-general-provisions.md
 ---
 
 # 中华人民共和国刑法

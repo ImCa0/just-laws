@@ -1,5 +1,5 @@
 ---
-next: /procedural/civil-procedure/第一编 总则.md
+next: /procedural/civil-procedure/01-general-provisions.md
 ---
 
 # 中华人民共和国民事诉讼法

@@ -1,5 +1,5 @@
 ---
-next: /civil-and-commercial/civil-code/第一编 总则.md
+next: /civil-and-commercial/civil-code/01-general-principles.md
 ---
 
 # 中华人民共和国民法典

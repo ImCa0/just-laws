@@ -1,5 +1,5 @@
 ---
-next: /procedural/criminal-procedure/第一编 总则.md
+next: /procedural/criminal-procedure/01-general-provisions.md
 ---
 
 # 中华人民共和国刑事诉讼法
