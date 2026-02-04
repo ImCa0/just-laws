@@ -7,3 +7,5 @@
 [消费者权益保护法](../civil-and-commercial/protection-of-the-rights-and-interests-of-consumers)
 
 [公司法](../civil-and-commercial/company-law)
+
+[专利法](../civil-and-commercial/patent-law/)
