@@ -1,6 +1,7 @@
 import argparse
 import json
 import re
+import subprocess
 import sys
 from dataclasses import dataclass
 from datetime import date
@@ -694,6 +695,8 @@ def update_category_page(docs_dir: Path, category: str, slug: str, title: str) -
         return
     link = f"[{short_law_name(title)}]({href})"
     category_path.write_text(text.rstrip() + "\n\n" + link + "\n", encoding="utf-8")
+    sorter_path = docs_dir.parent / "scripts" / "sort-category-pages.js"
+    subprocess.run(["node", str(sorter_path), str(category_path)], check=True)
 
 
 def rendered_sidebar_children(files: list[Path], docs_dir: Path) -> list[str]:

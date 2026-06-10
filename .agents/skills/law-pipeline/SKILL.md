@@ -83,7 +83,7 @@ PowerShell 不应依赖把 `laws_md\*.md` 自动展开给 Python；先用 `Get-C
 
 启用 `--apply-site` 后脚本会同步：
 
-- 在 `docs/category/{category}.md` 追加 `[{简称}](../{category}/{slug}/)`，已存在则跳过。
+- 在 `docs/category/{category}.md` 写入 `[{简称}](../{category}/{slug}/)`，已存在则跳过；新增后按法律简称拼音重排。
 - 对 C 类法律，在 `docs/.vuepress/config.js` 的 `sidebar` 对象中插入该法律 children，children 不包含 `README.md`。
 - 在 `LAWS_PROGRESS.md` 中把对应法律标记为 `✅ 已收录`，并重算顶部进度、分类进度、统计表和总计。
 
@@ -105,7 +105,7 @@ npm run docs:build
 - 脚本从立法记录提取公布日期和最后修订日期写入 JSON，但不据此判断输入是否比站点版本更新。
 - 更新已有法律前，人工确认输入来自有效且公布日期最新的版本。
 - 如果 C 类法律的分编数量或文件名发生变化，脚本不会清理目标目录中的旧文件；应用后必须检查目录和 sidebar，手工删除确认废弃的文件。
-- `--apply-site` 对已存在的 category 链接和 sidebar 路由会跳过，不会重排现有配置。
+- `--apply-site` 对已存在的 category 链接和 sidebar 路由会跳过；新增 category 链接后会调用 Node.js 排序脚本按拼音重排该分类页。
 
 ## 维护映射
 

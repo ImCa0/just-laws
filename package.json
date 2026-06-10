@@ -5,6 +5,7 @@
   "author": "ImCaO <imcao@imcao.cn>",
   "license": "MIT",
   "scripts": {
+    "categories:sort": "node scripts/sort-category-pages.js docs/category",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },

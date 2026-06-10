@@ -1,38 +1,10 @@
 # 经济法
 
-[个人所得税法](../economic/individual-income-tax-law)
-
-[会计法](../economic/accounting-law)
-
-[产品质量法](../economic/product-quality-law)
-
-[中国人民银行法](../economic/peoples-bank-of-china-law)
-
-[价格法](../economic/price-law)
-
-[种子法](../economic/seed-law)
-
-[中小企业促进法](../economic/small-and-medium-sized-enterprises-promotion-law)
-
-[企业所得税法](../economic/enterprise-income-tax-law)
-
-[反垄断法](../economic/anti-monopoly-law)
-
-[企业国有资产法](../economic/enterprise-state-owned-assets-law)
-
-[网络安全法](../economic/cybersecurity-law)
-
-[乡村振兴促进法](../economic/rural-vitalization-promotion-law)
-
-[数据安全法](../economic/data-security-law)
-
-[个人信息保护法](../economic/personal-information-protection-law)
-
-[第五届全国人民代表大会常务委员会关于批准《广东省经济特区条例》的决议](../economic/fifth-npc-standing-committee-resolution-approving-guangdong-special-economic-zone-regulations/)
-
 [标准化法](../economic/standardization-law/)
 
 [草原法](../economic/grassland-law/)
+
+[产品质量法](../economic/product-quality-law)
 
 [车船税法](../economic/vehicle-and-vessel-tax-law/)
 
@@ -46,6 +18,8 @@
 
 [船舶吨税法](../economic/vessel-tonnage-tax-law/)
 
+[第五届全国人民代表大会常务委员会关于批准《广东省经济特区条例》的决议](../economic/fifth-npc-standing-committee-resolution-approving-guangdong-special-economic-zone-regulations/)
+
 [电力法](../economic/electric-power-law/)
 
 [电子商务法](../economic/e-commerce-law/)
@@ -56,11 +30,17 @@
 
 [反不正当竞争法](../economic/anti-unfair-competition-law/)
 
+[反垄断法](../economic/anti-monopoly-law)
+
 [反洗钱法](../economic/anti-money-laundering-law/)
 
 [防洪法](../economic/flood-control-law/)
 
 [港口法](../economic/ports-law/)
+
+[个人所得税法](../economic/individual-income-tax-law)
+
+[个人信息保护法](../economic/personal-information-protection-law)
 
 [耕地占用税法](../economic/farmland-occupation-tax-law/)
 
@@ -84,7 +64,11 @@
 
 [黄河保护法](../economic/yellow-river-protection-law/)
 
+[会计法](../economic/accounting-law)
+
 [计量法](../economic/metrology-law/)
+
+[价格法](../economic/price-law)
 
 [建筑法](../economic/construction-law/)
 
@@ -118,6 +102,10 @@
 
 [农业技术推广法](../economic/agricultural-technology-extension-law/)
 
+[企业国有资产法](../economic/enterprise-state-owned-assets-law)
+
+[企业所得税法](../economic/enterprise-income-tax-law)
+
 [契税法](../economic/deed-tax-law/)
 
 [清洁生产促进法](../economic/cleaner-production-promotion-law/)
@@ -132,6 +120,8 @@
 
 [石油天然气管道保护法](../economic/oil-and-gas-pipeline-protection-law/)
 
+[数据安全法](../economic/data-security-law)
+
 [水法](../economic/water-law/)
 
 [水土保持法](../economic/water-and-soil-conservation-law/)
@@ -145,6 +135,10 @@
 [统计法](../economic/statistics-law/)
 
 [外商投资法](../economic/foreign-investment-law/)
+
+[网络安全法](../economic/cybersecurity-law)
+
+[乡村振兴促进法](../economic/rural-vitalization-promotion-law)
 
 [循环经济促进法](../economic/circular-economy-promotion-law/)
 
@@ -169,6 +163,12 @@
 [长江保护法](../economic/yangtze-river-protection-law/)
 
 [政府采购法](../economic/government-procurement-law/)
+
+[中国人民银行法](../economic/peoples-bank-of-china-law)
+
+[中小企业促进法](../economic/small-and-medium-sized-enterprises-promotion-law)
+
+[种子法](../economic/seed-law)
 
 [注册会计师法](../economic/certified-public-accountants-law/)
 
