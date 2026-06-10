@@ -1,0 +1,2099 @@
+{
+  "中华人民共和国专利法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "patent-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国专属经济区和大陆架法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "exclusive-economic-zone-and-continental-shelf-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国个人信息保护法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "personal-information-protection-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国个人所得税法": {
+    "category": "economic",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "individual-income-tax-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国个人独资企业法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "sole-proprietorship-enterprise-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国中医药法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "traditional-chinese-medicine-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国中国人民银行法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "peoples-bank-of-china-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国中小企业促进法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "small-and-medium-sized-enterprises-promotion-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国义务教育法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "compulsory-education-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国乡村振兴促进法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "rural-vitalization-promotion-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国产品质量法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "product-quality-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国人口与计划生育法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "population-and-family-planning-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国人民检察院组织法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "people-s-procuratorate-organization-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国人民武装警察法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "people-s-armed-police-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国人民法院组织法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "people-s-court-organization-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国人民警察法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "people-s-police-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国人民警察警衔条例": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "people-s-police-rank-regulations",
+    "slug_source": "docs"
+  },
+  "中华人民共和国人民调解法": {
+    "category": "procedural",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "people-s-mediation-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国人民防空法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "civil-air-defense-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国人民陪审员法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "people-s-assessors-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国仲裁法": {
+    "category": "procedural",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "arbitration-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国价格法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "price-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国企业国有资产法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "enterprise-state-owned-assets-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国企业所得税法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "enterprise-income-tax-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国企业破产法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "enterprise-bankruptcy-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国会计法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "accounting-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国传染病防治法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "prevention-and-treatment-of-infections-diseases",
+    "slug_source": "docs"
+  },
+  "中华人民共和国体育法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "sports-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国促进科技成果转化法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "promotion-of-transformation-of-scientific-and-technological-achievements-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国保守国家秘密法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "state-secrets-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国保险法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "insurance-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国信托法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "trust-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国全国人民代表大会和地方各级人民代表大会代表法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "national-and-local-people-s-congresses-representative-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国全国人民代表大会和地方各级人民代表大会选举法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "electoral-law-of-national-and-local-people-s-congresses",
+    "slug_source": "docs"
+  },
+  "中华人民共和国全国人民代表大会常务委员会议事规则": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "npc-standing-committee-rules",
+    "slug_source": "docs"
+  },
+  "中华人民共和国全国人民代表大会组织法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "npc-organization-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国全国人民代表大会议事规则": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "national-people-s-conference-rules-of-procedure",
+    "slug_source": "docs"
+  },
+  "中华人民共和国全民所有制工业企业法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "state-owned-industrial-enterprise-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国公共图书馆法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "public-library-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国公共文化服务保障法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "public-cultural-services-guarantee-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国公务员法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "civil-service-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国公司法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "company-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国公益事业捐赠法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "public-welfare-donations-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国公职人员政务处分法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "public-officials-government-sanctions-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国公证法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "notarization-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国公路法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "highways-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国关税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "tariff-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国兵役法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "military-service-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国军事设施保护法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "military-facilities-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国军人保险法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "military-personnel-insurance-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国军人地位和权益保障法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "status-and-rights-protection-of-military-personnel-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国农业技术推广法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "agricultural-technology-extension-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国农业机械化促进法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "agricultural-mechanization-promotion-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国农业法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "agriculture-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国农产品质量安全法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "agricultural-product-quality-and-safety-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国农村土地承包法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "rural-land-contract-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国农村土地承包经营纠纷调解仲裁法": {
+    "category": "procedural",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "rural-land-contract-dispute-mediation-and-arbitration-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国农村集体经济组织法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "rural-collective-economic-organizations-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国农民专业合作社法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "farmer-specialized-cooperatives-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国出口管制法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "export-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国出境入境管理法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "exit-entry-administration-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国刑事诉讼法": {
+    "category": "procedural",
+    "docs_type": "C",
+    "mapping_source": "docs",
+    "part_filenames": {
+      "第一编　总则": "01-general-provisions.md",
+      "第三编　审判": "03-trial.md",
+      "第二编　立案、侦查和提起公诉": "02-filing-investigation-prosecution.md",
+      "第五编　特别程序": "05-special-procedures.md",
+      "第四编　执行": "04-enforcement.md"
+    },
+    "slug": "criminal-procedure",
+    "slug_source": "docs"
+  },
+  "中华人民共和国刑法": {
+    "category": "criminal-law",
+    "docs_type": "C",
+    "mapping_source": "docs",
+    "part_filenames": {
+      "第一编　总则": "01-general-provisions.md",
+      "第二编　分则": "02-specific-provisions.md"
+    },
+    "slug": "criminal-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国动物防疫法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "animal-epidemic-prevention-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国劳动争议调解仲裁法": {
+    "category": "procedural",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "labor-dispute-mediation-and-arbitration-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国劳动合同法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "labor-contracts-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国劳动法": {
+    "category": "social",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "labor-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国医师法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "physicians-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国印花税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "stamp-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国危险化学品安全法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "hazardous-chemicals-safety-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国原子能法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "atomic-energy-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国反不正当竞争法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "anti-unfair-competition-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国反垄断法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "anti-monopoly-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国反外国制裁法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "anti-foreign-sanctions-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国反家庭暴力法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "anti-domestic-violence-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国反恐怖主义法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "counter-terrorism-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国反有组织犯罪法": {
+    "category": "criminal-law",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "anti-organized-crime-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国反洗钱法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "anti-money-laundering-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国反电信网络诈骗法": {
+    "category": "criminal-law",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "combating-telecom-and-online-fraud",
+    "slug_source": "docs"
+  },
+  "中华人民共和国反间谍法": {
+    "category": "criminal-law",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "anti-espionage-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国反食品浪费法": {
+    "category": "administrative",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "anti-food-waste-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国可再生能源法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "renewable-energy-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国台湾同胞投资保护法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "taiwan-compatriots-investment-protection-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国各级人民代表大会常务委员会监督法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "npc-standing-committees-supervision-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国合伙企业法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "partnership-enterprise-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国商业银行法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "commercial-bank-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国商标法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "trademark-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国噪声污染防治法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "noise-pollution-prevention-and-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国固体废物污染环境防治法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "solid-waste-pollution-prevention-and-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国国务院组织法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "state-council-organization-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国境卫生检疫法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "frontier-health-and-quarantine-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国家公园法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "national-parks-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国国家勋章和国家荣誉称号法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "national-medal-and-national-honorary-title-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国家发展规划法": {
+    "category": "economic",
+    "mapping_source": "manual",
+    "slug": "national-development-planning-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国国家安全法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "national-security-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国家情报法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "national-intelligence-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国国家赔偿法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "state-compensation-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国家通用语言文字法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "national-language-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国徽法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "national-emblem-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国旗法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "national-flag-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国歌法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "national-anthem-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国籍法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "nationality-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国防交通法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "national-defense-transportation-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国国防动员法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "national-defense-mobilization-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国国防教育法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "national-defense-education-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国防法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "national-defense-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国国际刑事司法协助法": {
+    "category": "procedural",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "international-criminal-judicial-assistance-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国土地管理法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "land-administration-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国土壤污染防治法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "soil-pollution-prevention-and-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国地方各级人民代表大会和地方各级人民政府组织法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "local-people-congress-government-organization-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国城乡规划法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "urban-and-rural-planning-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国城市居民委员会组织法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "urban-residents-committee-organization-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国城市房地产管理法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "urban-real-estate-administration-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国城市维护建设税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "urban-maintenance-and-construction-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国基本医疗卫生与健康促进法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "basic-healthcare-and-health-promotion-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国境外非政府组织境内活动管理法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "overseas-non-governmental-organizations-domestic-activities-administration-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国增值税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "value-added-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国外交特权与豁免条例": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "diplomatic-privileges-and-immunities-regulations",
+    "slug_source": "docs"
+  },
+  "中华人民共和国外商投资法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "foreign-investment-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国外国中央银行财产司法强制措施豁免法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "foreign-central-bank-property-immunity-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国外国国家豁免法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "foreign-state-immunity-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国大气污染防治法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "air-pollution-prevention-and-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国契税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "deed-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国妇女权益保障法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "womens-rights-and-interests-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国学位法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "academic-degrees-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国学前教育法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "preschool-education-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国安全生产法": {
+    "category": "social",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "work-safety-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国审计法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "audit-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国宪法": {
+    "category": "constitution",
+    "mapping_source": "progress",
+    "slug": "constitution",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国宪法修正案": {
+    "category": "constitution",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "amendment",
+    "slug_source": "docs"
+  },
+  "中华人民共和国家庭教育促进法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "family-education-promotion-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国密码法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "cryptography-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国对外关系法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "foreign-relations-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国对外贸易法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "foreign-trade-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国就业促进法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "employment-promotion-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国居民身份证法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "resident-identity-card-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国工会法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "trade-unions-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国广告法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "advertising-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国建筑法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "construction-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国引渡法": {
+    "category": "procedural",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "extradition-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国归侨侨眷权益保护法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "returned-overseas-chinese-and-relatives-rights-protection-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国律师法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "lawyers-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国循环经济促进法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "circular-economy-promotion-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国慈善法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "charity-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国戒严法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "martial-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国户口登记条例": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "household-registration-regulations",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国护照法": {
+    "category": "administrative",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "passport-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国拍卖法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "auction-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国招标投标法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "bidding-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国放射性污染防治法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "radioactive-pollution-prevention-and-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国政府采购法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "government-procurement-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国教师法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "teachers-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国教育法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "education-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国数据安全法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "data-security-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国文物保护法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "cultural-relics-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国旅游法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "tourism-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国无障碍环境建设法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "barrier-free-environment-construction-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国期货和衍生品法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "futures-and-derivatives-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国未成年人保护法": {
+    "category": "social",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "protection-of-minors",
+    "slug_source": "docs"
+  },
+  "中华人民共和国村民委员会组织法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "villagers-committee-organization-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国枪支管理法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "gun-control-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国标准化法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "standardization-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国核安全法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "nuclear-safety-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国档案法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "archives-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国检察官法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "procurators-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国森林法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "forest-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国残疾人保障法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "protection-of-disabled-persons-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国母婴保健法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "maternal-and-infant-health-care-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国民事诉讼法": {
+    "category": "procedural",
+    "docs_type": "C",
+    "mapping_source": "docs",
+    "part_filenames": {
+      "第一编　总则": "01-general-provisions.md",
+      "第三编　执行程序": "03-execution-procedure.md",
+      "第二编　审判程序": "02-trial-procedure.md",
+      "第四编　涉外民事诉讼程序的特别规定": "04-special-provisions-for-foreign-related-civil-procedure.md"
+    },
+    "slug": "civil-procedure",
+    "slug_source": "docs"
+  },
+  "中华人民共和国民办教育促进法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "private-education-promotion-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国民族区域自治法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "law-on-regional-national-autonomy",
+    "slug_source": "docs"
+  },
+  "中华人民共和国民法典": {
+    "category": "civil-and-commercial",
+    "docs_type": "C",
+    "mapping_source": "docs",
+    "part_filenames": {
+      "第一编　总则": "01-general-principles.md",
+      "第七编　侵权责任": "07-tort-liability.md",
+      "第三编　合同": "03-contracts.md",
+      "第二编　物权": "02-property-rights.md",
+      "第五编　婚姻家庭": "05-marriage-and-family.md",
+      "第六编　继承": "06-inheritance.md",
+      "第四编　人格权": "04-personality-rights.md"
+    },
+    "slug": "civil-code",
+    "slug_source": "docs"
+  },
+  "中华人民共和国民用航空法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "civil-aviation-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国民营经济促进法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "private-economy-promotion-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国气象法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "meteorology-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国水土保持法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "water-and-soil-conservation-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国水污染防治法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "water-pollution-prevention-and-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国水法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "water-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国治安管理处罚法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "penalties-for-administration-of-public-security",
+    "slug_source": "docs"
+  },
+  "中华人民共和国法官法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "judges-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国法律援助法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "legal-aid-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国法治宣传教育法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "law-on-legal-publicity-and-education",
+    "slug_source": "docs"
+  },
+  "中华人民共和国注册会计师法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "certified-public-accountants-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国测绘法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "surveying-and-mapping-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国海上交通安全法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "maritime-traffic-safety-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国海事诉讼特别程序法": {
+    "category": "procedural",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "maritime-procedure-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国海关关衔条例": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "customs-rank-regulations",
+    "slug_source": "docs"
+  },
+  "中华人民共和国海关法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "customs-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国海南自由贸易港法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "hainan-free-trade-port-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国海商法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "maritime-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国海域使用管理法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "sea-area-use-administration-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国海岛保护法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "island-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国海洋环境保护法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "marine-environment-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国海警法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "coast-guard-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国消费者权益保护法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "protection-of-the-rights-and-interests-of-consumers",
+    "slug_source": "docs"
+  },
+  "中华人民共和国消防救援衔条例": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "fire-rescue-rank-regulations",
+    "slug_source": "docs"
+  },
+  "中华人民共和国消防法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "fire-services-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国涉外民事关系法律适用法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "law-application-to-foreign-related-civil-relations",
+    "slug_source": "docs"
+  },
+  "中华人民共和国深海海底区域资源勘探开发法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "deep-seabed-resource-exploration-and-development-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国清洁生产促进法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "cleaner-production-promotion-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国渔业法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "fisheries-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国港口法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "ports-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国湿地保护法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "wetland-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国澳门特别行政区基本法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "macau-special-administrative-region-basic-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国澳门特别行政区驻军法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "macau-garrison-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国烟叶税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "tobacco-leaf-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国烟草专卖法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "tobacco-monopoly-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国煤炭法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "coal-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国爱国主义教育法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "patriotism-education-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国特种设备安全法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "special-equipment-safety-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国献血法": {
+    "category": "administrative",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "blood-donation-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国环境保护法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "environment-protection",
+    "slug_source": "docs"
+  },
+  "中华人民共和国环境保护税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "environmental-protection-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国环境影响评价法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "environmental-impact-assessment-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国现役军官法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "active-duty-officers-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国生物安全法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "biosafety-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国电力法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "electric-power-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国电子商务法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "e-commerce-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国电子签名法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "electronic-signature-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国电影产业促进法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "film-industry-promotion-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国畜牧法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "animal-husbandry-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国疫苗管理法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "vaccine-administration-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国监察官法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "supervisors-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国监察法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "supervision-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国监狱法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "prisons-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国石油天然气管道保护法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "oil-and-gas-pipeline-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国矿产资源法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "mineral-resources-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国矿山安全法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "mine-safety-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国社会保险法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "social-insurance-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国社区矫正法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "community-corrections-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国票据法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "bill-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国禁毒法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "anti-drug-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国种子法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "seed-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国科学技术普及法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "science-and-technology-popularization-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国科学技术进步法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "science-and-technology-progress-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国税收征收管理法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "tax-collection-administration-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国突发事件应对法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "emergency-response-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国突发公共卫生事件应对法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "public-health-emergency-response-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国立法法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "legislation-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国粮食安全保障法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "food-security-guarantee-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国精神卫生法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "mental-health-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国红十字会法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "red-cross-society-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国统计法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "statistics-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国缔结条约程序法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "treaty-conclusion-procedure-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国网络安全法": {
+    "category": "economic",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "cybersecurity-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国老年人权益保障法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "elderly-rights-and-interests-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国耕地占用税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "farmland-occupation-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国职业教育法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "vocational-education-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国职业病防治法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "occupational-disease-prevention-and-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国能源法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "energy-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国航道法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "waterways-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国船舶吨税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "vessel-tonnage-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国节约能源法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "energy-conservation-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国英雄烈士保护法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "heroes-and-martyrs-protection-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国草原法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "grassland-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国药品管理法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "drug-administration-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国著作权法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "copyright-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国行政处罚法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "administrative-penalty",
+    "slug_source": "docs"
+  },
+  "中华人民共和国行政复议法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "administrative-reconsideration-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国行政强制法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "administrative-compulsion-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国行政许可法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "administrative-licensing-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国行政诉讼法": {
+    "category": "procedural",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "administrative-procedure",
+    "slug_source": "docs"
+  },
+  "中华人民共和国计量法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "metrology-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国证券投资基金法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "securities-investment-fund-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国证券法": {
+    "category": "civil-and-commercial",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "securities-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国资产评估法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "asset-appraisal-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国资源税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "resource-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国车船税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "vehicle-and-vessel-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国车辆购置税法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "vehicle-purchase-tax-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国进出口商品检验法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "import-and-export-commodity-inspection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国进出境动植物检疫法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "entry-and-exit-animal-and-plant-quarantine-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国退役军人保障法": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "veterans-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国道路交通安全法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "road-traffic-safety-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国邮政法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "postal-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国野生动物保护法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "protection-of-wildlife",
+    "slug_source": "docs"
+  },
+  "中华人民共和国铁路法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "railways-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国银行业监督管理法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "banking-supervision-and-administration-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国长江保护法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "yangtze-river-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国防沙治沙法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "desertification-prevention-and-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国防洪法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "flood-control-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国防震减灾法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "earthquake-disaster-prevention-and-mitigation-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国陆地国界法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "land-border-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国集会游行示威法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "assembly-procession-demonstration-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国青藏高原生态保护法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "qinghai-tibet-plateau-ecological-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国非物质文化遗产法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "intangible-cultural-heritage-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国预备役人员法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "reservists-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国预算法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "budget-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国预防未成年人犯罪法": {
+    "category": "social",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "prevention-of-juvenile-delinquency",
+    "slug_source": "docs"
+  },
+  "中华人民共和国领事特权与豁免条例": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "consular-privileges-and-immunities-regulations",
+    "slug_source": "docs"
+  },
+  "中华人民共和国领海及毗连区法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "territorial-sea-and-contiguous-zone-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国食品安全法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "food-safety-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国香港特别行政区基本法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "hong-kong-special-administrative-region-basic-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国香港特别行政区维护国家安全法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "hong-kong-national-security-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国香港特别行政区驻军法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "hong-kong-garrison-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国驻外外交人员法": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "diplomatic-personnel-stationed-abroad-law",
+    "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国高等教育法": {
+    "category": "administrative",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "higher-education-law",
+    "slug_source": "docs"
+  },
+  "中华人民共和国黄河保护法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "yellow-river-protection-law",
+    "slug_source": "translated"
+  },
+  "中华人民共和国黑土地保护法": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "black-soil-protection-law",
+    "slug_source": "translated"
+  },
+  "中国人民解放军军官军衔条例": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "officer-ranks-regulations",
+    "slug_source": "translated"
+  },
+  "中国人民解放军选举全国人民代表大会和县级以上地方各级人民代表大会代表的办法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "docs",
+    "slug": "pla-election-measures",
+    "slug_source": "docs"
+  },
+  "全国人民代表大会常务委员会关于中国人民解放军现役士兵衔级制度的决定": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "decision-on-pla-active-duty-enlisted-rank-system",
+    "slug_source": "translated-reviewed"
+  },
+  "全国人民代表大会常务委员会关于县级以下人民代表大会代表直接选举的若干规定": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "provisions-on-direct-election-of-people-s-congress-representatives-below-county-level",
+    "slug_source": "docs"
+  },
+  "全国人民代表大会常务委员会关于在沿海港口城市设立海事法院的决定": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "decision-on-establishing-maritime-courts-in-coastal-port-cities",
+    "slug_source": "docs"
+  },
+  "全国人民代表大会常务委员会关于惩治骗购外汇、逃汇和非法买卖外汇犯罪的决定": {
+    "category": "criminal-law",
+    "mapping_source": "manual",
+    "slug": "decision-on-punishing-crimes-of-fraudulent-purchase-evasion-and-illegal-trading-of-foreign-exchange",
+    "slug_source": "translated-reviewed"
+  },
+  "全国人民代表大会常务委员会关于批准《国务院关于安置老弱病残干部的暂行办法》的决议": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "resolution-approving-state-council-interim-measures-on-placement-of-old-weak-sick-and-disabled-cadres",
+    "slug_source": "translated-reviewed"
+  },
+  "全国人民代表大会常务委员会关于批准《国务院关于工人退休、退职的暂行办法》的决议": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "resolution-approving-state-council-interim-measures-on-workers-retirement-and-resignation",
+    "slug_source": "translated-reviewed"
+  },
+  "全国人民代表大会常务委员会关于批准《国务院关于老干部离职休养的暂行规定》的决议": {
+    "category": "administrative",
+    "mapping_source": "progress",
+    "slug": "resolution-approving-state-council-interim-provisions-on-retirement-of-veteran-cadres",
+    "slug_source": "translated-reviewed"
+  },
+  "全国人民代表大会常务委员会关于批准《国务院关于职工探亲待遇的规定》的决议": {
+    "category": "social",
+    "mapping_source": "progress",
+    "slug": "resolution-approving-state-council-provisions-on-employees-home-leave-benefits",
+    "slug_source": "translated-reviewed"
+  },
+  "全国人民代表大会常务委员会关于批准《广东省经济特区条例》的决议": {
+    "category": "economic",
+    "mapping_source": "progress",
+    "slug": "resolution-approving-guangdong-special-economic-zone-regulations",
+    "slug_source": "translated-reviewed"
+  },
+  "全国人民代表大会常务委员会关于批准中央军事委员会《关于授予军队离休干部中国人民解放军功勋荣誉章的规定》的决定": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "decision-on-military-honorary-medal-regulations",
+    "slug_source": "docs"
+  },
+  "反分裂国家法": {
+    "category": "constitutional-relevance",
+    "docs_type": "A",
+    "mapping_source": "docs",
+    "slug": "anti-secession-law",
+    "slug_source": "docs"
+  },
+  "目录": {
+    "category": "criminal-law",
+    "docs_type": "C",
+    "mapping_source": "docs",
+    "part_filenames": {
+      "中华人民共和国刑法修正案": "criminal-law-amendment-i.md",
+      "中华人民共和国刑法修正案（七）": "criminal-law-amendment-vii.md",
+      "中华人民共和国刑法修正案（三）": "criminal-law-amendment-iii.md",
+      "中华人民共和国刑法修正案（九）": "criminal-law-amendment-ix.md",
+      "中华人民共和国刑法修正案（二）": "criminal-law-amendment-ii.md",
+      "中华人民共和国刑法修正案（五）": "criminal-law-amendment-v.md",
+      "中华人民共和国刑法修正案（八）": "criminal-law-amendment-viii.md",
+      "中华人民共和国刑法修正案（六）": "criminal-law-amendment-vi.md",
+      "中华人民共和国刑法修正案（十一）": "criminal-law-amendment-xi.md",
+      "中华人民共和国刑法修正案（十）": "criminal-law-amendment-x.md",
+      "中华人民共和国刑法修正案（四）": "criminal-law-amendment-iv.md"
+    },
+    "slug": "amendment",
+    "slug_source": "docs"
+  },
+  "第五届全国人民代表大会常务委员会关于批准《国务院关于老干部离职休养的暂行规定》的决议": {
+    "category": "administrative",
+    "mapping_source": "manual",
+    "progress_title": "全国人民代表大会常务委员会关于批准《国务院关于老干部离职休养的暂行规定》的决议",
+    "slug": "fifth-npc-standing-committee-resolution-approving-state-council-interim-provisions-on-retirement-of-veteran-cadres",
+    "slug_source": "translated-reviewed"
+  },
+  "第五届全国人民代表大会常务委员会关于批准《国务院关于职工探亲待遇的规定》的决议": {
+    "category": "social",
+    "mapping_source": "manual",
+    "progress_title": "全国人民代表大会常务委员会关于批准《国务院关于职工探亲待遇的规定》的决议",
+    "slug": "fifth-npc-standing-committee-resolution-approving-state-council-provisions-on-employees-home-leave-benefits",
+    "slug_source": "translated-reviewed"
+  },
+  "第五届全国人民代表大会常务委员会关于批准《广东省经济特区条例》的决议": {
+    "category": "economic",
+    "mapping_source": "manual",
+    "progress_title": "全国人民代表大会常务委员会关于批准《广东省经济特区条例》的决议",
+    "slug": "fifth-npc-standing-committee-resolution-approving-guangdong-special-economic-zone-regulations",
+    "slug_source": "translated-reviewed"
+  }
+}
