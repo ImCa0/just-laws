@@ -20,8 +20,10 @@ SECTION_RE = re.compile(r"^第[{}]+节[\u3000\s]*(.+)?$".format(CHINESE_NUM))
 ARTICLE_RE = re.compile(r"^第[{}]+条(?:之[{}]+)?[\u3000\s]*(.*)$".format(CHINESE_NUM, CHINESE_NUM))
 PREAMBLE_RE = re.compile(r"^序[\u3000\s]*言$")
 ATTACHMENT_RE = re.compile(r"^附件([{}]+)(?:[：:][\u3000\s]*(.+))?$".format(CHINESE_NUM))
+BARE_ATTACHMENT_RE = re.compile(r"^附件[：:][\u3000\s]*(.*)$")
 APPENDIX_SOURCE_RE = re.compile(r"^附(表[{}]+)?[：:][\u3000\s]*(.*)$".format(CHINESE_NUM))
 APPENDIX_HEADING_RE = re.compile(r"^附(?:表[{}]+)?(?:\u3000.+)?$".format(CHINESE_NUM))
+MARKDOWN_IMAGE_RE = re.compile(r"!\[[^\]]*\]\([^)]+\)")
 
 
 PART_SLUGS = {
@@ -97,6 +99,10 @@ def compact_heading(text: str) -> str:
     if attachment:
         title = attachment.group(2) or ""
         return "附件" + attachment.group(1) + (IDEOGRAPHIC_SPACE + title if title else "")
+    bare_attachment = BARE_ATTACHMENT_RE.match(text)
+    if bare_attachment:
+        title = bare_attachment.group(1)
+        return "附件" + (IDEOGRAPHIC_SPACE + title if title else "")
     appendix = APPENDIX_SOURCE_RE.match(text)
     if appendix:
         label = "附" + (appendix.group(1) or "")
@@ -114,6 +120,7 @@ def is_structural_heading(text: str) -> bool:
     return bool(
         PREAMBLE_RE.match(heading)
         or ATTACHMENT_RE.match(heading)
+        or BARE_ATTACHMENT_RE.match(text)
         or APPENDIX_HEADING_RE.match(heading)
         or PART_RE.match(heading)
         or SUBPART_RE.match(heading)
@@ -339,7 +346,12 @@ def format_body(
             output.append("## " + line)
         elif PREAMBLE_RE.match(heading):
             output.append("## 序言")
-        elif ATTACHMENT_RE.match(heading) or APPENDIX_HEADING_RE.match(heading):
+        elif (
+            ATTACHMENT_RE.match(heading)
+            or heading == "附件"
+            or heading.startswith("附件" + IDEOGRAPHIC_SPACE)
+            or APPENDIX_HEADING_RE.match(heading)
+        ):
             attachment_heading = heading
             if IDEOGRAPHIC_SPACE not in attachment_heading:
                 j = i + 1
@@ -462,6 +474,58 @@ def with_blank_lines(lines: list[str]) -> list[str]:
 def write_text(path: Path, lines: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+
+def repair_placeholder_images(generated: Path, existing_text: str, warnings: list[str]) -> None:
+    text = generated.read_text(encoding="utf-8")
+    placeholders = [
+        match.group(0)
+        for match in MARKDOWN_IMAGE_RE.finditer(text)
+        if "data:image" in match.group(0) or "base64" in match.group(0)
+    ]
+    if not placeholders:
+        return
+
+    existing_images = [
+        match.group(0)
+        for match in MARKDOWN_IMAGE_RE.finditer(existing_text)
+        if "data:image" not in match.group(0) and "base64" not in match.group(0)
+    ]
+    existing_headings = {}
+    for line in existing_text.splitlines():
+        match = re.match(r"^(#{2,4})\s+(.+)$", line)
+        if match:
+            existing_headings[match.group(2).strip()] = line
+
+    replacements = iter(existing_images)
+    restored = 0
+    removed = 0
+
+    def replace(match: re.Match[str]) -> str:
+        nonlocal restored, removed
+        token = match.group(0)
+        if "data:image" not in token and "base64" not in token:
+            return token
+        replacement = next(replacements, None)
+        if replacement is None:
+            removed += 1
+            return ""
+        restored += 1
+        return replacement
+
+    repaired = MARKDOWN_IMAGE_RE.sub(replace, text)
+    repaired = re.sub(r"(\))(?=!\[)", r"\1\n\n", repaired)
+    repaired_lines = []
+    for line in repaired.splitlines():
+        repaired_lines.append(existing_headings.get(line.strip(), line))
+    repaired = "\n".join(repaired_lines)
+    repaired = re.sub(r"\n[ \t]*\n(?:[ \t]*\n)+", "\n\n", repaired)
+    generated.write_text(repaired.rstrip() + "\n", encoding="utf-8")
+
+    if restored:
+        warnings.append(f"已从现有 docs 恢复 {restored} 个本地图片链接")
+    if removed:
+        warnings.append(f"已移除 {removed} 个无可用资源的 base64 图片占位符")
 
 
 def render_records(records: list[str]) -> list[str]:
@@ -691,10 +755,30 @@ def update_category_page(docs_dir: Path, category: str, slug: str, title: str) -
         return
     text = category_path.read_text(encoding="utf-8")
     href = f"../{category}/{slug}/"
-    if href in text:
-        return
     link = f"[{short_law_name(title)}]({href})"
-    category_path.write_text(text.rstrip() + "\n\n" + link + "\n", encoding="utf-8")
+    lines = text.splitlines()
+    matching_indexes: list[int] = []
+    for index, line in enumerate(lines):
+        match = re.fullmatch(r"\[.+?\]\(([^)]+)\)", line.strip())
+        if match and match.group(1).rstrip("/") == href.rstrip("/"):
+            matching_indexes.append(index)
+
+    changed = False
+    if matching_indexes:
+        first = matching_indexes[0]
+        if lines[first] != link:
+            lines[first] = link
+            changed = True
+        for index in reversed(matching_indexes[1:]):
+            del lines[index]
+            if index < len(lines) and not lines[index].strip() and index > 0 and not lines[index - 1].strip():
+                del lines[index]
+            changed = True
+        if not changed:
+            return
+        category_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    else:
+        category_path.write_text(text.rstrip() + "\n\n" + link + "\n", encoding="utf-8")
     sorter_path = docs_dir.parent / "scripts" / "sort-category-pages.js"
     subprocess.run(["node", str(sorter_path), str(category_path)], check=True)
 
@@ -870,6 +954,11 @@ def main() -> None:
 
     global KNOWN_SLUGS
     KNOWN_SLUGS = build_law_mapping(args.progress, args.docs, args.known_slugs)
+    existing_docs_text: dict[Path, str] = {}
+    if args.docs.exists():
+        for markdown in args.docs.rglob("*.md"):
+            text = markdown.read_text(encoding="utf-8")
+            existing_docs_text[markdown.relative_to(args.docs)] = text
     progress_statuses = build_progress_statuses(args.progress) if args.only_uncollected else {}
     all_meta = []
     site_laws: list[tuple[LawDoc, dict, list[Path]]] = []
@@ -898,6 +987,9 @@ def main() -> None:
         mapping_info.setdefault("mapping_source", "fallback")
         out_dir = args.out / category / slug
         files = render_split(law, out_dir, category, slug, mapping_info) if law.law_type == "C" else render_single(law, out_dir)
+        for path in files:
+            relative = path.relative_to(args.out)
+            repair_placeholder_images(path, existing_docs_text.get(relative, ""), law.warnings)
         for warning in law.warnings:
             print(f"WARNING [{law.title}]: {warning}", file=sys.stderr)
         all_meta.append(metadata(law, files, mapping_info))

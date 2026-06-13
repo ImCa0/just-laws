@@ -4,7 +4,7 @@
 
 [草原法](../economic/grassland-law/)
 
-[产品质量法](../economic/product-quality-law)
+[产品质量法](../economic/product-quality-law/)
 
 [车船税法](../economic/vehicle-and-vessel-tax-law/)
 
@@ -30,7 +30,7 @@
 
 [反不正当竞争法](../economic/anti-unfair-competition-law/)
 
-[反垄断法](../economic/anti-monopoly-law)
+[反垄断法](../economic/anti-monopoly-law/)
 
 [反洗钱法](../economic/anti-money-laundering-law/)
 
@@ -38,9 +38,9 @@
 
 [港口法](../economic/ports-law/)
 
-[个人所得税法](../economic/individual-income-tax-law)
+[个人所得税法](../economic/individual-income-tax-law/)
 
-[个人信息保护法](../economic/personal-information-protection-law)
+[个人信息保护法](../economic/personal-information-protection-law/)
 
 [耕地占用税法](../economic/farmland-occupation-tax-law/)
 
@@ -49,6 +49,8 @@
 [关税法](../economic/tariff-law/)
 
 [广告法](../economic/advertising-law/)
+
+[国家发展规划法](../economic/national-development-planning-law/)
 
 [国家公园法](../economic/national-parks-law/)
 
@@ -64,11 +66,11 @@
 
 [黄河保护法](../economic/yellow-river-protection-law/)
 
-[会计法](../economic/accounting-law)
+[会计法](../economic/accounting-law/)
 
 [计量法](../economic/metrology-law/)
 
-[价格法](../economic/price-law)
+[价格法](../economic/price-law/)
 
 [建筑法](../economic/construction-law/)
 
@@ -102,9 +104,9 @@
 
 [农业技术推广法](../economic/agricultural-technology-extension-law/)
 
-[企业国有资产法](../economic/enterprise-state-owned-assets-law)
+[企业国有资产法](../economic/enterprise-state-owned-assets-law/)
 
-[企业所得税法](../economic/enterprise-income-tax-law)
+[企业所得税法](../economic/enterprise-income-tax-law/)
 
 [契税法](../economic/deed-tax-law/)
 
@@ -120,7 +122,7 @@
 
 [石油天然气管道保护法](../economic/oil-and-gas-pipeline-protection-law/)
 
-[数据安全法](../economic/data-security-law)
+[数据安全法](../economic/data-security-law/)
 
 [水法](../economic/water-law/)
 
@@ -136,9 +138,9 @@
 
 [外商投资法](../economic/foreign-investment-law/)
 
-[网络安全法](../economic/cybersecurity-law)
+[网络安全法](../economic/cybersecurity-law/)
 
-[乡村振兴促进法](../economic/rural-vitalization-promotion-law)
+[乡村振兴促进法](../economic/rural-vitalization-promotion-law/)
 
 [循环经济促进法](../economic/circular-economy-promotion-law/)
 
@@ -164,11 +166,11 @@
 
 [政府采购法](../economic/government-procurement-law/)
 
-[中国人民银行法](../economic/peoples-bank-of-china-law)
+[中国人民银行法](../economic/peoples-bank-of-china-law/)
 
-[中小企业促进法](../economic/small-and-medium-sized-enterprises-promotion-law)
+[中小企业促进法](../economic/small-and-medium-sized-enterprises-promotion-law/)
 
-[种子法](../economic/seed-law)
+[种子法](../economic/seed-law/)
 
 [注册会计师法](../economic/certified-public-accountants-law/)
 

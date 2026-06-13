@@ -12,9 +12,9 @@
 
 [出境入境管理法](../administrative/exit-entry-administration-law/)
 
-[传染病防治法](../administrative/prevention-and-treatment-of-infections-diseases)
+[传染病防治法](../administrative/prevention-and-treatment-of-infections-diseases/)
 
-[促进科技成果转化法](../administrative/promotion-of-transformation-of-scientific-and-technological-achievements-law)
+[促进科技成果转化法](../administrative/promotion-of-transformation-of-scientific-and-technological-achievements-law/)
 
 [大气污染防治法](../administrative/air-pollution-prevention-and-control-law/)
 
@@ -78,7 +78,7 @@
 
 [护照法](../administrative/passport-law/)
 
-[环境保护法](../administrative/environment-protection)
+[环境保护法](../administrative/environment-protection/)
 
 [环境影响评价法](../administrative/environmental-impact-assessment-law/)
 
@@ -118,15 +118,15 @@
 
 [全国人民代表大会常务委员会关于中国人民解放军现役士兵衔级制度的决定](../administrative/decision-on-pla-active-duty-enlisted-rank-system/)
 
-[人口与计划生育法](../administrative/population-and-family-planning-law)
+[人口与计划生育法](../administrative/population-and-family-planning-law/)
 
-[人民防空法](../administrative/civil-air-defense-law)
+[人民防空法](../administrative/civil-air-defense-law/)
 
-[人民警察法](../administrative/people-s-police-law)
+[人民警察法](../administrative/people-s-police-law/)
 
-[人民警察警衔条例](../administrative/people-s-police-rank-regulations)
+[人民警察警衔条例](../administrative/people-s-police-rank-regulations/)
 
-[人民武装警察法](../administrative/people-s-armed-police-law)
+[人民武装警察法](../administrative/people-s-armed-police-law/)
 
 [社区矫正法](../administrative/community-corrections-law/)
 
@@ -136,11 +136,11 @@
 
 [水污染防治法](../administrative/water-pollution-prevention-and-control-law/)
 
-[体育法](../administrative/sports-law)
+[体育法](../administrative/sports-law/)
 
 [突发公共卫生事件应对法](../administrative/public-health-emergency-response-law/)
 
-[突发事件应对法](../administrative/emergency-response-law)
+[突发事件应对法](../administrative/emergency-response-law/)
 
 [土地管理法](../administrative/land-administration-law/)
 
@@ -156,7 +156,7 @@
 
 [消防救援衔条例](../administrative/fire-rescue-rank-regulations/)
 
-[行政处罚法](../administrative/administrative-penalty)
+[行政处罚法](../administrative/administrative-penalty/)
 
 [行政复议法](../administrative/administrative-reconsideration-law/)
 
@@ -170,11 +170,11 @@
 
 [药品管理法](../administrative/drug-administration-law/)
 
-[野生动物保护法](../administrative/protection-of-wildlife)
+[野生动物保护法](../administrative/protection-of-wildlife/)
 
 [医师法](../administrative/physicians-law/)
 
-[义务教育法](../administrative/compulsory-education-law)
+[义务教育法](../administrative/compulsory-education-law/)
 
 [疫苗管理法](../administrative/vaccine-administration-law/)
 
@@ -184,10 +184,10 @@
 
 [职业教育法](../administrative/vocational-education-law/)
 
-[治安管理处罚法](../administrative/penalties-for-administration-of-public-security)
+[治安管理处罚法](../administrative/penalties-for-administration-of-public-security/)
 
 [中国人民解放军军官军衔条例](../administrative/officer-ranks-regulations/)
 
-[中医药法](../administrative/traditional-chinese-medicine-law)
+[中医药法](../administrative/traditional-chinese-medicine-law/)
 
 [驻外外交人员法](../administrative/diplomatic-personnel-stationed-abroad-law/)
