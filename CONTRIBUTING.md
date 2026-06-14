@@ -14,7 +14,7 @@
 `.temp` 目录在 `.gitignore` 中，不会被提交到 Git。您需要手动创建：
 
 ```bash
-mkdir -p .temp/laws_docs
+mkdir -p .temp/laws
 mkdir -p .temp/laws_md
 ```
 
@@ -24,9 +24,8 @@ mkdir -p .temp/laws_md
 ```
 .just-laws/
 ├── .temp/              # 临时文件（不提交到 Git）
-│   ├── laws_docs/      # 原始法律文档（DOCX/PDF）
-│   └── laws_md/        # 可选的临时 Markdown 输入
-├── laws_md/            # 仓库维护的默认 Markdown 输入
+│   ├── laws/           # 原始法律文档（DOCX/PDF）
+│   └── laws_md/        # 法律 Markdown 输入
 ├── docs/               # 站点文档
 └── .agents/skills/     # Agent 技能和流水线脚本
 ```
@@ -36,7 +35,7 @@ mkdir -p .temp/laws_md
 1. 进入[全国人大网现行有效法律目录](http://www.npc.gov.cn/npc/c2/c30834/202512/t20251231_450944.html)页面，选择要收录的法律
 2. 进入[国家法律法规数据库](https://flk.npc.gov.cn/)搜索法律
 3. **重要**：选择**时效性为有效，公布日期为最新**的版本
-4. 下载 WPS 版本（DOCX 格式）到 `.temp/laws_docs/` 目录
+4. 下载 WPS 版本（DOCX 格式）到 `.temp/laws/` 目录
 
 **文件命名**：默认命名为中文全名 + 日期，请勿修改，如 `中华人民共和国种子法_20211224.docx`
 
@@ -45,7 +44,7 @@ mkdir -p .temp/laws_md
 可以使用 `.agents/skills/markitdown/` 中说明的 MarkItDown 工具转换法律原文：
 
 ```
-markitdown .temp/laws_docs/中华人民共和国种子法_20211224.docx -o .temp/laws_md/中华人民共和国种子法_20211224.md
+markitdown .temp/laws/中华人民共和国种子法_20211224.docx -o .temp/laws_md/中华人民共和国种子法_20211224.md
 ```
 
 **输出**：转换后的 Markdown 文件保存在 `.temp/laws_md/` 目录
@@ -109,7 +108,7 @@ git push origin master
 如果要收录多部法律，先收集明确的输入列表，再复用步骤 4 的预览和应用命令：
 
 ```powershell
-$inputs = @(Get-ChildItem laws_md -Filter *.md -File).FullName
+$inputs = @(Get-ChildItem .temp/laws_md -Filter *.md -File).FullName
 ```
 
 自动化工具会：

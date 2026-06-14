@@ -1,6 +1,6 @@
 ---
 name: law-pipeline
-description: "默认法律收录流程：将 laws_md 中的法律 Markdown 批量规范化为 Just Laws VuePress 站点交付件，并同步 category、sidebar 与 LAWS_PROGRESS.md。"
+description: "默认法律收录流程：将 .temp/laws_md 中的法律 Markdown 批量规范化为 Just Laws VuePress 站点交付件，可配对读取 .temp/laws 中的 Word 原件，并同步 category、sidebar 与 LAWS_PROGRESS.md。"
 allowed-tools: [Read, Write, Edit, Glob, Grep, Bash]
 license: MIT
 source: https://github.com/justlaws/just-laws
@@ -8,14 +8,13 @@ source: https://github.com/justlaws/just-laws
 
 # 法律收录流水线
 
-这是仓库默认的法律收录技能。用于把 `laws_md` 中明确选定的文件作为输入，输出可部署的 Just Laws 站点文件。优先使用脚本完成机械格式整理和配置更新，遇到 warning 再人工复核；不要先按旧 `addlaws` 流程逐部手工整理。
+这是仓库默认的法律收录技能。用于把 `.temp/laws_md` 中明确选定的文件作为输入，输出可部署的 Just Laws 站点文件。优先使用脚本完成机械格式整理和配置更新，遇到 warning 再人工复核；不要先按旧 `addlaws` 流程逐部手工整理。
 
 ## 输入与输出
 
 输入：
-- `laws_md/*.md`：仓库当前维护的法律原文 Markdown，也是默认输入目录。
-- `laws/*.docx`：可选的同名 Word 原件；Markdown 含表格时，脚本优先读取其表格网格以保留合并单元格占位。
-- `.temp/laws_md/*.md`：可选的临时转换输入；脚本不会自动扫描，必须显式传入文件。
+- `.temp/laws_md/*.md`：法律原文 Markdown，也是默认输入目录；脚本不会自动扫描，必须显式传入文件。
+- `.temp/laws/*.docx`：可选的同名 Word 原件；Markdown 含表格时，脚本优先读取其表格网格以保留合并单元格占位。
 - `references/known_slugs.json`：预置的 `法律名 -> 分类/slug/type/编文件名` 映射。
 
 输出：
@@ -30,7 +29,7 @@ source: https://github.com/justlaws/just-laws
 先在临时目录生成结果，查看 warnings：
 
 ```powershell
-$inputs = @(Get-ChildItem laws_md -Filter *.md -File).FullName
+$inputs = @(Get-ChildItem .temp/laws_md -Filter *.md -File).FullName
 python .agents/skills/law-pipeline/scripts/normalize_law.py @inputs `
   --out .temp\law-pipeline\out `
   --json .temp\law-pipeline\laws.json `
@@ -43,7 +42,7 @@ python .agents/skills/law-pipeline/scripts/normalize_law.py @inputs `
 确认后写入站点交付件并同步配置：
 
 ```powershell
-$inputs = @(Get-ChildItem laws_md -Filter *.md -File).FullName
+$inputs = @(Get-ChildItem .temp/laws_md -Filter *.md -File).FullName
 python .agents/skills/law-pipeline/scripts/normalize_law.py @inputs `
   --out docs `
   --docs docs `
@@ -60,11 +59,11 @@ python .agents/skills/law-pipeline/scripts/normalize_law.py @inputs `
 
 ```powershell
 $inputs = @(
-  "laws_md\中华人民共和国种子法_20211224.md"
+  ".temp\laws_md\中华人民共和国种子法_20211224.md"
 )
 ```
 
-PowerShell 不应依赖把 `laws_md\*.md` 自动展开给 Python；先用 `Get-ChildItem` 收集文件，或显式列出输入。
+PowerShell 不应依赖把 `.temp\laws_md\*.md` 自动展开给 Python；先用 `Get-ChildItem` 收集文件，或显式列出输入。
 
 ## 脚本行为
 

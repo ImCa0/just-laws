@@ -30,8 +30,9 @@ just-laws/
 │   ├── criminal-law/               # 刑法及修正案
 │   └── procedural/                 # 程序法（刑诉、民诉、行诉）
 │
-├── laws_md/                        # 流水线默认输入（308 部法律 Markdown）
-├── .temp/                          # 预览输出和临时转换文件（不纳入版本控制）
+├── .temp/                          # 法律原件、Markdown 输入及预览输出（不纳入版本控制）
+│   ├── laws/                       # 308 部法律 Word 原件
+│   └── laws_md/                    # 流水线默认输入（308 部法律 Markdown）
 ├── .agents/skills/                 # Codex 自定义技能
 │   ├── law-pipeline/               # 默认法律收录流水线及规范化脚本
 │   ├── addlaws/                    # 旧流程兼容说明（已弃用）
@@ -110,8 +111,7 @@ VuePress 主配置文件，定义站点行为和外观。
 
 执行顺序：
 
-1. 从 `laws_md/*.md` 选择明确的输入文件。临时转换文件也可以放在
-   `.temp/laws_md/`，但必须显式传入脚本。
+1. 从 `.temp/laws_md/*.md` 选择明确的输入文件，并显式传入脚本。
 2. 先输出到 `.temp/law-pipeline/`，检查生成的 JSON 元数据和
    `warnings`。
 3. 对附件、图片、表格、C 类拆分、标题截断及中文 fallback slug
