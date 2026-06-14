@@ -1,5 +1,6 @@
 const { defaultTheme } = require("@vuepress/theme-default");
 const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
+const { categoryNavbarItem } = require("./category-navigation");
 
 module.exports = {
   lang: " ",
@@ -34,68 +35,60 @@ module.exports = {
           { text: "宪法修正案", link: "/constitution/amendment/" },
         ],
       },
-      {
+      categoryNavbarItem({
         text: "宪法相关法",
-        children: [
-          { text: "全国人民代表大会组织法", link: "/constitutional-relevance/npc-organization-law/" },
-          { text: "民族区域自治法", link: "/constitutional-relevance/law-on-regional-national-autonomy/" },
-          { text: "香港特别行政区基本法", link: "/constitutional-relevance/hong-kong-special-administrative-region-basic-law/" },
-          { text: "查看全部 24 部宪法相关法", link: "/category/constitutional-relevance" },
+        slug: "constitutional-relevance",
+        featured: [
+          "全国人民代表大会组织法",
+          "民族区域自治法",
+          "香港特别行政区基本法",
         ],
-      },
-      {
+      }),
+      categoryNavbarItem({
         text: "民商法",
-        children: [
-          { text: "民法典", link: "/civil-and-commercial/civil-code/" },
-          { text: "著作权法", link: "/civil-and-commercial/copyright-law/" },
-          { text: "消费者权益保护法", link: "/civil-and-commercial/protection-of-the-rights-and-interests-of-consumers/" },
-          { text: "公司法", link: "/civil-and-commercial/company-law/" },
+        slug: "civil-and-commercial",
+        featured: [
+          "民法典",
+          "著作权法",
+          "消费者权益保护法",
+          "公司法",
         ],
-      },
-      {
+      }),
+      categoryNavbarItem({
         text: "行政法",
-        children: [
-          { text: "行政处罚法", link: "/administrative/administrative-penalty/" },
-          { text: "治安管理处罚法", link: "/administrative/penalties-for-administration-of-public-security/" },
-          { text: "义务教育法", link: "/administrative/compulsory-education-law/" },
-          { text: "查看全部 15 部行政法", link: "/category/administrative" },
-        ],
-      },
-      {
+        slug: "administrative",
+        featured: ["行政处罚法", "治安管理处罚法", "义务教育法"],
+      }),
+      categoryNavbarItem({
         text: "经济法",
-        children: [
-          { text: "个人所得税法", link: "/economic/individual-income-tax-law/" },
-          { text: "中国人民银行法", link: "/economic/peoples-bank-of-china-law/" },
-          { text: "个人信息保护法", link: "/economic/personal-information-protection-law/" },
-          { text: "查看全部 14 部经济法", link: "/category/economic" },
-        ],
-      },
-      {
+        slug: "economic",
+        featured: ["个人所得税法", "中国人民银行法", "个人信息保护法"],
+      }),
+      categoryNavbarItem({
         text: "社会法",
-        children: [
-          { text: "未成年人保护法", link: "/social/protection-of-minors/" },
-          { text: "劳动法", link: "/social/labor-law/" },
-          { text: "预防未成年人犯罪法", link: "/social/prevention-of-juvenile-delinquency/" },
-          { text: "安全生产法", link: "/social/work-safety-law/" },
+        slug: "social",
+        featured: [
+          "未成年人保护法",
+          "劳动法",
+          "预防未成年人犯罪法",
+          "安全生产法",
         ],
-      },
-      {
+      }),
+      categoryNavbarItem({
         text: "刑法",
-        children: [
-          { text: "刑法", link: "/criminal-law/criminal-law/" },
-          { text: "刑法修正案", link: "/criminal-law/amendment/" },
-          { text: "反有组织犯罪法", link: "/criminal-law/anti-organized-crime-law/" },
-          { text: "反电信网络诈骗法", link: "/criminal-law/combating-telecom-and-online-fraud/" },
+        slug: "criminal-law",
+        featured: [
+          "刑法",
+          "反间谍法",
+          "反有组织犯罪法",
+          "反电信网络诈骗法",
         ],
-      },
-      {
+      }),
+      categoryNavbarItem({
         text: "程序法",
-        children: [
-          { text: "刑事诉讼法", link: "/procedural/criminal-procedure/" },
-          { text: "行政诉讼法", link: "/procedural/administrative-procedure/" },
-          { text: "民事诉讼法", link: "/procedural/civil-procedure/" },
-        ],
-      },
+        slug: "procedural",
+        featured: ["刑事诉讼法", "行政诉讼法", "民事诉讼法"],
+      }),
     ],
     sidebar: {
       "/category/": [
