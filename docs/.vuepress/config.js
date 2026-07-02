@@ -30,10 +30,7 @@ module.exports = {
       },
       {
         text: "宪法",
-        children: [
-          { text: "宪法", link: "/constitution/", activeMatch: "/constitution/[^(amendment)]" },
-          { text: "宪法修正案", link: "/constitution/amendment/" },
-        ],
+        link: "/constitution/",
       },
       categoryNavbarItem({
         text: "宪法相关法",
@@ -114,6 +111,7 @@ module.exports = {
             "/constitution/02-civil-rights-and-duties.md",
             "/constitution/03-state-institutions.md",
             "/constitution/04-flag-anthem-emblem-capital.md",
+            "/constitution/05-amendment.md",
           ],
         },
       ],
@@ -123,25 +121,9 @@ module.exports = {
           children: [
             "/criminal-law/criminal-law/01-general-provisions.md",
             "/criminal-law/criminal-law/02-specific-provisions.md",
-            "/criminal-law/criminal-law/00-supplementary.md",
-          ],
-        },
-      ],
-      "/criminal-law/amendment/": [
-        {
-          text: "目录",
-          children: [
-            "/criminal-law/amendment/criminal-law-amendment-i.md",
-            "/criminal-law/amendment/criminal-law-amendment-ii.md",
-            "/criminal-law/amendment/criminal-law-amendment-iii.md",
-            "/criminal-law/amendment/criminal-law-amendment-iv.md",
-            "/criminal-law/amendment/criminal-law-amendment-v.md",
-            "/criminal-law/amendment/criminal-law-amendment-vi.md",
-            "/criminal-law/amendment/criminal-law-amendment-vii.md",
-            "/criminal-law/amendment/criminal-law-amendment-viii.md",
-            "/criminal-law/amendment/criminal-law-amendment-ix.md",
-            "/criminal-law/amendment/criminal-law-amendment-x.md",
-            "/criminal-law/amendment/criminal-law-amendment-xi.md",
+            "/criminal-law/criminal-law/03-supplementary.md",
+            "/criminal-law/criminal-law/04-amendment.md",
+            "/criminal-law/criminal-law/05-foreign-exchange-crimes-decision.md",
           ],
         },
       ],
