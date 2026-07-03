@@ -46,6 +46,8 @@
 
 [社会保险法](../social/social-insurance-law/)
 
+[社会救助法](../social/social-assistance-law/)
+
 [特种设备安全法](../social/special-equipment-safety-law/)
 
 [退役军人保障法](../social/veterans-protection-law/)

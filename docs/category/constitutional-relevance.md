@@ -74,6 +74,8 @@ prev:
 
 [民族区域自治法](../constitutional-relevance/law-on-regional-national-autonomy/)
 
+[民族团结进步促进法](../constitutional-relevance/ethnic-unity-and-progress-promotion-law/)
+
 [全国人民代表大会常务委员会关于批准中央军事委员会《关于授予军队离休干部中国人民解放军功勋荣誉章的规定》的决定](../constitutional-relevance/decision-on-military-honorary-medal-regulations/)
 
 [全国人民代表大会常务委员会关于县级以下人民代表大会代表直接选举的若干规定](../constitutional-relevance/provisions-on-direct-election-of-people-s-congress-representatives-below-county-level/)

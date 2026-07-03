@@ -72,6 +72,11 @@ module.exports = {
         ],
       }),
       categoryNavbarItem({
+        text: "生态环境法",
+        slug: "ecological-environment",
+        featured: ["生态环境法典"],
+      }),
+      categoryNavbarItem({
         text: "刑法",
         slug: "criminal-law",
         featured: [
@@ -88,6 +93,18 @@ module.exports = {
       }),
     ],
     sidebar: {
+      "/ecological-environment/ecological-environment-code/": [
+        {
+          text: "中华人民共和国生态环境法典",
+          children: [
+            "/ecological-environment/ecological-environment-code/01-general-principles.md",
+            "/ecological-environment/ecological-environment-code/02-pollution-prevention-and-control.md",
+            "/ecological-environment/ecological-environment-code/03-ecological-protection.md",
+            "/ecological-environment/ecological-environment-code/04-green-and-low-carbon-development.md",
+            "/ecological-environment/ecological-environment-code/05-legal-liability-and-supplementary.md",
+          ],
+        },
+      ],
       "/category/": [
         {
           text: "类别",
@@ -97,6 +114,7 @@ module.exports = {
             "/category/administrative",
             "/category/economic",
             "/category/social",
+            "/category/ecological-environment",
             "/category/criminal-law",
             "/category/procedural",
           ]
