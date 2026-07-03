@@ -1,9 +1,3 @@
----
-prev:
-  link: /category/
-  text: 类别
----
-
 # 宪法相关法
 
 [爱国主义教育法](../constitutional-relevance/patriotism-education-law/)
@@ -43,6 +37,8 @@ prev:
 [国籍法](../constitutional-relevance/nationality-law/)
 
 [国家安全法](../constitutional-relevance/national-security-law/)
+
+[国家发展规划法](../economic/national-development-planning-law/)
 
 [国家赔偿法](../constitutional-relevance/state-compensation-law/)
 
