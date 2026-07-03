@@ -1,9 +1,3 @@
----
-prev:
-  link: /category/
-  text: 类别
----
-
 # 宪法相关法
 
 [爱国主义教育法](../constitutional-relevance/patriotism-education-law/)
@@ -44,6 +38,8 @@ prev:
 
 [国家安全法](../constitutional-relevance/national-security-law/)
 
+[国家发展规划法](../economic/national-development-planning-law/)
+
 [国家赔偿法](../constitutional-relevance/state-compensation-law/)
 
 [国家通用语言文字法](../constitutional-relevance/national-language-law/)
@@ -73,6 +69,8 @@ prev:
 [陆地国界法](../constitutional-relevance/land-border-law/)
 
 [民族区域自治法](../constitutional-relevance/law-on-regional-national-autonomy/)
+
+[民族团结进步促进法](../constitutional-relevance/ethnic-unity-and-progress-promotion-law/)
 
 [全国人民代表大会常务委员会关于批准中央军事委员会《关于授予军队离休干部中国人民解放军功勋荣誉章的规定》的决定](../constitutional-relevance/decision-on-military-honorary-medal-regulations/)
 

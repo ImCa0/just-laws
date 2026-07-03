@@ -48,6 +48,7 @@ CATEGORY_DIRS = {
     "行政法": "administrative",
     "经济法": "economic",
     "社会法": "social",
+    "生态环境法": "ecological-environment",
     "刑法": "criminal-law",
     "诉讼与非诉讼程序法": "procedural",
 }
