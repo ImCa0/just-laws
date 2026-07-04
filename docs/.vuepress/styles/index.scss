@@ -14,3 +14,7 @@ html.dark {
   margin: 0 auto;
   padding: 2rem 2.5rem;
 }
+
+.theme-default-content [id^="article-"] {
+  scroll-margin-top: calc(var(--navbar-height) + 1rem);
+}

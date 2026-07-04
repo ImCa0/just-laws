@@ -1,9 +1,10 @@
 const { defaultTheme } = require("@vuepress/theme-default");
 const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
 const { categoryNavbarItem } = require("./category-navigation");
+const { lawArticleAnchorsPlugin } = require("./markdown/lawArticleAnchors");
 
 module.exports = {
-  lang: " ",
+  lang: "zh",
   title: "Just Laws",
   description: "法律和法律都是相互依存的",
   head: [
@@ -20,6 +21,9 @@ module.exports = {
       })()`,
     ],
   ],
+  extendsMarkdown: (md) => {
+    md.use(lawArticleAnchorsPlugin);
+  },
 
   theme: defaultTheme({
     logo: "/images/logo.png",
