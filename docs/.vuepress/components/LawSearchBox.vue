@@ -530,14 +530,22 @@ export default {
 }
 
 @media (max-width: 719px) {
-  .navbar .law-search-box:not(.jl-home-search) {
-    position: static;
-    margin-left: 0;
+  .law-search-box--home-route:not(.jl-home-search) {
+    display: none;
   }
 
-  .navbar .law-search-box:not(.jl-home-search) .law-search-box__input,
+  .navbar .law-search-box:not(.jl-home-search) {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.55rem;
+  }
+
+  .navbar .law-search-box:not(.jl-home-search) .law-search-box__input {
+    width: 10rem;
+  }
+
   .navbar .law-search-box:not(.jl-home-search) .law-search-box__input:focus {
-    width: var(--search-input-width, 10rem);
+    width: 10rem;
   }
 
   .law-search-box__panel {
@@ -552,9 +560,22 @@ export default {
     height: 3.1rem;
     border-radius: 16px;
   }
+
+  .law-search-box.jl-home-search .law-search-box__panel {
+    position: absolute;
+    top: calc(100% + 0.55rem);
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-height: min(28rem, calc(100vh - 2rem));
+  }
+
+  .navbar .law-search-box--home-route:not(.jl-home-search) {
+    display: none;
+  }
 }
 
-@media (max-width: 1180px) {
+@media (min-width: 720px) and (max-width: 1180px) {
   .navbar .law-search-box:not(.jl-home-search) {
     display: none;
   }
