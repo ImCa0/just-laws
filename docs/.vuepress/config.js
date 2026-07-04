@@ -3,7 +3,7 @@ const { categoryNavbarItem } = require("./category-navigation");
 const { lawArticleAnchorsPlugin } = require("./markdown/lawArticleAnchors");
 
 module.exports = {
-  lang: "zh",
+  lang: "zh-CN",
   title: "Just Laws",
   description: "法律和法律都是相互依存的",
   head: [
@@ -123,6 +123,10 @@ module.exports = {
           "人民调解法",
         ],
       }),
+      {
+        text: "留言板",
+        link: "/MessageBoard/",
+      },
     ],
     sidebar: {
       "/ecological-environment/ecological-environment-code/": [

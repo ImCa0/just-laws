@@ -1,6 +1,7 @@
 // @ts-nocheck
 import { defineClientConfig } from "@vuepress/client";
 import LawSearchBox from "./components/LawSearchBox.vue";
+import TwikooMessageBoard from "./components/TwikooMessageBoard.vue";
 
 let initialArticleHash =
   typeof window !== "undefined" && window.location.hash.startsWith("#article-")
@@ -49,6 +50,7 @@ const scrollToArticle = (hash) => {
 export default defineClientConfig({
   enhance({ app, router }) {
     app.component("SearchBox", LawSearchBox);
+    app.component("TwikooMessageBoard", TwikooMessageBoard);
 
     router.afterEach((to) => {
       if (typeof _hmt != "undefined") {
