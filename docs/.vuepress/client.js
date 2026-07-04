@@ -1,5 +1,6 @@
 // @ts-nocheck
 import { defineClientConfig } from "@vuepress/client";
+import LawSearchBox from "./components/LawSearchBox.vue";
 
 let initialArticleHash =
   typeof window !== "undefined" && window.location.hash.startsWith("#article-")
@@ -46,7 +47,9 @@ const scrollToArticle = (hash) => {
 };
 
 export default defineClientConfig({
-  enhance({ router }) {
+  enhance({ app, router }) {
+    app.component("SearchBox", LawSearchBox);
+
     router.afterEach((to) => {
       if (typeof _hmt != "undefined") {
         if (to.path) {
