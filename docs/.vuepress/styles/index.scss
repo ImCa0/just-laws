@@ -14,3 +14,250 @@ html.dark {
   margin: 0 auto;
   padding: 2rem 2.5rem;
 }
+
+.theme-default-content [id^="article-"] {
+  scroll-margin-top: calc(var(--navbar-height) + 1rem);
+}
+
+.theme-container.message-board-page .theme-default-content:not(.custom) {
+  max-width: 920px;
+}
+
+.message-board-page .theme-default-content > h1 {
+  margin-bottom: 0.8rem;
+}
+
+.message-board-page .theme-default-content > p {
+  margin-top: 0;
+  color: var(--c-text-light);
+}
+
+.message-board-donate {
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--c-border);
+  border-radius: 8px;
+  background: var(--c-bg);
+}
+
+.message-board-donate summary {
+  padding: 0.9rem 1rem;
+  color: var(--c-text);
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.message-board-donate summary::marker {
+  color: var(--c-brand);
+}
+
+.message-board-donate__content {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  padding: 0 1rem 1.25rem;
+  border-top: 1px solid var(--c-border);
+}
+
+.message-board-donate figure {
+  margin: 1.25rem 0 0;
+  text-align: center;
+}
+
+.message-board-donate img {
+  width: min(220px, 38vw);
+  border-radius: 8px;
+  border: 1px solid var(--c-border);
+  background: #fff;
+}
+
+.message-board-donate figcaption {
+  margin-top: 0.55rem;
+  color: var(--c-text-light);
+  font-size: 0.92rem;
+}
+
+.twikoo-message-board {
+  margin-top: 2rem;
+}
+
+.twikoo-message-board__status {
+  margin: 1rem 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--c-border);
+  border-radius: 8px;
+  color: var(--c-text-light);
+  background: var(--c-bg-light);
+}
+
+.twikoo-message-board__status p {
+  margin: 0 0 0.75rem;
+}
+
+.twikoo-message-board__status button {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--c-brand);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  background: var(--c-brand);
+  cursor: pointer;
+}
+
+.twikoo-message-board .twikoo {
+  color: var(--c-text);
+}
+
+.twikoo-message-board .tk-submit {
+  margin-top: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--c-border);
+  border-radius: 8px;
+  background: var(--c-bg);
+  box-shadow: 0 10px 28px rgb(0 0 0 / 6%);
+}
+
+.twikoo-message-board .tk-meta-input {
+  margin-bottom: 0.75rem;
+}
+
+.twikoo-message-board .twikoo .el-input__inner,
+.twikoo-message-board .twikoo .el-textarea__inner {
+  border-color: var(--c-border);
+  color: var(--c-text);
+  background: var(--c-bg-light);
+}
+
+.twikoo-message-board .twikoo .el-input__inner:hover,
+.twikoo-message-board .twikoo .el-textarea__inner:hover,
+.twikoo-message-board .twikoo .el-input__inner:focus,
+.twikoo-message-board .twikoo .el-textarea__inner:focus {
+  border-color: var(--c-brand);
+}
+
+.twikoo-message-board .twikoo .el-input-group__prepend {
+  border-color: var(--c-border);
+  color: var(--c-text-light);
+  background: var(--c-bg-lighter);
+}
+
+.twikoo-message-board .tk-input .el-textarea__inner {
+  min-height: 8.5rem !important;
+  line-height: 1.75;
+}
+
+.twikoo-message-board .tk-row.actions {
+  margin-top: 0.8rem;
+}
+
+.twikoo-message-board .twikoo .el-button--primary {
+  border-color: var(--c-brand);
+  background: var(--c-brand);
+}
+
+.twikoo-message-board .twikoo .el-button--primary:hover,
+.twikoo-message-board .twikoo .el-button--primary:focus {
+  border-color: var(--c-brand-light);
+  background: var(--c-brand-light);
+}
+
+.twikoo-message-board .tk-comments-title {
+  margin-top: 2.4rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--c-border);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.twikoo-message-board .tk-comments-container {
+  margin-top: 1.2rem;
+}
+
+.twikoo-message-board .tk-comment {
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.twikoo-message-board .tk-comment .tk-main {
+  padding-left: 0.25rem;
+}
+
+.twikoo-message-board .tk-avatar {
+  margin-right: 0.85rem;
+}
+
+.twikoo-message-board .tk-avatar .tk-avatar-img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--c-bg), 0 0 0 3px var(--c-border);
+}
+
+.twikoo-message-board .tk-nick {
+  font-weight: 600;
+}
+
+.twikoo-message-board .tk-content {
+  margin-top: 0.45rem;
+  line-height: 1.8;
+}
+
+.twikoo-message-board .tk-extras,
+.twikoo-message-board .tk-actions {
+  color: var(--c-text-light);
+}
+
+.twikoo-message-board .tk-replies {
+  margin-top: 0.9rem;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-left: 3px solid var(--c-border);
+  background: transparent;
+}
+
+.twikoo-message-board .tk-replies .tk-comment {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+html.dark .twikoo-message-board .tk-submit {
+  box-shadow: 0 10px 28px rgb(0 0 0 / 22%);
+}
+
+@media (max-width: 719px) {
+  .theme-container.message-board-page .theme-default-content:not(.custom) {
+    padding: 1.5rem 1rem;
+  }
+
+  .twikoo-message-board {
+    margin-top: 1.5rem;
+  }
+
+  .message-board-donate__content {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .message-board-donate img {
+    width: min(220px, 72vw);
+  }
+
+  .twikoo-message-board .tk-submit {
+    padding: 1rem;
+  }
+
+  .twikoo-message-board .tk-meta-input {
+    display: block;
+  }
+
+  .twikoo-message-board .tk-meta-input .el-input + .el-input {
+    margin-left: 0;
+    margin-top: 0.65rem;
+  }
+
+  .twikoo-message-board .tk-avatar {
+    margin-right: 0.65rem;
+  }
+
+  .twikoo-message-board .tk-replies {
+    padding-left: 0.75rem;
+  }
+}

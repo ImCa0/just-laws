@@ -16,6 +16,7 @@ features: []
           <a class="jl-button jl-button--primary" href="/constitution/preamble.html">开始阅读</a>
           <a class="jl-button jl-button--ghost" href="/category/">浏览类别</a>
         </div>
+        <SearchBox class="jl-home-search" />
       </div>
       <div class="jl-overview" role="group" aria-label="收录概览">
         <div class="jl-stat">
@@ -167,7 +168,7 @@ features: []
   position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
   background: #fff;
   border-bottom: 1px solid rgba(27, 30, 37, 0.08);
 }
@@ -205,6 +206,8 @@ features: []
 }
 
 .jl-hero__content {
+  position: relative;
+  z-index: 3;
   max-width: 40rem;
 }
 
@@ -497,6 +500,13 @@ html.dark .jl-category {
 
 html.dark .jl-feature span {
   background: rgba(222, 41, 16, 0.12);
+}
+
+html.dark .law-search-box.jl-home-search .law-search-box__input {
+  background:
+    radial-gradient(circle at 1.25rem 50%, var(--law-search-accent) 0 0.3rem, transparent 0.32rem),
+    linear-gradient(135deg, color-mix(in srgb, var(--law-search-accent) 14%, #171b21) 0%, rgba(23, 27, 33, 0.96) 100%);
+  box-shadow: 0 18px 42px rgb(0 0 0 / 26%);
 }
 
 

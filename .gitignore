@@ -2,3 +2,4 @@ node_modules
 .temp
 .cache
 dist
+docs/.vuepress/public/search
