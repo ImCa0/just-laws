@@ -1,9 +1,6 @@
 ---
 name: law-pipeline
-description: "默认法律收录流程：将 .temp/laws_md 中的法律 Markdown 批量规范化为 Just Laws VuePress 站点交付件，可配对读取 .temp/laws 中的 Word 原件，并同步 category、sidebar 与 LAWS_PROGRESS.md。"
-allowed-tools: [Read, Write, Edit, Glob, Grep, Bash]
-license: MIT
-source: https://github.com/justlaws/just-laws
+description: "默认法律收录与更新流程：将 .temp/laws_md 中的法律 Markdown 规范化为 Just Laws VuePress 站点交付件，可配对读取 Word 原件，同步 category、sidebar 与 LAWS_PROGRESS.md；更新已有法律时识别当前、未来和历史版本，维护 versions.json、多版本页面及生效日轮换。"
 ---
 
 # 法律收录流水线
@@ -19,6 +16,7 @@ source: https://github.com/justlaws/just-laws
 
 输出：
 - `docs/{category}/{slug}/`：法律正文交付件。
+- `docs/{category}/{slug}/versions.json` 与 `versions/{effectiveFrom}/README.md`：已有单文件法律出现新版本时的版本元数据和非现行正文。
 - `docs/category/{category}.md`：分类页链接。
 - `docs/.vuepress/config.js`：仅 C 类法律新增 sidebar。
 - `LAWS_PROGRESS.md`：收录状态、分类进度和总进度。
@@ -99,10 +97,105 @@ npm run docs:build
 
 5. 检查 git diff，确认只包含本次应交付的正文、category、必要的 sidebar 和进度更新；JSON 预览文件应保留在 `.temp/`。
 
+## 更新已有法律与多版本展示
+
+更新已收录法律时，先判断是同一版本的内容勘误，还是具有独立公布、生效记录的新版本。勘误直接修正对应正文，不创建版本；新修订、修正或重新公布的正文按下述流程处理。
+
+当前版本能力只完整支持单文件 A/B 类法律。C 类法律的各编页面尚不能整体切换版本；遇到 C 类更新时停止应用，先扩展版本路由、sidebar 和轮换脚本，不要只给封面页添加 `versions.json`。
+
+### 1. 预览规范化结果
+
+显式传入已有法律的输入文件，移除 `--only-uncollected`，只输出到临时目录，不使用 `--apply-site`：
+
+```powershell
+$inputs = @(
+  ".temp\laws_md\中华人民共和国商标法_20260626.md"
+)
+python .agents/skills/law-pipeline/scripts/normalize_law.py @inputs `
+  --out .temp\law-pipeline\out `
+  --json .temp\law-pipeline\updated-laws.json `
+  --docs docs `
+  --progress LAWS_PROGRESS.md `
+  --known-slugs .agents\skills\law-pipeline\references\known_slugs.json
+```
+
+复核临时 `README.md`、warnings、公布日期和生效日期，并与站点根目录正文、现有 `versions.json` 和立法记录比较。日期状态统一按北京时间判断。
+
+### 2. 按时效分流
+
+- **未来版本**：根目录继续保存当前有效正文；把规范化后的新正文放到 `versions/{effectiveFrom}/README.md`，新增或更新 `versions.json`。禁止对未来版本运行 `--apply-site`，否则会提前覆盖现行正文。
+- **已经生效的新版本**：也先把新正文放到 `versions/{effectiveFrom}/README.md` 并登记元数据，再运行轮换预览和 `--apply`；不要手工交换根目录与版本目录。
+- **历史版本补录**：放到 `versions/{effectiveFrom}/README.md` 并登记实际 `effectiveTo`，不执行轮换。
+- **同版本勘误**：修正该版本现有入口；若修正现行版则修改根目录，若修正历史或未来版则修改对应 `versions/` 入口，不新增版本记录。
+
+根目录 `README.md` 始终是当前有效版本。`versions/` 只保存未来版或历史版，不复制当前有效正文。
+
+### 3. 维护版本元数据
+
+版本文件固定使用以下结构，不写入派生状态或来源链接：
+
+```json
+{
+  "schemaVersion": 1,
+  "lawId": "civil-and-commercial/trademark-law",
+  "title": "中华人民共和国商标法",
+  "versions": [
+    {
+      "id": "2019-amendment",
+      "label": "2019年修正版",
+      "promulgatedOn": "2019-04-23",
+      "effectiveFrom": "2019-11-01",
+      "effectiveTo": "2027-01-01",
+      "entry": "README.md"
+    },
+    {
+      "id": "2026-revision",
+      "label": "2026年修订版",
+      "promulgatedOn": "2026-06-26",
+      "effectiveFrom": "2027-01-01",
+      "effectiveTo": null,
+      "entry": "versions/2027-01-01/README.md"
+    }
+  ]
+}
+```
+
+约束：
+
+- `effectiveTo` 是不包含该日的失效日期；相邻版本通常满足旧版 `effectiveTo ==` 新版 `effectiveFrom`。
+- 各区间不得重叠，日期必须为 `YYYY-MM-DD`，`id` 和 `entry` 不得重复。
+- 必须恰好一个版本使用根目录 `README.md`，且该版本必须是校验日期的当前有效版本。
+- `status`、展示用截止日和页面路径由构建时派生，不持久化。
+- `LAWS_PROGRESS.md` 的年份表示最新公布版本，不用生效状态覆盖，也不因版本轮换重复新增法律。
+
+### 4. 校验与生效日轮换
+
+登记未来版本或历史版本后先校验：
+
+```powershell
+npm run laws:versions:validate
+```
+
+如果登记时新版已经生效，旧版仍在根目录会触发“现行版本尚未提升”的预期校验错误；此时不要运行构建或绕过校验，直接使用下述 `promote` 命令预览，应用轮换后再执行完整校验。
+
+新版本生效时，先预览：
+
+```powershell
+npm run laws:versions:promote -- civil-and-commercial/trademark-law --as-of 2027-01-01
+```
+
+确认预览会把旧根正文归档到 `versions/{旧版effectiveFrom}/README.md`、把新正文提升到根目录并移除原未来版目录后，再应用：
+
+```powershell
+npm run laws:versions:promote -- civil-and-commercial/trademark-law --as-of 2027-01-01 --apply
+```
+
+轮换后再次运行版本校验和 `npm run docs:build`。搜索只索引法律根目录直接 Markdown：生效前应只搜到当前版，轮换后自动改为搜索新版；不要把 `versions/` 加入搜索索引。
+
 ## 覆盖与更新边界
 
 - 脚本从立法记录提取公布日期和最后修订日期写入 JSON，但不据此判断输入是否比站点版本更新。
-- 更新已有法律前，人工确认输入来自有效且公布日期最新的版本。
+- 更新已有法律前，人工确认输入的公布日期、生效日期和时效状态；最新公布版本可能尚未生效，不能因此直接覆盖根目录。
 - 如果 C 类法律的分编数量或文件名发生变化，脚本不会清理目标目录中的旧文件；应用后必须检查目录和 sidebar，手工删除确认废弃的文件。
 - `--apply-site` 对已存在的 category 链接和 sidebar 路由会跳过；新增 category 链接后会调用 Node.js 排序脚本按拼音重排该分类页。
 
