@@ -1,6 +1,8 @@
-const { defaultTheme } = require("@vuepress/theme-default");
+const path = require("node:path");
 const { categoryNavbarItem } = require("./category-navigation");
 const { lawArticleAnchorsPlugin } = require("./markdown/lawArticleAnchors");
+const { lawVersionsPlugin } = require("./plugins/lawVersions");
+const { justLawsTheme } = require("./theme");
 
 module.exports = {
   lang: "zh-CN",
@@ -24,7 +26,7 @@ module.exports = {
     md.use(lawArticleAnchorsPlugin);
   },
 
-  theme: defaultTheme({
+  theme: justLawsTheme({
     logo: "/images/logo.png",
     navbar: [
       {
@@ -235,5 +237,5 @@ module.exports = {
     toggleSidebar: "切换侧边栏",
   }),
 
-  plugins: [],
+  plugins: [lawVersionsPlugin({ docsDir: path.resolve(__dirname, "..") })],
 };

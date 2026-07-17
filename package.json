@@ -7,8 +7,11 @@
   "scripts": {
     "categories:sort": "node scripts/sort-category-pages.js docs/category",
     "search:index": "node scripts/build-law-search-index.js",
-    "docs:dev": "npm run search:index && vuepress dev docs",
-    "docs:build": "npm run search:index && vuepress build docs"
+    "laws:versions:validate": "node scripts/manage-law-versions.js validate",
+    "laws:versions:promote": "node scripts/manage-law-versions.js promote",
+    "test:law-versions": "node --test tests/law-versions.test.js",
+    "docs:dev": "npm run laws:versions:validate && npm run search:index && vuepress dev docs",
+    "docs:build": "npm run laws:versions:validate && npm run search:index && vuepress build docs"
   },
   "devDependencies": {
     "vuepress": "^2.0.0-beta.48"

@@ -643,9 +643,9 @@ def build_progress_mapping(progress_path: Path) -> dict[str, dict]:
         if heading:
             current_category = CATEGORY_DIRS.get(heading.group(1))
             continue
-        row = re.match(r"^\|\s*\d+\s*\|\s*(.+?)\s*\|\s*.+?\s*\|$", raw)
-        if row and current_category:
-            name = normalize_spaces(row.group(1))
+        cells = parse_progress_row(raw)
+        if cells and current_category:
+            name = normalize_spaces(cells[1])
             mapping.setdefault(name, {})["category"] = current_category
             mapping[name]["mapping_source"] = "progress"
     return mapping
@@ -661,10 +661,19 @@ def build_progress_statuses(progress_path: Path) -> dict[str, str]:
         if heading:
             current_category = CATEGORY_DIRS.get(heading.group(1))
             continue
-        row = re.match(r"^\|\s*\d+\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|$", raw)
-        if row and current_category:
-            statuses[normalize_spaces(row.group(1))] = row.group(2).strip()
+        cells = parse_progress_row(raw)
+        if cells and current_category:
+            statuses[normalize_spaces(cells[1])] = cells[-1]
     return statuses
+
+
+def parse_progress_row(raw: str) -> list[str] | None:
+    if not raw.startswith("|") or not raw.endswith("|"):
+        return None
+    cells = [cell.strip() for cell in raw.strip("|").split("|")]
+    if len(cells) < 3 or not cells[0].isdigit():
+        return None
+    return cells
 
 
 def build_docs_mapping(docs_dir: Path) -> dict[str, dict]:
@@ -942,17 +951,20 @@ def update_progress_file(progress_path: Path, titles: set[str]) -> None:
             updated_lines.append(line)
             continue
 
-        row = re.match(r"^(\|\s*\d+\s*\|\s*)(.+?)(\s*\|\s*)(.+?)(\s*\|)$", line)
-        if row and current_category and not set(row.group(2).strip()) <= {"-", " "}:
-            title = normalize_spaces(row.group(2))
-            status = row.group(4).strip()
+        cells = parse_progress_row(line)
+        if cells and current_category:
+            title = normalize_spaces(cells[1])
+            status = cells[-1]
             if title in titles:
                 status = COLLECTED_STATUS
                 seen.add(title)
+                cells[1] = title
+                cells[-1] = status
+                line = "| " + " | ".join(cells) + " |"
             category_totals[current_category] = category_totals.get(current_category, 0) + 1
             if status == COLLECTED_STATUS:
                 category_done[current_category] = category_done.get(current_category, 0) + 1
-            updated_lines.append(f"{row.group(1)}{title}{row.group(3)}{status}{row.group(5)}")
+            updated_lines.append(line)
             continue
 
         updated_lines.append(line)
