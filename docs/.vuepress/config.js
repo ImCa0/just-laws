@@ -1,5 +1,8 @@
 const path = require("node:path");
 const { categoryNavbarItem } = require("./category-navigation");
+const {
+  criminalOffenseAnnotationsPlugin,
+} = require("./markdown/criminalOffenseAnnotations");
 const { lawArticleAnchorsPlugin } = require("./markdown/lawArticleAnchors");
 const { lawVersionsPlugin } = require("./plugins/lawVersions");
 const { justLawsTheme } = require("./theme");
@@ -24,6 +27,7 @@ module.exports = {
   ],
   extendsMarkdown: (md) => {
     md.use(lawArticleAnchorsPlugin);
+    md.use(criminalOffenseAnnotationsPlugin);
   },
 
   theme: justLawsTheme({

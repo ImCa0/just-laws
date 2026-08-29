@@ -2,16 +2,26 @@ const fs = require("node:fs");
 const path = require("node:path");
 const {
   createArticleAnchor,
+  createDecisionItemAnchor,
 } = require("../docs/.vuepress/markdown/lawArticleAnchors");
 const { parseCategoryLinks } = require("./sort-category-pages");
+const {
+  currentOffensesByArticle,
+  loadCurrentCriminalOffenses,
+} = require("./manage-criminal-offenses");
 
 const DOCS_DIR = path.resolve(__dirname, "..", "docs");
 const CATEGORY_DIR = path.join(DOCS_DIR, "category");
 const SEARCH_DIR = path.join(DOCS_DIR, ".vuepress", "public", "search");
 const EXCLUDED_DIRS = new Set([".vuepress", "category"]);
+const CRIMINAL_OFFENSES_BY_ARTICLE = currentOffensesByArticle(
+  loadCurrentCriminalOffenses()
+);
 
 const ARTICLE_LABEL_RE =
   /^(?:\*\*)?(\u7b2c[\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341\u767e\u5343\u4e07\u96f6\u3007\u4e24]+\u6761(?:\u4e4b[\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341\u767e\u5343\u4e07\u96f6\u3007\u4e24]+)?)(?:\*\*)?[\u3000\s]*(.*)$/;
+const DECISION_ITEM_RE =
+  /^([\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341\u767e\u5343\u4e07\u96f6\u3007\u4e24]+)\u3001[\u3000\s]*(.*)$/;
 const FRONTMATTER_RE = /^---\r?\n[\s\S]*?\r?\n---\r?\n/;
 const COMMON_PUNCTUATION_RE =
   /[\s,.;:!?()[\]{}<>"'`~@#$%^&*_+=|\\/，。、“”‘’；：？！【】（）《》〈〉〔〕［］｛｝—…·￥-]+/g;
@@ -129,6 +139,30 @@ function excerptFor(content) {
   return content.length > 120 ? `${content.slice(0, 120)}...` : content;
 }
 
+function criminalInstrumentForFile(filename) {
+  const relative = path.relative(DOCS_DIR, filename).replace(/\\/g, "/");
+  if (relative === "criminal-law/criminal-law/02-specific-provisions.md") {
+    return "criminal-law";
+  }
+  if (
+    relative ===
+    "criminal-law/criminal-law/05-foreign-exchange-crimes-decision.md"
+  ) {
+    return "foreign-exchange-decision";
+  }
+  return null;
+}
+
+function offenseNamesForArticle(filename, anchor) {
+  const instrument = criminalInstrumentForFile(filename);
+  const match = anchor.match(/^article-(\d+)(?:-(\d+))?$/);
+  if (!instrument || !match) return [];
+  const key = [instrument, Number(match[1]), match[2] ? Number(match[2]) : null]
+    .filter((part) => part !== null)
+    .join(":");
+  return (CRIMINAL_OFFENSES_BY_ARTICLE.get(key) || []).map((item) => item.name);
+}
+
 function parseArticles({ filename, lawId, lawTitle, category }) {
   const source = stripFrontmatter(fs.readFileSync(filename, "utf8"));
   const lines = source.split(/\r?\n/);
@@ -137,6 +171,8 @@ function parseArticles({ filename, lawId, lawTitle, category }) {
   const articles = [];
   let partTitle = "";
   let current = null;
+  const isForeignExchangeDecision =
+    criminalInstrumentForFile(filename) === "foreign-exchange-decision";
 
   const closeArticle = () => {
     if (!current) {
@@ -149,6 +185,8 @@ function parseArticles({ filename, lawId, lawTitle, category }) {
       .join("");
 
     if (content) {
+      const offenseNames = offenseNamesForArticle(filename, current.anchor);
+      const offenseSearch = normalizeSearchText(offenseNames.join(""));
       articles.push({
         id: `${lawId}:${path.relative(DOCS_DIR, filename).replace(/\\/g, "/")}:${
           current.anchor
@@ -163,7 +201,9 @@ function parseArticles({ filename, lawId, lawTitle, category }) {
         anchor: current.anchor,
         content,
         excerpt: excerptFor(content),
-        contentSearch: normalizeSearchText(content),
+        contentSearch: normalizeSearchText(content) + offenseSearch,
+        offenseNames,
+        offenseSearch,
       });
     }
 
@@ -180,12 +220,17 @@ function parseArticles({ filename, lawId, lawTitle, category }) {
     }
 
     const match = line.match(ARTICLE_LABEL_RE);
+    const decisionMatch = isForeignExchangeDecision
+      ? line.match(DECISION_ITEM_RE)
+      : null;
 
-    if (match) {
+    if (match || decisionMatch) {
       closeArticle();
 
       const normalizedLine = stripMarkdown(line);
-      const baseAnchor = createArticleAnchor(normalizedLine);
+      const baseAnchor = match
+        ? createArticleAnchor(normalizedLine)
+        : createDecisionItemAnchor(normalizedLine, { filePath: filename });
 
       if (!baseAnchor) {
         continue;
@@ -195,10 +240,10 @@ function parseArticles({ filename, lawId, lawTitle, category }) {
       pageAnchors.set(baseAnchor, usedCount + 1);
       const anchor =
         usedCount === 0 ? baseAnchor : `${baseAnchor}-${usedCount + 1}`;
-      const articleBody = match[2] || "";
+      const articleBody = (match || decisionMatch)[2] || "";
 
       current = {
-        articleLabel: match[1],
+        articleLabel: match ? match[1] : `第${decisionMatch[1]}条`,
         anchor,
         partTitle,
         lines: [articleBody],
@@ -280,4 +325,5 @@ if (require.main === module) {
 module.exports = {
   buildIndexes,
   normalizeSearchText,
+  offenseNamesForArticle,
 };

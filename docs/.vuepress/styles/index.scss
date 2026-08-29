@@ -23,6 +23,53 @@ html.dark {
   scroll-margin-top: calc(var(--navbar-height) + 1rem);
 }
 
+.criminal-law-article-number {
+  margin: 1.65rem 0 0.65rem;
+  line-height: 1.6;
+}
+
+.criminal-law-article-number strong {
+  display: block;
+}
+
+.criminal-law-paragraph {
+  margin-top: 0.65rem;
+}
+
+.criminal-offense-note {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 0.45rem;
+  padding: 0;
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.criminal-offense-note + .criminal-law-paragraph,
+.criminal-offense-note + p {
+  margin-top: 0.45rem;
+}
+
+.criminal-offense-note__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.55rem;
+  min-width: 0;
+}
+
+.criminal-offense-note__item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.08rem 0.48rem;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--c-brand);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
 .law-version-layout {
   width: 100%;
 }
