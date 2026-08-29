@@ -1,0 +1,7469 @@
+{
+  "schemaVersion": 1,
+  "baseline": {
+    "sourceId": "spp-1997",
+    "effectiveFrom": "1997-12-25",
+    "offenses": [
+      {
+        "id": "offense-1997-001",
+        "name": "背叛国家罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 102
+          }
+        ],
+        "sourceRow": 1
+      },
+      {
+        "id": "offense-1997-002",
+        "name": "分裂国家罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 103,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 2
+      },
+      {
+        "id": "offense-1997-003",
+        "name": "煽动分裂国家罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 103,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 3
+      },
+      {
+        "id": "offense-1997-004",
+        "name": "武装叛乱、暴乱罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 104
+          }
+        ],
+        "sourceRow": 4
+      },
+      {
+        "id": "offense-1997-005",
+        "name": "颠覆国家政权罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 105,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 5
+      },
+      {
+        "id": "offense-1997-006",
+        "name": "煽动颠覆国家政权罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 105,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 6
+      },
+      {
+        "id": "offense-1997-007",
+        "name": "资助危害国家安全犯罪活动罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 107
+          }
+        ],
+        "sourceRow": 7
+      },
+      {
+        "id": "offense-1997-008",
+        "name": "投敌叛变罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 108
+          }
+        ],
+        "sourceRow": 8
+      },
+      {
+        "id": "offense-1997-009",
+        "name": "叛逃罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 109
+          }
+        ],
+        "sourceRow": 9
+      },
+      {
+        "id": "offense-1997-010",
+        "name": "间谍罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 110
+          }
+        ],
+        "sourceRow": 10
+      },
+      {
+        "id": "offense-1997-011",
+        "name": "为境外窃取、刺探、收买、非法提供国家秘密、情报罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 111
+          }
+        ],
+        "sourceRow": 11
+      },
+      {
+        "id": "offense-1997-012",
+        "name": "资敌罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 112
+          }
+        ],
+        "sourceRow": 12
+      },
+      {
+        "id": "offense-1997-013",
+        "name": "放火罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 114
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 13
+      },
+      {
+        "id": "offense-1997-014",
+        "name": "决水罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 114
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 14
+      },
+      {
+        "id": "offense-1997-015",
+        "name": "爆炸罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 114
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 15
+      },
+      {
+        "id": "offense-1997-016",
+        "name": "投毒罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 114
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 16
+      },
+      {
+        "id": "offense-1997-017",
+        "name": "以危险方法危害公共安全罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 114
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 17
+      },
+      {
+        "id": "offense-1997-018",
+        "name": "失火罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 18
+      },
+      {
+        "id": "offense-1997-019",
+        "name": "过失决水罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 19
+      },
+      {
+        "id": "offense-1997-020",
+        "name": "过失爆炸罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 20
+      },
+      {
+        "id": "offense-1997-021",
+        "name": "过失投毒罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 21
+      },
+      {
+        "id": "offense-1997-022",
+        "name": "过失以危险方法危害公共安全罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 115,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 22
+      },
+      {
+        "id": "offense-1997-023",
+        "name": "破坏交通工具罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 116
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 119,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 23
+      },
+      {
+        "id": "offense-1997-024",
+        "name": "破坏交通设施罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 117
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 119,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 24
+      },
+      {
+        "id": "offense-1997-025",
+        "name": "破坏电力设备罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 118
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 119,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 25
+      },
+      {
+        "id": "offense-1997-026",
+        "name": "破坏易燃易爆设备罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 118
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 119,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 26
+      },
+      {
+        "id": "offense-1997-027",
+        "name": "过失损坏交通工具罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 119,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 27
+      },
+      {
+        "id": "offense-1997-028",
+        "name": "过失损坏交通设施罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 119,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 28
+      },
+      {
+        "id": "offense-1997-029",
+        "name": "过失损坏电力设备罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 119,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 29
+      },
+      {
+        "id": "offense-1997-030",
+        "name": "过失损坏易燃易爆设备罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 119,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 30
+      },
+      {
+        "id": "offense-1997-031",
+        "name": "组织、领导、参加恐怖组织罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 120
+          }
+        ],
+        "sourceRow": 31
+      },
+      {
+        "id": "offense-1997-032",
+        "name": "劫持航空器罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 121
+          }
+        ],
+        "sourceRow": 32
+      },
+      {
+        "id": "offense-1997-033",
+        "name": "劫持船只、汽车罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 122
+          }
+        ],
+        "sourceRow": 33
+      },
+      {
+        "id": "offense-1997-034",
+        "name": "暴力危及飞行安全罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 123
+          }
+        ],
+        "sourceRow": 34
+      },
+      {
+        "id": "offense-1997-035",
+        "name": "破坏广播电视设施、公用电信设施罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 124,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 35
+      },
+      {
+        "id": "offense-1997-036",
+        "name": "过失损坏广播电视设施、公用电信设施罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 124,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 36
+      },
+      {
+        "id": "offense-1997-037",
+        "name": "非法制造、买卖、运输、邮寄、储存枪支、弹药、爆炸物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 125,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 37
+      },
+      {
+        "id": "offense-1997-038",
+        "name": "非法买卖、运输核材料罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 125,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 38
+      },
+      {
+        "id": "offense-1997-039",
+        "name": "违规制造、销售枪支罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 126
+          }
+        ],
+        "sourceRow": 39
+      },
+      {
+        "id": "offense-1997-040",
+        "name": "盗窃、抢夺枪支、弹药、爆炸物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 127,
+            "paragraph": 1
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 127,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 40
+      },
+      {
+        "id": "offense-1997-041",
+        "name": "抢劫枪支、弹药、爆炸物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 127,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 41
+      },
+      {
+        "id": "offense-1997-042",
+        "name": "非法持有、私藏枪支、弹药罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 128,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 42
+      },
+      {
+        "id": "offense-1997-043",
+        "name": "非法出租、出借枪支罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 128,
+            "paragraph": 2
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 128,
+            "paragraph": 3
+          }
+        ],
+        "sourceRow": 43
+      },
+      {
+        "id": "offense-1997-044",
+        "name": "丢失枪支不报罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 129
+          }
+        ],
+        "sourceRow": 44
+      },
+      {
+        "id": "offense-1997-045",
+        "name": "非法携带枪支、弹药、管制刀具、危险物品危及公共安全罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 130
+          }
+        ],
+        "sourceRow": 45
+      },
+      {
+        "id": "offense-1997-046",
+        "name": "重大飞行事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 131
+          }
+        ],
+        "sourceRow": 46
+      },
+      {
+        "id": "offense-1997-047",
+        "name": "铁路运营安全事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 132
+          }
+        ],
+        "sourceRow": 47
+      },
+      {
+        "id": "offense-1997-048",
+        "name": "交通肇事罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 133
+          }
+        ],
+        "sourceRow": 48
+      },
+      {
+        "id": "offense-1997-049",
+        "name": "重大责任事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 134
+          }
+        ],
+        "sourceRow": 49
+      },
+      {
+        "id": "offense-1997-050",
+        "name": "重大劳动安全事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 135
+          }
+        ],
+        "sourceRow": 50
+      },
+      {
+        "id": "offense-1997-051",
+        "name": "危险物品肇事罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 136
+          }
+        ],
+        "sourceRow": 51
+      },
+      {
+        "id": "offense-1997-052",
+        "name": "工程重大安全事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 137
+          }
+        ],
+        "sourceRow": 52
+      },
+      {
+        "id": "offense-1997-053",
+        "name": "教育设施重大安全事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 138
+          }
+        ],
+        "sourceRow": 53
+      },
+      {
+        "id": "offense-1997-054",
+        "name": "消防责任事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 139
+          }
+        ],
+        "sourceRow": 54
+      },
+      {
+        "id": "offense-1997-055",
+        "name": "生产、销售伪劣产品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 140
+          }
+        ],
+        "sourceRow": 55
+      },
+      {
+        "id": "offense-1997-056",
+        "name": "生产、销售假药罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 141
+          }
+        ],
+        "sourceRow": 56
+      },
+      {
+        "id": "offense-1997-057",
+        "name": "生产、销售劣药罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 142
+          }
+        ],
+        "sourceRow": 57
+      },
+      {
+        "id": "offense-1997-058",
+        "name": "生产、销售不符合卫生标准的食品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 143
+          }
+        ],
+        "sourceRow": 58
+      },
+      {
+        "id": "offense-1997-059",
+        "name": "生产、销售有毒、有害食品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 144
+          }
+        ],
+        "sourceRow": 59
+      },
+      {
+        "id": "offense-1997-060",
+        "name": "生产、销售不符合标准的医用器材罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 145
+          }
+        ],
+        "sourceRow": 60
+      },
+      {
+        "id": "offense-1997-061",
+        "name": "生产、销售不符合安全标准的产品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 146
+          }
+        ],
+        "sourceRow": 61
+      },
+      {
+        "id": "offense-1997-062",
+        "name": "生产、销售伪劣农药、兽药、化肥、种子罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 147
+          }
+        ],
+        "sourceRow": 62
+      },
+      {
+        "id": "offense-1997-063",
+        "name": "生产、销售不符合卫生标准的化妆品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 148
+          }
+        ],
+        "sourceRow": 63
+      },
+      {
+        "id": "offense-1997-064",
+        "name": "走私武器、弹药罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 151,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 64
+      },
+      {
+        "id": "offense-1997-065",
+        "name": "走私核材料罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 151,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 65
+      },
+      {
+        "id": "offense-1997-066",
+        "name": "走私假币罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 151,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 66
+      },
+      {
+        "id": "offense-1997-067",
+        "name": "走私文物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 151,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 67
+      },
+      {
+        "id": "offense-1997-068",
+        "name": "走私贵重金属罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 151,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 68
+      },
+      {
+        "id": "offense-1997-069",
+        "name": "走私珍贵动物、珍贵动物制品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 151,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 69
+      },
+      {
+        "id": "offense-1997-070",
+        "name": "走私珍稀植物、珍稀植物制品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 151,
+            "paragraph": 3
+          }
+        ],
+        "sourceRow": 70
+      },
+      {
+        "id": "offense-1997-071",
+        "name": "走私淫秽物品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 152
+          }
+        ],
+        "sourceRow": 71
+      },
+      {
+        "id": "offense-1997-072",
+        "name": "走私普通货物、物品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 153
+          }
+        ],
+        "sourceRow": 72
+      },
+      {
+        "id": "offense-1997-073",
+        "name": "走私固体废物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 155,
+            "item": 3
+          }
+        ],
+        "sourceRow": 73
+      },
+      {
+        "id": "offense-1997-074",
+        "name": "虚报注册资本罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 158
+          }
+        ],
+        "sourceRow": 74
+      },
+      {
+        "id": "offense-1997-075",
+        "name": "虚假出资、抽逃出资罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 159
+          }
+        ],
+        "sourceRow": 75
+      },
+      {
+        "id": "offense-1997-076",
+        "name": "欺诈发行股票、债券罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 160
+          }
+        ],
+        "sourceRow": 76
+      },
+      {
+        "id": "offense-1997-077",
+        "name": "提供虚假财会报告罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 161
+          }
+        ],
+        "sourceRow": 77
+      },
+      {
+        "id": "offense-1997-078",
+        "name": "妨害清算罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 162
+          }
+        ],
+        "sourceRow": 78
+      },
+      {
+        "id": "offense-1997-079",
+        "name": "公司、企业人员受贿罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 163
+          }
+        ],
+        "sourceRow": 79
+      },
+      {
+        "id": "offense-1997-080",
+        "name": "对公司、企业人员行贿罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 164
+          }
+        ],
+        "sourceRow": 80
+      },
+      {
+        "id": "offense-1997-081",
+        "name": "非法经营同类营业罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 165
+          }
+        ],
+        "sourceRow": 81
+      },
+      {
+        "id": "offense-1997-082",
+        "name": "为亲友非法牟利罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 166
+          }
+        ],
+        "sourceRow": 82
+      },
+      {
+        "id": "offense-1997-083",
+        "name": "签订、履行合同失职被骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 167
+          }
+        ],
+        "sourceRow": 83
+      },
+      {
+        "id": "offense-1997-084",
+        "name": "徇私舞弊造成破产、亏损罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 168
+          }
+        ],
+        "sourceRow": 84
+      },
+      {
+        "id": "offense-1997-085",
+        "name": "徇私舞弊低价折股、出售国有资产罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 169
+          }
+        ],
+        "sourceRow": 85
+      },
+      {
+        "id": "offense-1997-086",
+        "name": "伪造货币罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 170
+          }
+        ],
+        "sourceRow": 86
+      },
+      {
+        "id": "offense-1997-087",
+        "name": "出售、购买、运输假币罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 171,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 87
+      },
+      {
+        "id": "offense-1997-088",
+        "name": "金融工作人员购买假币、以假币换取货币罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 171,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 88
+      },
+      {
+        "id": "offense-1997-089",
+        "name": "持有、使用假币罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 172
+          }
+        ],
+        "sourceRow": 89
+      },
+      {
+        "id": "offense-1997-090",
+        "name": "变造货币罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 173
+          }
+        ],
+        "sourceRow": 90
+      },
+      {
+        "id": "offense-1997-091",
+        "name": "擅自设立金融机构罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 174,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 91
+      },
+      {
+        "id": "offense-1997-092",
+        "name": "伪造、变造、转让金融机构经营许可证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 174,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 92
+      },
+      {
+        "id": "offense-1997-093",
+        "name": "高利转贷罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 175
+          }
+        ],
+        "sourceRow": 93
+      },
+      {
+        "id": "offense-1997-094",
+        "name": "非法吸收公众存款罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 176
+          }
+        ],
+        "sourceRow": 94
+      },
+      {
+        "id": "offense-1997-095",
+        "name": "伪造、变造金融票证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 177
+          }
+        ],
+        "sourceRow": 95
+      },
+      {
+        "id": "offense-1997-096",
+        "name": "伪造、变造国家有价证券罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 178,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 96,
+        "sourceName": "伪造变造国家有价证券罪"
+      },
+      {
+        "id": "offense-1997-097",
+        "name": "伪造、变造股票、公司、企业债券罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 178,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 97
+      },
+      {
+        "id": "offense-1997-098",
+        "name": "擅自发行股票、公司、企业债券罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 179
+          }
+        ],
+        "sourceRow": 98
+      },
+      {
+        "id": "offense-1997-099",
+        "name": "内幕交易、泄露内幕信息罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 180
+          }
+        ],
+        "sourceRow": 99
+      },
+      {
+        "id": "offense-1997-100",
+        "name": "编造并传播证券交易虚假信息罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 181,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 100
+      },
+      {
+        "id": "offense-1997-101",
+        "name": "诱骗投资者买卖证券罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 181,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 101
+      },
+      {
+        "id": "offense-1997-102",
+        "name": "操纵证券交易价格罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 182
+          }
+        ],
+        "sourceRow": 102
+      },
+      {
+        "id": "offense-1997-103",
+        "name": "违法向关系人发放贷款罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 186,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 103
+      },
+      {
+        "id": "offense-1997-104",
+        "name": "违法发放贷款罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 186,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 104
+      },
+      {
+        "id": "offense-1997-105",
+        "name": "用账外客户资金非法拆借、发放贷款罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 187
+          }
+        ],
+        "sourceRow": 105
+      },
+      {
+        "id": "offense-1997-106",
+        "name": "非法出具金融票证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 188
+          }
+        ],
+        "sourceRow": 106
+      },
+      {
+        "id": "offense-1997-107",
+        "name": "对违法票据承兑、付款、保证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 189
+          }
+        ],
+        "sourceRow": 107
+      },
+      {
+        "id": "offense-1997-108",
+        "name": "逃汇罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 190
+          }
+        ],
+        "sourceRow": 108
+      },
+      {
+        "id": "offense-1997-109",
+        "name": "洗钱罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 191
+          }
+        ],
+        "sourceRow": 109
+      },
+      {
+        "id": "offense-1997-110",
+        "name": "集资诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 192
+          }
+        ],
+        "sourceRow": 110
+      },
+      {
+        "id": "offense-1997-111",
+        "name": "贷款诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 193
+          }
+        ],
+        "sourceRow": 111
+      },
+      {
+        "id": "offense-1997-112",
+        "name": "票据诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 194,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 112
+      },
+      {
+        "id": "offense-1997-113",
+        "name": "金融凭证诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 194,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 113
+      },
+      {
+        "id": "offense-1997-114",
+        "name": "信用证诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 195
+          }
+        ],
+        "sourceRow": 114
+      },
+      {
+        "id": "offense-1997-115",
+        "name": "信用卡诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 196
+          }
+        ],
+        "sourceRow": 115
+      },
+      {
+        "id": "offense-1997-116",
+        "name": "有价证券诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 197
+          }
+        ],
+        "sourceRow": 116
+      },
+      {
+        "id": "offense-1997-117",
+        "name": "保险诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 198
+          }
+        ],
+        "sourceRow": 117
+      },
+      {
+        "id": "offense-1997-118",
+        "name": "偷税罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 201
+          }
+        ],
+        "sourceRow": 118
+      },
+      {
+        "id": "offense-1997-119",
+        "name": "抗税罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 202
+          }
+        ],
+        "sourceRow": 119
+      },
+      {
+        "id": "offense-1997-120",
+        "name": "逃避追缴欠税罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 203
+          }
+        ],
+        "sourceRow": 120
+      },
+      {
+        "id": "offense-1997-121",
+        "name": "骗取出口退税罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 204,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 121
+      },
+      {
+        "id": "offense-1997-122",
+        "name": "虚开增值税专用发票、用于骗取出口退税、抵扣税款发票罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 205
+          }
+        ],
+        "sourceRow": 122
+      },
+      {
+        "id": "offense-1997-123",
+        "name": "伪造、出售伪造的增值税专用发票罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 206
+          }
+        ],
+        "sourceRow": 123
+      },
+      {
+        "id": "offense-1997-124",
+        "name": "非法出售增值税专用发票罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 207
+          }
+        ],
+        "sourceRow": 124
+      },
+      {
+        "id": "offense-1997-125",
+        "name": "非法购买增值税专用发票、购买伪造的增值税专用发票罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 208,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 125
+      },
+      {
+        "id": "offense-1997-126",
+        "name": "非法制造、出售非法制造的用于骗取出口退税、抵扣税款发票罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 209,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 126
+      },
+      {
+        "id": "offense-1997-127",
+        "name": "非法制造、出售非法制造的发票罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 209,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 127
+      },
+      {
+        "id": "offense-1997-128",
+        "name": "非法出售用于骗取出口退税、抵扣税款发票罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 209,
+            "paragraph": 3
+          }
+        ],
+        "sourceRow": 128
+      },
+      {
+        "id": "offense-1997-129",
+        "name": "非法出售发票罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 209,
+            "paragraph": 4
+          }
+        ],
+        "sourceRow": 129
+      },
+      {
+        "id": "offense-1997-130",
+        "name": "假冒注册商标罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 213
+          }
+        ],
+        "sourceRow": 130
+      },
+      {
+        "id": "offense-1997-131",
+        "name": "销售假冒注册商标的商品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 214
+          }
+        ],
+        "sourceRow": 131
+      },
+      {
+        "id": "offense-1997-132",
+        "name": "非法制造、销售非法制造的注册商标标识罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 215
+          }
+        ],
+        "sourceRow": 132
+      },
+      {
+        "id": "offense-1997-133",
+        "name": "假冒专利罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 216
+          }
+        ],
+        "sourceRow": 133
+      },
+      {
+        "id": "offense-1997-134",
+        "name": "侵犯著作权罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 217
+          }
+        ],
+        "sourceRow": 134
+      },
+      {
+        "id": "offense-1997-135",
+        "name": "销售侵权复制品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 218
+          }
+        ],
+        "sourceRow": 135
+      },
+      {
+        "id": "offense-1997-136",
+        "name": "侵犯商业秘密罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 219
+          }
+        ],
+        "sourceRow": 136
+      },
+      {
+        "id": "offense-1997-137",
+        "name": "损害商业信誉、商品声誉罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 221
+          }
+        ],
+        "sourceRow": 137
+      },
+      {
+        "id": "offense-1997-138",
+        "name": "虚假广告罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 222
+          }
+        ],
+        "sourceRow": 138
+      },
+      {
+        "id": "offense-1997-139",
+        "name": "串通投标罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 223
+          }
+        ],
+        "sourceRow": 139
+      },
+      {
+        "id": "offense-1997-140",
+        "name": "合同诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 224
+          }
+        ],
+        "sourceRow": 140
+      },
+      {
+        "id": "offense-1997-141",
+        "name": "非法经营罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 225
+          }
+        ],
+        "sourceRow": 141
+      },
+      {
+        "id": "offense-1997-142",
+        "name": "强迫交易罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 226
+          }
+        ],
+        "sourceRow": 142
+      },
+      {
+        "id": "offense-1997-143",
+        "name": "伪造、倒卖伪造的有价票证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 227,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 143
+      },
+      {
+        "id": "offense-1997-144",
+        "name": "倒卖车票、船票罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 227,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 144
+      },
+      {
+        "id": "offense-1997-145",
+        "name": "非法转让、倒卖土地使用权罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 228
+          }
+        ],
+        "sourceRow": 145
+      },
+      {
+        "id": "offense-1997-146",
+        "name": "中介组织人员提供虚假证明文件罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 229,
+            "paragraph": 1
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 229,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 146
+      },
+      {
+        "id": "offense-1997-147",
+        "name": "中介组织人员出具证明文件重大失实罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 229,
+            "paragraph": 3
+          }
+        ],
+        "sourceRow": 147
+      },
+      {
+        "id": "offense-1997-148",
+        "name": "逃避商检罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 230
+          }
+        ],
+        "sourceRow": 148
+      },
+      {
+        "id": "offense-1997-149",
+        "name": "故意杀人罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 232
+          }
+        ],
+        "sourceRow": 149
+      },
+      {
+        "id": "offense-1997-150",
+        "name": "过失致人死亡罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 233
+          }
+        ],
+        "sourceRow": 150
+      },
+      {
+        "id": "offense-1997-151",
+        "name": "故意伤害罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 234
+          }
+        ],
+        "sourceRow": 151
+      },
+      {
+        "id": "offense-1997-152",
+        "name": "过失致人重伤罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 235
+          }
+        ],
+        "sourceRow": 152
+      },
+      {
+        "id": "offense-1997-153",
+        "name": "强奸罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 236,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 153
+      },
+      {
+        "id": "offense-1997-154",
+        "name": "奸淫幼女罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 236,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 154
+      },
+      {
+        "id": "offense-1997-155",
+        "name": "强制猥亵、侮辱妇女罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 237,
+            "paragraph": 1
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 237,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 155
+      },
+      {
+        "id": "offense-1997-156",
+        "name": "猥亵儿童罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 237,
+            "paragraph": 3
+          }
+        ],
+        "sourceRow": 156
+      },
+      {
+        "id": "offense-1997-157",
+        "name": "非法拘禁罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 238
+          }
+        ],
+        "sourceRow": 157
+      },
+      {
+        "id": "offense-1997-158",
+        "name": "绑架罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 239
+          }
+        ],
+        "sourceRow": 158
+      },
+      {
+        "id": "offense-1997-159",
+        "name": "拐卖妇女、儿童罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 240
+          }
+        ],
+        "sourceRow": 159
+      },
+      {
+        "id": "offense-1997-160",
+        "name": "收买被拐卖的妇女、儿童罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 241,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 160
+      },
+      {
+        "id": "offense-1997-161",
+        "name": "聚众阻碍解救被收买的妇女、儿童罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 242,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 161
+      },
+      {
+        "id": "offense-1997-162",
+        "name": "诬告陷害罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 243
+          }
+        ],
+        "sourceRow": 162
+      },
+      {
+        "id": "offense-1997-163",
+        "name": "强迫职工劳动罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 244
+          }
+        ],
+        "sourceRow": 163
+      },
+      {
+        "id": "offense-1997-164",
+        "name": "非法搜查罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 245
+          }
+        ],
+        "sourceRow": 164
+      },
+      {
+        "id": "offense-1997-165",
+        "name": "非法侵入住宅罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 245
+          }
+        ],
+        "sourceRow": 165
+      },
+      {
+        "id": "offense-1997-166",
+        "name": "侮辱罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 246
+          }
+        ],
+        "sourceRow": 166
+      },
+      {
+        "id": "offense-1997-167",
+        "name": "诽谤罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 246
+          }
+        ],
+        "sourceRow": 167
+      },
+      {
+        "id": "offense-1997-168",
+        "name": "刑讯逼供罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 247
+          }
+        ],
+        "sourceRow": 168
+      },
+      {
+        "id": "offense-1997-169",
+        "name": "暴力取证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 247
+          }
+        ],
+        "sourceRow": 169
+      },
+      {
+        "id": "offense-1997-170",
+        "name": "虐待被监管人罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 248
+          }
+        ],
+        "sourceRow": 170
+      },
+      {
+        "id": "offense-1997-171",
+        "name": "煽动民族仇恨、民族歧视罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 249
+          }
+        ],
+        "sourceRow": 171
+      },
+      {
+        "id": "offense-1997-172",
+        "name": "出版歧视、侮辱少数民族作品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 250
+          }
+        ],
+        "sourceRow": 172
+      },
+      {
+        "id": "offense-1997-173",
+        "name": "非法剥夺公民宗教信仰自由罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 251
+          }
+        ],
+        "sourceRow": 173
+      },
+      {
+        "id": "offense-1997-174",
+        "name": "侵犯少数民族风俗习惯罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 251
+          }
+        ],
+        "sourceRow": 174
+      },
+      {
+        "id": "offense-1997-175",
+        "name": "侵犯通信自由罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 252
+          }
+        ],
+        "sourceRow": 175
+      },
+      {
+        "id": "offense-1997-176",
+        "name": "私自开拆、隐匿、毁弃邮件、电报罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 253,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 176
+      },
+      {
+        "id": "offense-1997-177",
+        "name": "报复陷害罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 254
+          }
+        ],
+        "sourceRow": 177
+      },
+      {
+        "id": "offense-1997-178",
+        "name": "打击报复会计、统计人员罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 255
+          }
+        ],
+        "sourceRow": 178
+      },
+      {
+        "id": "offense-1997-179",
+        "name": "破坏选举罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 256
+          }
+        ],
+        "sourceRow": 179
+      },
+      {
+        "id": "offense-1997-180",
+        "name": "暴力干涉婚姻自由罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 257
+          }
+        ],
+        "sourceRow": 180
+      },
+      {
+        "id": "offense-1997-181",
+        "name": "重婚罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 258
+          }
+        ],
+        "sourceRow": 181
+      },
+      {
+        "id": "offense-1997-182",
+        "name": "破坏军婚罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 259,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 182
+      },
+      {
+        "id": "offense-1997-183",
+        "name": "虐待罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 260
+          }
+        ],
+        "sourceRow": 183
+      },
+      {
+        "id": "offense-1997-184",
+        "name": "遗弃罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 261
+          }
+        ],
+        "sourceRow": 184
+      },
+      {
+        "id": "offense-1997-185",
+        "name": "拐骗儿童罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 262
+          }
+        ],
+        "sourceRow": 185
+      },
+      {
+        "id": "offense-1997-186",
+        "name": "抢劫罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 263
+          }
+        ],
+        "sourceRow": 186
+      },
+      {
+        "id": "offense-1997-187",
+        "name": "盗窃罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 264
+          }
+        ],
+        "sourceRow": 187
+      },
+      {
+        "id": "offense-1997-188",
+        "name": "诈骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 266
+          }
+        ],
+        "sourceRow": 188
+      },
+      {
+        "id": "offense-1997-189",
+        "name": "抢夺罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 267,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 189
+      },
+      {
+        "id": "offense-1997-190",
+        "name": "聚众哄抢罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 268
+          }
+        ],
+        "sourceRow": 190
+      },
+      {
+        "id": "offense-1997-191",
+        "name": "侵占罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 270
+          }
+        ],
+        "sourceRow": 191
+      },
+      {
+        "id": "offense-1997-192",
+        "name": "职务侵占罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 271,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 192
+      },
+      {
+        "id": "offense-1997-193",
+        "name": "挪用资金罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 272
+          }
+        ],
+        "sourceRow": 193
+      },
+      {
+        "id": "offense-1997-194",
+        "name": "挪用特定款物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 273
+          }
+        ],
+        "sourceRow": 194
+      },
+      {
+        "id": "offense-1997-195",
+        "name": "敲诈勒索罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 274
+          }
+        ],
+        "sourceRow": 195
+      },
+      {
+        "id": "offense-1997-196",
+        "name": "故意毁坏财物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 275
+          }
+        ],
+        "sourceRow": 196
+      },
+      {
+        "id": "offense-1997-197",
+        "name": "破坏生产经营罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 276
+          }
+        ],
+        "sourceRow": 197
+      },
+      {
+        "id": "offense-1997-198",
+        "name": "妨害公务罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 277
+          }
+        ],
+        "sourceRow": 198
+      },
+      {
+        "id": "offense-1997-199",
+        "name": "煽动暴力抗拒法律实施罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 278
+          }
+        ],
+        "sourceRow": 199
+      },
+      {
+        "id": "offense-1997-200",
+        "name": "招摇撞骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 279
+          }
+        ],
+        "sourceRow": 200
+      },
+      {
+        "id": "offense-1997-201",
+        "name": "伪造、变造、买卖国家机关公文、证件、印章罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 280,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 201
+      },
+      {
+        "id": "offense-1997-202",
+        "name": "盗窃、抢夺、毁灭国家机关公文、证件、印章罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 280,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 202
+      },
+      {
+        "id": "offense-1997-203",
+        "name": "伪造公司、企业、事业单位、人民团体印章罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 280,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 203
+      },
+      {
+        "id": "offense-1997-204",
+        "name": "伪造、变造居民身份证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 280,
+            "paragraph": 3
+          }
+        ],
+        "sourceRow": 204
+      },
+      {
+        "id": "offense-1997-205",
+        "name": "非法生产、买卖警用装备罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 281
+          }
+        ],
+        "sourceRow": 205
+      },
+      {
+        "id": "offense-1997-206",
+        "name": "非法获取国家秘密罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 282,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 206
+      },
+      {
+        "id": "offense-1997-207",
+        "name": "非法持有国家绝密、机密文件、资料、物品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 282,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 207
+      },
+      {
+        "id": "offense-1997-208",
+        "name": "非法生产、销售间谍专用器材罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 283
+          }
+        ],
+        "sourceRow": 208
+      },
+      {
+        "id": "offense-1997-209",
+        "name": "非法使用窃听、窃照专用器材罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 284
+          }
+        ],
+        "sourceRow": 209
+      },
+      {
+        "id": "offense-1997-210",
+        "name": "非法侵入计算机信息系统罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 285
+          }
+        ],
+        "sourceRow": 210
+      },
+      {
+        "id": "offense-1997-211",
+        "name": "破坏计算机信息系统罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 286
+          }
+        ],
+        "sourceRow": 211
+      },
+      {
+        "id": "offense-1997-212",
+        "name": "扰乱无线电通讯管理秩序罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 288
+          }
+        ],
+        "sourceRow": 212
+      },
+      {
+        "id": "offense-1997-213",
+        "name": "聚众扰乱社会秩序罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 290,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 213
+      },
+      {
+        "id": "offense-1997-214",
+        "name": "聚众冲击国家机关罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 290,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 214
+      },
+      {
+        "id": "offense-1997-215",
+        "name": "聚众扰乱公共场所秩序、交通秩序罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 291
+          }
+        ],
+        "sourceRow": 215
+      },
+      {
+        "id": "offense-1997-216",
+        "name": "聚众斗殴罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 292,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 216
+      },
+      {
+        "id": "offense-1997-217",
+        "name": "寻衅滋事罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 293
+          }
+        ],
+        "sourceRow": 217
+      },
+      {
+        "id": "offense-1997-218",
+        "name": "组织、领导、参加黑社会性质组织罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 294,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 218
+      },
+      {
+        "id": "offense-1997-219",
+        "name": "入境发展黑社会组织罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 294,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 219
+      },
+      {
+        "id": "offense-1997-220",
+        "name": "包庇、纵容黑社会性质组织罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 294,
+            "paragraph": 4
+          }
+        ],
+        "sourceRow": 220
+      },
+      {
+        "id": "offense-1997-221",
+        "name": "传授犯罪方法罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 295
+          }
+        ],
+        "sourceRow": 221
+      },
+      {
+        "id": "offense-1997-222",
+        "name": "非法集会、游行、示威罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 296
+          }
+        ],
+        "sourceRow": 222
+      },
+      {
+        "id": "offense-1997-223",
+        "name": "非法携带武器、管制刀具、爆炸物参加集会、游行、示威罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 297
+          }
+        ],
+        "sourceRow": 223
+      },
+      {
+        "id": "offense-1997-224",
+        "name": "破坏集会、游行、示威罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 298
+          }
+        ],
+        "sourceRow": 224
+      },
+      {
+        "id": "offense-1997-225",
+        "name": "侮辱国旗、国徽罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 299
+          }
+        ],
+        "sourceRow": 225
+      },
+      {
+        "id": "offense-1997-226",
+        "name": "组织、利用会道门、邪教组织、利用迷信破坏法律实施罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 300,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 226
+      },
+      {
+        "id": "offense-1997-227",
+        "name": "组织、利用会道门、邪教组织、利用迷信致人死亡罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 300,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 227
+      },
+      {
+        "id": "offense-1997-228",
+        "name": "聚众淫乱罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 301,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 228
+      },
+      {
+        "id": "offense-1997-229",
+        "name": "引诱未成年人聚众淫乱罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 301,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 229
+      },
+      {
+        "id": "offense-1997-230",
+        "name": "盗窃、侮辱尸体罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 302
+          }
+        ],
+        "sourceRow": 230
+      },
+      {
+        "id": "offense-1997-231",
+        "name": "赌博罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 303
+          }
+        ],
+        "sourceRow": 231
+      },
+      {
+        "id": "offense-1997-232",
+        "name": "故意延误投递邮件罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 304
+          }
+        ],
+        "sourceRow": 232
+      },
+      {
+        "id": "offense-1997-233",
+        "name": "伪证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 305
+          }
+        ],
+        "sourceRow": 233
+      },
+      {
+        "id": "offense-1997-234",
+        "name": "辩护人、诉讼代理人毁灭证据、伪造证据、妨害作证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 306
+          }
+        ],
+        "sourceRow": 234
+      },
+      {
+        "id": "offense-1997-235",
+        "name": "妨害作证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 307,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 235
+      },
+      {
+        "id": "offense-1997-236",
+        "name": "帮助毁灭、伪造证据罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 307,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 236
+      },
+      {
+        "id": "offense-1997-237",
+        "name": "打击报复证人罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 308
+          }
+        ],
+        "sourceRow": 237
+      },
+      {
+        "id": "offense-1997-238",
+        "name": "扰乱法庭秩序罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 309
+          }
+        ],
+        "sourceRow": 238
+      },
+      {
+        "id": "offense-1997-239",
+        "name": "窝藏、包庇罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 310
+          }
+        ],
+        "sourceRow": 239
+      },
+      {
+        "id": "offense-1997-240",
+        "name": "拒绝提供间谍犯罪证据罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 311
+          }
+        ],
+        "sourceRow": 240
+      },
+      {
+        "id": "offense-1997-241",
+        "name": "窝藏、转移、收购、销售赃物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 312
+          }
+        ],
+        "sourceRow": 241
+      },
+      {
+        "id": "offense-1997-242",
+        "name": "拒不执行判决、裁定罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 313
+          }
+        ],
+        "sourceRow": 242
+      },
+      {
+        "id": "offense-1997-243",
+        "name": "非法处置查封、扣押、冻结的财产罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 314
+          }
+        ],
+        "sourceRow": 243
+      },
+      {
+        "id": "offense-1997-244",
+        "name": "破坏监管秩序罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 315
+          }
+        ],
+        "sourceRow": 244
+      },
+      {
+        "id": "offense-1997-245",
+        "name": "脱逃罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 316,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 245
+      },
+      {
+        "id": "offense-1997-246",
+        "name": "劫夺被押解人员罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 316,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 246
+      },
+      {
+        "id": "offense-1997-247",
+        "name": "组织越狱罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 317,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 247
+      },
+      {
+        "id": "offense-1997-248",
+        "name": "暴动越狱罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 317,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 248
+      },
+      {
+        "id": "offense-1997-249",
+        "name": "聚众持械劫狱罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 317,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 249
+      },
+      {
+        "id": "offense-1997-250",
+        "name": "组织他人偷越国（边）境罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 318
+          }
+        ],
+        "sourceRow": 250
+      },
+      {
+        "id": "offense-1997-251",
+        "name": "骗取出境证件罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 319
+          }
+        ],
+        "sourceRow": 251
+      },
+      {
+        "id": "offense-1997-252",
+        "name": "提供伪造、变造的出入境证件罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 320
+          }
+        ],
+        "sourceRow": 252
+      },
+      {
+        "id": "offense-1997-253",
+        "name": "出售出入境证件罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 320
+          }
+        ],
+        "sourceRow": 253
+      },
+      {
+        "id": "offense-1997-254",
+        "name": "运送他人偷越国（边）境罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 321
+          }
+        ],
+        "sourceRow": 254
+      },
+      {
+        "id": "offense-1997-255",
+        "name": "偷越国（边）境罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 322
+          }
+        ],
+        "sourceRow": 255
+      },
+      {
+        "id": "offense-1997-256",
+        "name": "破坏界碑、界桩罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 323
+          }
+        ],
+        "sourceRow": 256
+      },
+      {
+        "id": "offense-1997-257",
+        "name": "破坏永久性测量标志罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 323
+          }
+        ],
+        "sourceRow": 257
+      },
+      {
+        "id": "offense-1997-258",
+        "name": "故意损毁文物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 324,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 258
+      },
+      {
+        "id": "offense-1997-259",
+        "name": "故意损毁名胜古迹罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 324,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 259
+      },
+      {
+        "id": "offense-1997-260",
+        "name": "过失损毁文物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 324,
+            "paragraph": 3
+          }
+        ],
+        "sourceRow": 260
+      },
+      {
+        "id": "offense-1997-261",
+        "name": "非法向外国人出售、赠送珍贵文物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 325
+          }
+        ],
+        "sourceRow": 261
+      },
+      {
+        "id": "offense-1997-262",
+        "name": "倒卖文物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 326
+          }
+        ],
+        "sourceRow": 262
+      },
+      {
+        "id": "offense-1997-263",
+        "name": "非法出售、私赠文物藏品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 327
+          }
+        ],
+        "sourceRow": 263
+      },
+      {
+        "id": "offense-1997-264",
+        "name": "盗掘古文化遗址、古墓葬罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 328,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 264
+      },
+      {
+        "id": "offense-1997-265",
+        "name": "盗掘古人类化石、古脊椎动物化石罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 328,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 265
+      },
+      {
+        "id": "offense-1997-266",
+        "name": "抢夺、窃取国有档案罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 329,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 266
+      },
+      {
+        "id": "offense-1997-267",
+        "name": "擅自出卖、转让国有档案罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 329,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 267
+      },
+      {
+        "id": "offense-1997-268",
+        "name": "妨害传染病防治罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 330
+          }
+        ],
+        "sourceRow": 268
+      },
+      {
+        "id": "offense-1997-269",
+        "name": "传染病菌种、毒种扩散罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 331
+          }
+        ],
+        "sourceRow": 269
+      },
+      {
+        "id": "offense-1997-270",
+        "name": "妨害国境卫生检疫罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 332
+          }
+        ],
+        "sourceRow": 270
+      },
+      {
+        "id": "offense-1997-271",
+        "name": "非法组织卖血罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 333,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 271
+      },
+      {
+        "id": "offense-1997-272",
+        "name": "强迫卖血罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 333,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 272
+      },
+      {
+        "id": "offense-1997-273",
+        "name": "非法采集、供应血液、制作、供应血液制品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 334,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 273
+      },
+      {
+        "id": "offense-1997-274",
+        "name": "采集、供应血液、制作、供应血液制品事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 334,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 274
+      },
+      {
+        "id": "offense-1997-275",
+        "name": "医疗事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 335
+          }
+        ],
+        "sourceRow": 275
+      },
+      {
+        "id": "offense-1997-276",
+        "name": "非法行医罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 336,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 276
+      },
+      {
+        "id": "offense-1997-277",
+        "name": "非法进行节育手术罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 336,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 277
+      },
+      {
+        "id": "offense-1997-278",
+        "name": "逃避动植物检疫罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 337
+          }
+        ],
+        "sourceRow": 278
+      },
+      {
+        "id": "offense-1997-279",
+        "name": "重大环境污染事故罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 338
+          }
+        ],
+        "sourceRow": 279
+      },
+      {
+        "id": "offense-1997-280",
+        "name": "非法处置进口的固体废物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 339,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 280
+      },
+      {
+        "id": "offense-1997-281",
+        "name": "擅自进口固体废物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 339,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 281
+      },
+      {
+        "id": "offense-1997-282",
+        "name": "非法捕捞水产品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 340
+          }
+        ],
+        "sourceRow": 282
+      },
+      {
+        "id": "offense-1997-283",
+        "name": "非法猎捕、杀害珍贵、濒危野生动物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 341,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 283
+      },
+      {
+        "id": "offense-1997-284",
+        "name": "非法收购、运输、出售珍贵、濒危野生动物、珍贵、濒危野生动物制品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 341,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 284
+      },
+      {
+        "id": "offense-1997-285",
+        "name": "非法狩猎罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 341,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 285
+      },
+      {
+        "id": "offense-1997-286",
+        "name": "非法占用耕地罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 342
+          }
+        ],
+        "sourceRow": 286
+      },
+      {
+        "id": "offense-1997-287",
+        "name": "非法采矿罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 343,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 287
+      },
+      {
+        "id": "offense-1997-288",
+        "name": "破坏性采矿罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 343,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 288
+      },
+      {
+        "id": "offense-1997-289",
+        "name": "非法采伐、毁坏珍贵树木罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 344
+          }
+        ],
+        "sourceRow": 289
+      },
+      {
+        "id": "offense-1997-290",
+        "name": "盗伐林木罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 345,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 290
+      },
+      {
+        "id": "offense-1997-291",
+        "name": "滥伐林木罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 345,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 291
+      },
+      {
+        "id": "offense-1997-292",
+        "name": "非法收购盗伐、滥伐的林木罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 345,
+            "paragraph": 3
+          }
+        ],
+        "sourceRow": 292
+      },
+      {
+        "id": "offense-1997-293",
+        "name": "走私、贩卖、运输、制造毒品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 347
+          }
+        ],
+        "sourceRow": 293
+      },
+      {
+        "id": "offense-1997-294",
+        "name": "非法持有毒品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 348
+          }
+        ],
+        "sourceRow": 294
+      },
+      {
+        "id": "offense-1997-295",
+        "name": "包庇毒品犯罪分子罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 349,
+            "paragraph": 1
+          },
+          {
+            "instrument": "criminal-law",
+            "article": 349,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 295
+      },
+      {
+        "id": "offense-1997-296",
+        "name": "窝藏、转移、隐瞒毒品、毒赃罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 349,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 296
+      },
+      {
+        "id": "offense-1997-297",
+        "name": "走私制毒物品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 350,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 297
+      },
+      {
+        "id": "offense-1997-298",
+        "name": "非法买卖制毒物品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 350,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 298
+      },
+      {
+        "id": "offense-1997-299",
+        "name": "非法种植毒品原植物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 351
+          }
+        ],
+        "sourceRow": 299
+      },
+      {
+        "id": "offense-1997-300",
+        "name": "非法买卖、运输、携带、持有毒品原植物种子、幼苗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 352
+          }
+        ],
+        "sourceRow": 300
+      },
+      {
+        "id": "offense-1997-301",
+        "name": "引诱、教唆、欺骗他人吸毒罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 353,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 301
+      },
+      {
+        "id": "offense-1997-302",
+        "name": "强迫他人吸毒罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 353,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 302
+      },
+      {
+        "id": "offense-1997-303",
+        "name": "容留他人吸毒罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 354
+          }
+        ],
+        "sourceRow": 303
+      },
+      {
+        "id": "offense-1997-304",
+        "name": "非法提供麻醉药品、精神药品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 355
+          }
+        ],
+        "sourceRow": 304
+      },
+      {
+        "id": "offense-1997-305",
+        "name": "组织卖淫罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 358,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 305
+      },
+      {
+        "id": "offense-1997-306",
+        "name": "强迫卖淫罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 358,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 306
+      },
+      {
+        "id": "offense-1997-307",
+        "name": "协助组织卖淫罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 358,
+            "paragraph": 3
+          }
+        ],
+        "sourceRow": 307
+      },
+      {
+        "id": "offense-1997-308",
+        "name": "引诱、容留、介绍卖淫罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 359,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 308
+      },
+      {
+        "id": "offense-1997-309",
+        "name": "引诱幼女卖淫罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 359,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 309
+      },
+      {
+        "id": "offense-1997-310",
+        "name": "传播性病罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 360,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 310
+      },
+      {
+        "id": "offense-1997-311",
+        "name": "嫖宿幼女罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 360,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 311
+      },
+      {
+        "id": "offense-1997-312",
+        "name": "制作、复制、出版、贩卖、传播淫秽物品牟利罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 363,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 312
+      },
+      {
+        "id": "offense-1997-313",
+        "name": "为他人提供书号出版淫秽书刊罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 363,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 313
+      },
+      {
+        "id": "offense-1997-314",
+        "name": "传播淫秽物品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 364,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 314
+      },
+      {
+        "id": "offense-1997-315",
+        "name": "组织播放淫秽音像制品罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 364,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 315
+      },
+      {
+        "id": "offense-1997-316",
+        "name": "组织淫秽表演罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 365
+          }
+        ],
+        "sourceRow": 316
+      },
+      {
+        "id": "offense-1997-317",
+        "name": "阻碍军人执行职务罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 368,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 317
+      },
+      {
+        "id": "offense-1997-318",
+        "name": "阻碍军事行动罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 368,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 318
+      },
+      {
+        "id": "offense-1997-319",
+        "name": "破坏武器装备、军事设施、军事通信罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 369
+          }
+        ],
+        "sourceRow": 319
+      },
+      {
+        "id": "offense-1997-320",
+        "name": "故意提供不合格武器装备、军事设施罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 370,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 320
+      },
+      {
+        "id": "offense-1997-321",
+        "name": "过失提供不合格武器装备、军事设施罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 370,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 321
+      },
+      {
+        "id": "offense-1997-322",
+        "name": "聚众冲击军事禁区罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 371,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 322
+      },
+      {
+        "id": "offense-1997-323",
+        "name": "聚众扰乱军事管理区秩序罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 371,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 323,
+        "sourceReferenceText": "第371条第2条"
+      },
+      {
+        "id": "offense-1997-324",
+        "name": "冒充军人招摇撞骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 372
+          }
+        ],
+        "sourceRow": 324
+      },
+      {
+        "id": "offense-1997-325",
+        "name": "煽动军人逃离部队罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 373
+          }
+        ],
+        "sourceRow": 325
+      },
+      {
+        "id": "offense-1997-326",
+        "name": "雇用逃离部队军人罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 373
+          }
+        ],
+        "sourceRow": 326
+      },
+      {
+        "id": "offense-1997-327",
+        "name": "接送不合格兵员罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 374
+          }
+        ],
+        "sourceRow": 327
+      },
+      {
+        "id": "offense-1997-328",
+        "name": "伪造、变造、买卖武装部队公文、证件、印章罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 375,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 328
+      },
+      {
+        "id": "offense-1997-329",
+        "name": "盗窃、抢夺武装部队公文、证件、印章罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 375,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 329
+      },
+      {
+        "id": "offense-1997-330",
+        "name": "非法生产、买卖军用标志罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 375,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 330
+      },
+      {
+        "id": "offense-1997-331",
+        "name": "战时拒绝、逃避征召、军事训练罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 376,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 331
+      },
+      {
+        "id": "offense-1997-332",
+        "name": "战时拒绝、逃避服役罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 376,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 332
+      },
+      {
+        "id": "offense-1997-333",
+        "name": "战时故意提供虚假敌情罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 377
+          }
+        ],
+        "sourceRow": 333
+      },
+      {
+        "id": "offense-1997-334",
+        "name": "战时造谣扰乱军心罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 378
+          }
+        ],
+        "sourceRow": 334
+      },
+      {
+        "id": "offense-1997-335",
+        "name": "战时窝藏逃离部队军人罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 379
+          }
+        ],
+        "sourceRow": 335
+      },
+      {
+        "id": "offense-1997-336",
+        "name": "战时拒绝、故意延误军事订货罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 380
+          }
+        ],
+        "sourceRow": 336
+      },
+      {
+        "id": "offense-1997-337",
+        "name": "战时拒绝军事征用罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 381
+          }
+        ],
+        "sourceRow": 337
+      },
+      {
+        "id": "offense-1997-338",
+        "name": "贪污罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 382
+          }
+        ],
+        "sourceRow": 338
+      },
+      {
+        "id": "offense-1997-339",
+        "name": "挪用公款罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 384
+          }
+        ],
+        "sourceRow": 339
+      },
+      {
+        "id": "offense-1997-340",
+        "name": "受贿罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 385
+          }
+        ],
+        "sourceRow": 340
+      },
+      {
+        "id": "offense-1997-341",
+        "name": "单位受贿罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 387
+          }
+        ],
+        "sourceRow": 341
+      },
+      {
+        "id": "offense-1997-342",
+        "name": "行贿罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 389
+          }
+        ],
+        "sourceRow": 342
+      },
+      {
+        "id": "offense-1997-343",
+        "name": "对单位行贿罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 391
+          }
+        ],
+        "sourceRow": 343
+      },
+      {
+        "id": "offense-1997-344",
+        "name": "介绍贿赂罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 392
+          }
+        ],
+        "sourceRow": 344
+      },
+      {
+        "id": "offense-1997-345",
+        "name": "单位行贿罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 393
+          }
+        ],
+        "sourceRow": 345
+      },
+      {
+        "id": "offense-1997-346",
+        "name": "巨额财产来源不明罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 395,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 346
+      },
+      {
+        "id": "offense-1997-347",
+        "name": "隐瞒境外存款罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 395,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 347
+      },
+      {
+        "id": "offense-1997-348",
+        "name": "私分国有资产罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 396,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 348
+      },
+      {
+        "id": "offense-1997-349",
+        "name": "私分罚没财物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 396,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 349
+      },
+      {
+        "id": "offense-1997-350",
+        "name": "滥用职权罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 397,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 350
+      },
+      {
+        "id": "offense-1997-351",
+        "name": "玩忽职守罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 397,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 351
+      },
+      {
+        "id": "offense-1997-352",
+        "name": "国家机关工作人员徇私舞弊罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 397,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 352
+      },
+      {
+        "id": "offense-1997-353",
+        "name": "故意泄露国家秘密罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 398
+          }
+        ],
+        "sourceRow": 353
+      },
+      {
+        "id": "offense-1997-354",
+        "name": "过失泄露国家秘密罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 398
+          }
+        ],
+        "sourceRow": 354
+      },
+      {
+        "id": "offense-1997-355",
+        "name": "枉法追诉、裁判罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 399,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 355
+      },
+      {
+        "id": "offense-1997-356",
+        "name": "民事、行政枉法裁判罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 399,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 356
+      },
+      {
+        "id": "offense-1997-357",
+        "name": "私放在押人员罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 400,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 357
+      },
+      {
+        "id": "offense-1997-358",
+        "name": "失职致使在押人员脱逃罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 400,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 358
+      },
+      {
+        "id": "offense-1997-359",
+        "name": "徇私舞弊减刑、假释、暂予监外执行罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 401
+          }
+        ],
+        "sourceRow": 359
+      },
+      {
+        "id": "offense-1997-360",
+        "name": "徇私舞弊不移交刑事案件罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 402
+          }
+        ],
+        "sourceRow": 360
+      },
+      {
+        "id": "offense-1997-361",
+        "name": "滥用管理公司、证券职权罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 403
+          }
+        ],
+        "sourceRow": 361
+      },
+      {
+        "id": "offense-1997-362",
+        "name": "徇私舞弊不征、少征税款罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 404
+          }
+        ],
+        "sourceRow": 362
+      },
+      {
+        "id": "offense-1997-363",
+        "name": "徇私舞弊发售发票、抵扣税款、出口退税罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 405,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 363
+      },
+      {
+        "id": "offense-1997-364",
+        "name": "违法提供出口退税凭证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 405,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 364
+      },
+      {
+        "id": "offense-1997-365",
+        "name": "国家机关工作人员签订、履行合同失职被骗罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 406
+          }
+        ],
+        "sourceRow": 365
+      },
+      {
+        "id": "offense-1997-366",
+        "name": "违法发放林木采伐许可证罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 407
+          }
+        ],
+        "sourceRow": 366
+      },
+      {
+        "id": "offense-1997-367",
+        "name": "环境监管失职罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 408
+          }
+        ],
+        "sourceRow": 367
+      },
+      {
+        "id": "offense-1997-368",
+        "name": "传染病防治失职罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 409
+          }
+        ],
+        "sourceRow": 368
+      },
+      {
+        "id": "offense-1997-369",
+        "name": "非法批准征用、占用土地罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 410
+          }
+        ],
+        "sourceRow": 369
+      },
+      {
+        "id": "offense-1997-370",
+        "name": "非法低价出让国有土地使用权罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 410
+          }
+        ],
+        "sourceRow": 370
+      },
+      {
+        "id": "offense-1997-371",
+        "name": "放纵走私罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 411
+          }
+        ],
+        "sourceRow": 371
+      },
+      {
+        "id": "offense-1997-372",
+        "name": "商检徇私舞弊罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 412,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 372
+      },
+      {
+        "id": "offense-1997-373",
+        "name": "商检失职罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 412,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 373
+      },
+      {
+        "id": "offense-1997-374",
+        "name": "动植物检疫徇私舞弊罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 413,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 374
+      },
+      {
+        "id": "offense-1997-375",
+        "name": "动植物检疫失职罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 413,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 375
+      },
+      {
+        "id": "offense-1997-376",
+        "name": "放纵制售伪劣商品犯罪行为罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 414
+          }
+        ],
+        "sourceRow": 376
+      },
+      {
+        "id": "offense-1997-377",
+        "name": "办理偷越国（边）境人员出入境证件罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 415
+          }
+        ],
+        "sourceRow": 377
+      },
+      {
+        "id": "offense-1997-378",
+        "name": "放行偷越国（边）境人员罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 415
+          }
+        ],
+        "sourceRow": 378
+      },
+      {
+        "id": "offense-1997-379",
+        "name": "不解救被拐卖、绑架妇女、儿童罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 416,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 379
+      },
+      {
+        "id": "offense-1997-380",
+        "name": "阻碍解救被拐卖、绑架妇女、儿童罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 416,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 380
+      },
+      {
+        "id": "offense-1997-381",
+        "name": "帮助犯罪分子逃避处罚罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 417
+          }
+        ],
+        "sourceRow": 381
+      },
+      {
+        "id": "offense-1997-382",
+        "name": "招收公务员、学生徇私舞弊罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 418
+          }
+        ],
+        "sourceRow": 382
+      },
+      {
+        "id": "offense-1997-383",
+        "name": "失职造成珍贵文物损毁、流失罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 419
+          }
+        ],
+        "sourceRow": 383
+      },
+      {
+        "id": "offense-1997-384",
+        "name": "战时违抗命令罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 421
+          }
+        ],
+        "sourceRow": 384
+      },
+      {
+        "id": "offense-1997-385",
+        "name": "隐瞒、谎报军情罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 422
+          }
+        ],
+        "sourceRow": 385
+      },
+      {
+        "id": "offense-1997-386",
+        "name": "拒传、假传军令罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 422
+          }
+        ],
+        "sourceRow": 386
+      },
+      {
+        "id": "offense-1997-387",
+        "name": "投降罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 423
+          }
+        ],
+        "sourceRow": 387
+      },
+      {
+        "id": "offense-1997-388",
+        "name": "战时临阵脱逃罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 424
+          }
+        ],
+        "sourceRow": 388
+      },
+      {
+        "id": "offense-1997-389",
+        "name": "擅离、玩忽军事职守罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 425
+          }
+        ],
+        "sourceRow": 389
+      },
+      {
+        "id": "offense-1997-390",
+        "name": "阻碍执行军事职务罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 426
+          }
+        ],
+        "sourceRow": 390
+      },
+      {
+        "id": "offense-1997-391",
+        "name": "指使部属违反职责罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 427
+          }
+        ],
+        "sourceRow": 391
+      },
+      {
+        "id": "offense-1997-392",
+        "name": "违令作战消极罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 428
+          }
+        ],
+        "sourceRow": 392
+      },
+      {
+        "id": "offense-1997-393",
+        "name": "拒不救援友邻部队罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 429
+          }
+        ],
+        "sourceRow": 393
+      },
+      {
+        "id": "offense-1997-394",
+        "name": "军人叛逃罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 430
+          }
+        ],
+        "sourceRow": 394
+      },
+      {
+        "id": "offense-1997-395",
+        "name": "非法获取军事秘密罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 431,
+            "paragraph": 1
+          }
+        ],
+        "sourceRow": 395
+      },
+      {
+        "id": "offense-1997-396",
+        "name": "为境外窃取、刺探、收买、非法提供军事秘密罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 431,
+            "paragraph": 2
+          }
+        ],
+        "sourceRow": 396,
+        "sourceName": "为境外窃取、剌探、收买、非法提供军事秘密罪"
+      },
+      {
+        "id": "offense-1997-397",
+        "name": "故意泄露军事秘密罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 432
+          }
+        ],
+        "sourceRow": 397
+      },
+      {
+        "id": "offense-1997-398",
+        "name": "过失泄露军事秘密罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 432
+          }
+        ],
+        "sourceRow": 398
+      },
+      {
+        "id": "offense-1997-399",
+        "name": "战时造谣惑众罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 433
+          }
+        ],
+        "sourceRow": 399
+      },
+      {
+        "id": "offense-1997-400",
+        "name": "战时自伤罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 434
+          }
+        ],
+        "sourceRow": 400
+      },
+      {
+        "id": "offense-1997-401",
+        "name": "逃离部队罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 435
+          }
+        ],
+        "sourceRow": 401
+      },
+      {
+        "id": "offense-1997-402",
+        "name": "武器装备肇事罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 436
+          }
+        ],
+        "sourceRow": 402
+      },
+      {
+        "id": "offense-1997-403",
+        "name": "擅自改变武器装备编配用途罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 437
+          }
+        ],
+        "sourceRow": 403
+      },
+      {
+        "id": "offense-1997-404",
+        "name": "盗窃、抢夺武器装备、军用物资罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 438
+          }
+        ],
+        "sourceRow": 404
+      },
+      {
+        "id": "offense-1997-405",
+        "name": "非法出卖、转让武器装备罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 439
+          }
+        ],
+        "sourceRow": 405
+      },
+      {
+        "id": "offense-1997-406",
+        "name": "遗弃武器装备罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 440
+          }
+        ],
+        "sourceRow": 406
+      },
+      {
+        "id": "offense-1997-407",
+        "name": "遗失武器装备罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 441
+          }
+        ],
+        "sourceRow": 407
+      },
+      {
+        "id": "offense-1997-408",
+        "name": "擅自出卖、转让军队房地产罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 442
+          }
+        ],
+        "sourceRow": 408
+      },
+      {
+        "id": "offense-1997-409",
+        "name": "虐待部属罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 443
+          }
+        ],
+        "sourceRow": 409
+      },
+      {
+        "id": "offense-1997-410",
+        "name": "遗弃伤病军人罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 444
+          }
+        ],
+        "sourceRow": 410
+      },
+      {
+        "id": "offense-1997-411",
+        "name": "战时拒不救治伤病军人罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 445
+          }
+        ],
+        "sourceRow": 411
+      },
+      {
+        "id": "offense-1997-412",
+        "name": "战时残害居民、掠夺居民财物罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 446
+          }
+        ],
+        "sourceRow": 412
+      },
+      {
+        "id": "offense-1997-413",
+        "name": "私放俘虏罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 447
+          }
+        ],
+        "sourceRow": 413
+      },
+      {
+        "id": "offense-1997-414",
+        "name": "虐待俘虏罪",
+        "provisions": [
+          {
+            "instrument": "criminal-law",
+            "article": 448
+          }
+        ],
+        "sourceRow": 414
+      }
+    ]
+  },
+  "changeSets": [
+    {
+      "id": "supplement-01",
+      "sourceId": "supplement-01",
+      "effectiveFrom": "2002-03-26",
+      "changes": [
+        {
+          "id": "supplement-01-row-01",
+          "sourceRow": 1,
+          "referenceText": "第114条、第115条第1款",
+          "cancels": [
+            "投毒罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "投放危险物质罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 114
+                },
+                {
+                  "instrument": "criminal-law",
+                  "article": 115,
+                  "paragraph": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-02",
+          "sourceRow": 2,
+          "referenceText": "第115条第2款",
+          "cancels": [
+            "过失投毒罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "过失投放危险物质罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 115,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-03",
+          "sourceRow": 3,
+          "referenceText": "第120条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "资助恐怖活动罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 120,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-04",
+          "sourceRow": 4,
+          "referenceText": "第125条第2款",
+          "cancels": [
+            "非法买卖、运输核材料罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法制造、买卖、运输、储存危险物质罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 125,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-05",
+          "sourceRow": 5,
+          "referenceText": "第127条第1款、第2款",
+          "cancels": [],
+          "implicitReplaces": [
+            "盗窃、抢夺枪支、弹药、爆炸物罪"
+          ],
+          "add": [
+            {
+              "name": "盗窃、抢夺枪支、弹药、爆炸物、危险物质罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 127,
+                  "paragraph": 1
+                },
+                {
+                  "instrument": "criminal-law",
+                  "article": 127,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-06",
+          "sourceRow": 6,
+          "referenceText": "第127条第2款",
+          "cancels": [],
+          "implicitReplaces": [
+            "抢劫枪支、弹药、爆炸物罪"
+          ],
+          "add": [
+            {
+              "name": "抢劫枪支、弹药、爆炸物、危险物质罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 127,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-07",
+          "sourceRow": 7,
+          "referenceText": "第162条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "隐匿、故意销毁会计凭证、会计账簿、财务会计报告罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 162,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-08",
+          "sourceRow": 8,
+          "referenceText": "第168条",
+          "cancels": [
+            "徇私舞弊造成破产、亏损罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "国有公司、企业、事业单位人员失职罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 168
+                }
+              ]
+            },
+            {
+              "name": "国有公司、企业、事业单位人员滥用职权罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 168
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-09",
+          "sourceRow": 9,
+          "referenceText": "第174条第2款",
+          "cancels": [],
+          "implicitReplaces": [
+            "伪造、变造、转让金融机构经营许可证罪"
+          ],
+          "add": [
+            {
+              "name": "伪造、变造、转让金融机构经营许可证、批准文件罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 174,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-10",
+          "sourceRow": 10,
+          "referenceText": "第181条第1款",
+          "cancels": [],
+          "implicitReplaces": [
+            "编造并传播证券交易虚假信息罪"
+          ],
+          "add": [
+            {
+              "name": "编造并传播证券、期货交易虚假信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 181,
+                  "paragraph": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-11",
+          "sourceRow": 11,
+          "referenceText": "第181条第2款",
+          "cancels": [],
+          "implicitReplaces": [
+            "诱骗投资者买卖证券罪"
+          ],
+          "add": [
+            {
+              "name": "诱骗投资者买卖证券、期货合约罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 181,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-12",
+          "sourceRow": 12,
+          "referenceText": "第182条",
+          "cancels": [],
+          "implicitReplaces": [
+            "操纵证券交易价格罪"
+          ],
+          "add": [
+            {
+              "name": "操纵证券、期货交易价格罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 182
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-13",
+          "sourceRow": 13,
+          "referenceText": "《决定》第1条",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "骗购外汇罪",
+              "provisions": [
+                {
+                  "instrument": "foreign-exchange-decision",
+                  "article": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-14",
+          "sourceRow": 14,
+          "referenceText": "第229条第1款、第2款、第3款",
+          "cancels": [
+            "中介组织人员提供虚假证明文件罪",
+            "中介组织人员出具证明文件重大失实罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "提供虚假证明文件罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 229,
+                  "paragraph": 1
+                },
+                {
+                  "instrument": "criminal-law",
+                  "article": 229,
+                  "paragraph": 2
+                }
+              ]
+            },
+            {
+              "name": "出具证明文件重大失实罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 229,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-15",
+          "sourceRow": 15,
+          "referenceText": "第236条",
+          "cancels": [
+            "奸淫幼女罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "强奸罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 236
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-16",
+          "sourceRow": 16,
+          "referenceText": "第291条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "投放虚假危险物质罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 291,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-17",
+          "sourceRow": 17,
+          "referenceText": "同上",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "编造、故意传播虚假恐怖信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 291,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-18",
+          "sourceRow": 18,
+          "referenceText": "第342条",
+          "cancels": [
+            "非法占用耕地罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法占用农用地罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 342
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-19",
+          "sourceRow": 19,
+          "referenceText": "第397条",
+          "cancels": [
+            "国家机关工作人员徇私舞弊罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "滥用职权罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 397
+                }
+              ]
+            },
+            {
+              "name": "玩忽职守罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 397
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-20",
+          "sourceRow": 20,
+          "referenceText": "第399条第1款、第2款",
+          "cancels": [
+            "枉法追诉、裁判罪",
+            "枉法裁判罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "徇私枉法罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 399,
+                  "paragraph": 1
+                }
+              ]
+            },
+            {
+              "name": "民事、行政枉法裁判罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 399,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-01-row-21",
+          "sourceRow": 21,
+          "referenceText": "第406条",
+          "cancels": [
+            "国家机关工作人员签订、履行合同失职罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "国家机关工作人员签订、履行合同失职被骗罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 406
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplement-02",
+      "sourceId": "supplement-02",
+      "effectiveFrom": "2003-08-21",
+      "changes": [
+        {
+          "id": "supplement-02-row-01",
+          "sourceRow": 1,
+          "referenceText": "第152条第2款",
+          "cancels": [
+            "走私固体废物罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "走私废物罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 152,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-02-row-02",
+          "sourceRow": 2,
+          "referenceText": "第244条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "雇用童工从事危重劳动罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 244,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-02-row-03",
+          "sourceRow": 3,
+          "referenceText": "第344条",
+          "cancels": [
+            "非法采伐、毁坏珍贵树木罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法采伐、毁坏国家重点保护植物罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 344
+                }
+              ]
+            },
+            {
+              "name": "非法收购、运输、加工、出售国家重点保护植物、国家重点保护植物制品罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 344
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-02-row-04",
+          "sourceRow": 4,
+          "referenceText": "第345条第3款",
+          "cancels": [
+            "非法收购盗伐、滥伐的林木罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法收购、运输盗伐、滥伐的林木罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 345,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-02-row-05",
+          "sourceRow": 5,
+          "referenceText": "第399条第3款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "执行判决、裁定失职罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 399,
+                  "paragraph": 3
+                }
+              ]
+            },
+            {
+              "name": "执行判决、裁定滥用职权罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 399,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplement-03",
+      "sourceId": "supplement-03",
+      "effectiveFrom": "2007-11-06",
+      "changes": [
+        {
+          "id": "supplement-03-row-01",
+          "sourceRow": 1,
+          "referenceText": "第134条第2款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "强令违章冒险作业罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 134,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-02",
+          "sourceRow": 2,
+          "referenceText": "第135条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "大型群众性活动重大安全事故罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 135,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-03",
+          "sourceRow": 3,
+          "referenceText": "第139条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "不报、谎报安全事故罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 139,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-04",
+          "sourceRow": 4,
+          "referenceText": "第161条",
+          "cancels": [
+            "提供虚假财会报告罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "违规披露、不披露重要信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 161
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-05",
+          "sourceRow": 5,
+          "referenceText": "第162条之二",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "虚假破产罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 162,
+                  "subArticle": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-06",
+          "sourceRow": 6,
+          "referenceText": "第163条",
+          "cancels": [
+            "公司、企业人员受贿罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非国家工作人员受贿罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 163
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-07",
+          "sourceRow": 7,
+          "referenceText": "第164条",
+          "cancels": [
+            "对公司、企业人员行贿罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "对非国家工作人员行贿罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 164
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-08",
+          "sourceRow": 8,
+          "referenceText": "第169条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "背信损害上市公司利益罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 169,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-09",
+          "sourceRow": 9,
+          "referenceText": "第175条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "骗取贷款、票据承兑、金融票证罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 175,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-10",
+          "sourceRow": 10,
+          "referenceText": "第177条之一第1款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "妨害信用卡管理罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 177,
+                  "subArticle": 1,
+                  "paragraph": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-11",
+          "sourceRow": 11,
+          "referenceText": "第177条之一第2款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "窃取、收买、非法提供信用卡信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 177,
+                  "subArticle": 1,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-12",
+          "sourceRow": 12,
+          "referenceText": "第182条",
+          "cancels": [
+            "操纵证券、期货交易价格罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "操纵证券、期货市场罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 182
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-13",
+          "sourceRow": 13,
+          "referenceText": "第185条之一第1款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "背信运用受托财产罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 185,
+                  "subArticle": 1,
+                  "paragraph": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-14",
+          "sourceRow": 14,
+          "referenceText": "第185条之一第2款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "违法运用资金罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 185,
+                  "subArticle": 1,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-15",
+          "sourceRow": 15,
+          "referenceText": "第186条",
+          "cancels": [
+            "违法向关系人发放贷款罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "违法发放贷款罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 186
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-16",
+          "sourceRow": 16,
+          "referenceText": "第187条",
+          "cancels": [
+            "用账外客户资金非法拆借、发放贷款罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "吸收客户资金不入账罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 187
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-17",
+          "sourceRow": 17,
+          "referenceText": "第188条",
+          "cancels": [
+            "非法出具金融票证罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "违规出具金融票证罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 188
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-18",
+          "sourceRow": 18,
+          "referenceText": "第262条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "组织残疾人、儿童乞讨罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 262,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-19",
+          "sourceRow": 19,
+          "referenceText": "第303条第2款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "开设赌场罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 303,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-20",
+          "sourceRow": 20,
+          "referenceText": "第312条",
+          "cancels": [
+            "窝藏、转移、收购、销售赃物罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "掩饰、隐瞒犯罪所得、犯罪所得收益罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 312
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-21",
+          "sourceRow": 21,
+          "referenceText": "第369条第2款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "过失损坏武器装备、军事设施、军事通信罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 369,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-03-row-22",
+          "sourceRow": 22,
+          "referenceText": "第399条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "枉法仲裁罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 399,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplement-04",
+      "sourceId": "supplement-04",
+      "effectiveFrom": "2009-10-16",
+      "changes": [
+        {
+          "id": "supplement-04-row-01",
+          "sourceRow": 1,
+          "referenceText": "第151条第3款",
+          "cancels": [
+            "走私珍稀植物、珍稀植物制品罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "走私国家禁止进出口的货物、物品罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 151,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-02",
+          "sourceRow": 2,
+          "referenceText": "第180条第4款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "利用未公开信息交易罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 180,
+                  "paragraph": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-03",
+          "sourceRow": 3,
+          "referenceText": "第201条",
+          "cancels": [
+            "偷税罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "逃税罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 201
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-04",
+          "sourceRow": 4,
+          "referenceText": "第224条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "组织、领导传销活动罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 224,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-05",
+          "sourceRow": 5,
+          "referenceText": "第253条之一第1款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "出售、非法提供公民个人信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 253,
+                  "subArticle": 1,
+                  "paragraph": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-06",
+          "sourceRow": 6,
+          "referenceText": "第253条之一第2款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法获取公民个人信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 253,
+                  "subArticle": 1,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-07",
+          "sourceRow": 7,
+          "referenceText": "第262条之二",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "组织未成年人进行违反治安管理活动罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 262,
+                  "subArticle": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-08",
+          "sourceRow": 8,
+          "referenceText": "第285条第2款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法获取计算机信息系统数据、非法控制计算机信息系统罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 285,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-09",
+          "sourceRow": 9,
+          "referenceText": "第285条第3款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "提供侵入、非法控制计算机信息系统程序、工具罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 285,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-10",
+          "sourceRow": 10,
+          "referenceText": "第337条第1款",
+          "cancels": [
+            "逃避动植物检疫罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "妨害动植物防疫、检疫罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 337,
+                  "paragraph": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-11",
+          "sourceRow": 11,
+          "referenceText": "第375条第2款",
+          "cancels": [
+            "非法生产、买卖军用标志罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法生产、买卖武装部队制式服装罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 375,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-12",
+          "sourceRow": 12,
+          "referenceText": "第375条第3款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "伪造、盗窃、买卖、非法提供、非法使用武装部队专用标志罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 375,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-04-row-13",
+          "sourceRow": 13,
+          "referenceText": "第388条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "利用影响力受贿罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 388,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplement-05",
+      "sourceId": "supplement-05",
+      "effectiveFrom": "2011-05-01",
+      "changes": [
+        {
+          "id": "supplement-05-row-01",
+          "sourceRow": 1,
+          "referenceText": "第一百三十三条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "危险驾驶罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 133,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-05-row-02",
+          "sourceRow": 2,
+          "referenceText": "第一百四十三条",
+          "cancels": [
+            "生产、销售不符合卫生标准的食品罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "生产、销售不符合安全标准的食品罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-05-row-03",
+          "sourceRow": 3,
+          "referenceText": "第一百六十四条第二款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "对外国公职人员、国际公共组织官员行贿罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 164,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-05-row-04",
+          "sourceRow": 4,
+          "referenceText": "第二百零五条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "虚开发票罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 205,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-05-row-05",
+          "sourceRow": 5,
+          "referenceText": "第二百一十条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "持有伪造的发票罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 210,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-05-row-06",
+          "sourceRow": 6,
+          "referenceText": "第二百三十四条之一第一款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "组织出卖人体器官罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 234,
+                  "subArticle": 1,
+                  "paragraph": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-05-row-07",
+          "sourceRow": 7,
+          "referenceText": "第二百四十四条",
+          "cancels": [
+            "强迫职工劳动罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "强迫劳动罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 244
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-05-row-08",
+          "sourceRow": 8,
+          "referenceText": "第二百七十六条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "拒不支付劳动报酬罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 276,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-05-row-09",
+          "sourceRow": 9,
+          "referenceText": "第三百三十八条",
+          "cancels": [
+            "重大环境污染事故罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "污染环境罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 338
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-05-row-10",
+          "sourceRow": 10,
+          "referenceText": "第四百零八条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "食品监管渎职罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 408,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplement-06",
+      "sourceId": "supplement-06",
+      "effectiveFrom": "2015-11-01",
+      "changes": [
+        {
+          "id": "supplement-06-row-01",
+          "sourceRow": 1,
+          "referenceText": "第一百二十条之一",
+          "cancels": [
+            "资助恐怖活动罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "帮助恐怖活动罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 120,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-02",
+          "sourceRow": 2,
+          "referenceText": "第一百二十条之二",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "准备实施恐怖活动罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 120,
+                  "subArticle": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-03",
+          "sourceRow": 3,
+          "referenceText": "第一百二十条之三",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "宣扬恐怖主义、极端主义、煽动实施恐怖活动罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 120,
+                  "subArticle": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-04",
+          "sourceRow": 4,
+          "referenceText": "第一百二十条之四",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "利用极端主义破坏法律实施罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 120,
+                  "subArticle": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-05",
+          "sourceRow": 5,
+          "referenceText": "第一百二十条之五",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "强制穿戴宣扬恐怖主义、极端主义服饰、标志罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 120,
+                  "subArticle": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-06",
+          "sourceRow": 6,
+          "referenceText": "第一百二十条之六",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法持有宣扬恐怖主义、极端主义物品罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 120,
+                  "subArticle": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-07",
+          "sourceRow": 7,
+          "referenceText": "第二百三十七条第一款、第二款",
+          "cancels": [
+            "强制猥亵、侮辱妇女罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "强制猥亵、侮辱罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 237,
+                  "paragraph": 1
+                },
+                {
+                  "instrument": "criminal-law",
+                  "article": 237,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-08",
+          "sourceRow": 8,
+          "referenceText": "第二百五十三条之一",
+          "cancels": [
+            "出售、非法提供公民个人信息罪",
+            "非法获取公民个人信息罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "侵犯公民个人信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 253,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-09",
+          "sourceRow": 9,
+          "referenceText": "第二百六十条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "虐待被监护、看护人罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 260,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-10",
+          "sourceRow": 10,
+          "referenceText": "第二百八十条第三款",
+          "cancels": [
+            "伪造、变造居民身份证罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "伪造、变造、买卖身份证件罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 280,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-11",
+          "sourceRow": 11,
+          "referenceText": "第二百八十条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "使用虚假身份证件、盗用身份证件罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 280,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-12",
+          "sourceRow": 12,
+          "referenceText": "第二百八十三条",
+          "cancels": [
+            "非法生产、销售间谍专用器材罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法生产、销售专用间谍器材、窃听、窃照专用器材罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 283
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-13",
+          "sourceRow": 13,
+          "referenceText": "第二百八十四条之一第一款、第二款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "组织考试作弊罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 284,
+                  "subArticle": 1,
+                  "paragraph": 1
+                },
+                {
+                  "instrument": "criminal-law",
+                  "article": 284,
+                  "subArticle": 1,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-14",
+          "sourceRow": 14,
+          "referenceText": "第二百八十四条之一第三款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法出售、提供试题、答案罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 284,
+                  "subArticle": 1,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-15",
+          "sourceRow": 15,
+          "referenceText": "第二百八十四条之一第四款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "代替考试罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 284,
+                  "subArticle": 1,
+                  "paragraph": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-16",
+          "sourceRow": 16,
+          "referenceText": "第二百八十六条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "拒不履行信息网络安全管理义务罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 286,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-17",
+          "sourceRow": 17,
+          "referenceText": "第二百八十七条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法利用信息网络罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 287,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-18",
+          "sourceRow": 18,
+          "referenceText": "第二百八十七条之二",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "帮助信息网络犯罪活动罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 287,
+                  "subArticle": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-19",
+          "sourceRow": 19,
+          "referenceText": "第二百九十条第三款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "扰乱国家机关工作秩序罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 290,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-20",
+          "sourceRow": 20,
+          "referenceText": "第二百九十条第四款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "组织、资助非法聚集罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 290,
+                  "paragraph": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-21",
+          "sourceRow": 21,
+          "referenceText": "第二百九十一条之一第二款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "编造、故意传播虚假信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 291,
+                  "subArticle": 1,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-22",
+          "sourceRow": 22,
+          "referenceText": "第三百条第二款",
+          "cancels": [
+            "组织、利用会道门、邪教组织、利用迷信致人死亡罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "组织、利用会道门、邪教组织、利用迷信致人重伤、死亡罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 300,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-23",
+          "sourceRow": 23,
+          "referenceText": "第三百零二条",
+          "cancels": [
+            "盗窃、侮辱尸体罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "盗窃、侮辱、故意毁坏尸体、尸骨、骨灰罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 302
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-24",
+          "sourceRow": 24,
+          "referenceText": "第三百零七条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "虚假诉讼罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 307,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-25",
+          "sourceRow": 25,
+          "referenceText": "第三百零八条之一第一款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "泄露不应公开的案件信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 308,
+                  "subArticle": 1,
+                  "paragraph": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-26",
+          "sourceRow": 26,
+          "referenceText": "第三百零八条之一第三款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "披露、报道不应公开的案件信息罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 308,
+                  "subArticle": 1,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-27",
+          "sourceRow": 27,
+          "referenceText": "第三百一十一条",
+          "cancels": [
+            "拒绝提供间谍犯罪证据罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "拒绝提供间谍犯罪、恐怖主义犯罪、极端主义犯罪证据罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 311
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-28",
+          "sourceRow": 28,
+          "referenceText": "第三百五十条",
+          "cancels": [
+            "走私制毒物品罪",
+            "非法买卖制毒物品罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法生产、买卖、运输制毒物品、走私制毒物品罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 350
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-29",
+          "sourceRow": 29,
+          "referenceText": "第三百六十条第二款",
+          "cancels": [
+            "嫖宿幼女罪"
+          ],
+          "implicitReplaces": [],
+          "add": []
+        },
+        {
+          "id": "supplement-06-row-30",
+          "sourceRow": 30,
+          "referenceText": "第三百八十一条",
+          "cancels": [
+            "战时拒绝军事征用罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "战时拒绝军事征收、征用罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 381
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-31",
+          "sourceRow": 31,
+          "referenceText": "第三百九十条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "对有影响力的人行贿罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 390,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-06-row-32",
+          "sourceRow": 32,
+          "referenceText": "第四百一十条",
+          "cancels": [
+            "非法批准征用、占用土地罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法批准征收、征用、占用土地罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 410
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplement-07",
+      "sourceId": "supplement-07",
+      "effectiveFrom": "2021-03-01",
+      "changes": [
+        {
+          "id": "supplement-07-row-01",
+          "sourceRow": 1,
+          "referenceText": "第一百三十三条之二",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "妨害安全驾驶罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 133,
+                  "subArticle": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-02",
+          "sourceRow": 2,
+          "referenceText": "第一百三十四条第二款",
+          "cancels": [
+            "强令违章冒险作业罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "强令、组织他人违章冒险作业罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 134,
+                  "paragraph": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-03",
+          "sourceRow": 3,
+          "referenceText": "第一百三十四条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "危险作业罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 134,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-04",
+          "sourceRow": 4,
+          "referenceText": "第一百四十一条",
+          "cancels": [
+            "生产、销售假药罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "生产、销售、提供假药罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 141
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-05",
+          "sourceRow": 5,
+          "referenceText": "第一百四十二条",
+          "cancels": [
+            "生产、销售劣药罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "生产、销售、提供劣药罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 142
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-06",
+          "sourceRow": 6,
+          "referenceText": "第一百四十二条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "妨害药品管理罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 142,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-07",
+          "sourceRow": 7,
+          "referenceText": "第一百六十条",
+          "cancels": [
+            "欺诈发行股票、债券罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "欺诈发行证券罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 160
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-08",
+          "sourceRow": 8,
+          "referenceText": "第二百一十九条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "为境外窃取、刺探、收买、非法提供商业秘密罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 219,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-09",
+          "sourceRow": 9,
+          "referenceText": "第二百三十六条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "负有照护职责人员性侵罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 236,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-10",
+          "sourceRow": 10,
+          "referenceText": "第二百七十七条第五款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "袭警罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 277,
+                  "paragraph": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-11",
+          "sourceRow": 11,
+          "referenceText": "第二百八十条之二",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "冒名顶替罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 280,
+                  "subArticle": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-12",
+          "sourceRow": 12,
+          "referenceText": "第二百九十一条之二",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "高空抛物罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 291,
+                  "subArticle": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-13",
+          "sourceRow": 13,
+          "referenceText": "第二百九十三条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "催收非法债务罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 293,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-14",
+          "sourceRow": 14,
+          "referenceText": "第二百九十九条",
+          "cancels": [
+            "侮辱国旗、国徽罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "侮辱国旗、国徽、国歌罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 299
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-15",
+          "sourceRow": 15,
+          "referenceText": "第二百九十九条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "侵害英雄烈士名誉、荣誉罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 299,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-16",
+          "sourceRow": 16,
+          "referenceText": "第三百零三条第三款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "组织参与国（境）外赌博罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 303,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-17",
+          "sourceRow": 17,
+          "referenceText": "第三百三十四条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法采集人类遗传资源、走私人类遗传资源材料罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 334,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-18",
+          "sourceRow": 18,
+          "referenceText": "第三百三十六条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法植入基因编辑、克隆胚胎罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 336,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-19",
+          "sourceRow": 19,
+          "referenceText": "第三百四十一条第一款",
+          "cancels": [
+            "非法猎捕、杀害珍贵、濒危野生动物罪",
+            "非法收购、运输、出售珍贵、濒危野生动物、珍贵、濒危野生动物制品罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "危害珍贵、濒危野生动物罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 341,
+                  "paragraph": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-20",
+          "sourceRow": 20,
+          "referenceText": "第三百四十一条第三款",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法猎捕、收购、运输、出售陆生野生动物罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 341,
+                  "paragraph": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-21",
+          "sourceRow": 21,
+          "referenceText": "第三百四十二条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "破坏自然保护地罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 342,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-22",
+          "sourceRow": 22,
+          "referenceText": "第三百四十四条",
+          "cancels": [
+            "非法采伐、毁坏国家重点保护植物罪",
+            "非法收购、运输、加工、出售国家重点保护植物、国家重点保护植物制品罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "危害国家重点保护植物罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 344
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-23",
+          "sourceRow": 23,
+          "referenceText": "第三百四十四条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "非法引进、释放、丢弃外来入侵物种罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 344,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-24",
+          "sourceRow": 24,
+          "referenceText": "第三百五十五条之一",
+          "cancels": [],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "妨害兴奋剂管理罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 355,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supplement-07-row-25",
+          "sourceRow": 25,
+          "referenceText": "第四百零八条之一",
+          "cancels": [
+            "食品监管渎职罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "食品、药品监管渎职罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 408,
+                  "subArticle": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplement-08",
+      "sourceId": "supplement-08",
+      "effectiveFrom": "2024-03-01",
+      "changes": [
+        {
+          "id": "supplement-08-row-01",
+          "sourceRow": 1,
+          "referenceText": "第一百六十九条",
+          "cancels": [
+            "徇私舞弊低价折股、出售国有资产罪"
+          ],
+          "implicitReplaces": [],
+          "add": [
+            {
+              "name": "徇私舞弊低价折股、出售公司、企业资产罪",
+              "provisions": [
+                {
+                  "instrument": "criminal-law",
+                  "article": 169
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
