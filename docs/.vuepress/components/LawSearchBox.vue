@@ -22,7 +22,7 @@
         搜索索引加载失败
       </div>
       <div v-else-if="!normalizedQuery" class="law-search-box__state">
-        输入关键词搜索法律名和法条内容
+        输入关键词搜索法律名、罪名和法条内容
       </div>
       <div v-else-if="!hasResults" class="law-search-box__state">
         没有找到相关结果
@@ -46,7 +46,7 @@
         </section>
 
         <section v-if="articleResults.length" class="law-search-box__section">
-          <h2 class="law-search-box__heading">法条内容</h2>
+          <h2 class="law-search-box__heading">法条与罪名</h2>
           <button
             v-for="result in articleResults"
             :key="result.id"
@@ -56,6 +56,13 @@
           >
             <span class="law-search-box__title">
               {{ result.lawTitle }} {{ result.articleLabel }}
+            </span>
+            <span
+              v-if="result.offenseNames?.length"
+              class="law-search-box__offenses"
+            >
+              <span class="law-search-box__offenses-label">罪名：</span>
+              <span v-html="result.highlightedOffenses"></span>
             </span>
             <span
               class="law-search-box__excerpt"
@@ -198,7 +205,7 @@ export default {
     const error = ref(null);
     const titleIndex = ref([]);
     const articleIndex = ref([]);
-    const placeholder = "搜索法律或法条";
+    const placeholder = "搜索法律、罪名或法条";
 
     const normalizedQuery = computed(() => normalizeSearchText(query.value));
     const isHomeRoute = computed(
@@ -225,6 +232,10 @@ export default {
         .slice(0, 20)
         .map((item) => ({
           ...item,
+          highlightedOffenses: highlightedTextFor(
+            (item.offenseNames || []).join("、"),
+            normalizedQuery.value
+          ),
           highlightedExcerpt: highlightedExcerptFor(
             item.content,
             normalizedQuery.value
@@ -471,6 +482,7 @@ export default {
 
 .law-search-box__title,
 .law-search-box__meta,
+.law-search-box__offenses,
 .law-search-box__excerpt {
   display: block;
 }
@@ -482,11 +494,21 @@ export default {
 }
 
 .law-search-box__meta,
+.law-search-box__offenses,
 .law-search-box__excerpt {
   margin-top: 0.2rem;
   color: var(--c-text-light);
   font-size: 0.78rem;
   line-height: 1.45;
+}
+
+.law-search-box__offenses {
+  color: var(--c-text);
+}
+
+.law-search-box__offenses-label {
+  color: var(--c-brand);
+  font-weight: 700;
 }
 
 .law-search-box mark {
