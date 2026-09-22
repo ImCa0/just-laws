@@ -1,7 +1,8 @@
 const path = require("node:path");
-const { categoryNavbarItem } = require("./category-navigation");
+
 const { lawArticleAnchorsPlugin } = require("./markdown/lawArticleAnchors");
 const { lawVersionsPlugin } = require("./plugins/lawVersions");
+const { lawCatalogPlugin } = require("./plugins/lawCatalog");
 const { justLawsTheme } = require("./theme");
 
 module.exports = {
@@ -9,7 +10,7 @@ module.exports = {
   title: "Just Laws",
   description: "清晰、可检索、适合长期阅读的中华人民共和国法律文库",
   head: [
-    ["link", { rel: "icon", href: "/images/logo.png" }],
+    ["link", { rel: "icon", href: "/images/logo.svg" }],
     [
       "script",
       {},
@@ -27,108 +28,11 @@ module.exports = {
   },
 
   theme: justLawsTheme({
-    logo: "/images/logo.png",
+    logo: "/images/logo.svg",
     navbar: [
-      {
-        text: "全部类别",
-        link: "/category/",
-      },
-      {
-        text: "宪法",
-        link: "/constitution/",
-      },
-      categoryNavbarItem({
-        text: "宪法相关法",
-        slug: "constitutional-relevance",
-        featured: [
-          "立法法",
-          "全国人民代表大会组织法",
-          "全国人民代表大会和地方各级人民代表大会选举法",
-          "民族区域自治法",
-          "香港特别行政区基本法",
-        ],
-      }),
-      categoryNavbarItem({
-        text: "民商法",
-        slug: "civil-and-commercial",
-        featured: [
-          "民法典",
-          "公司法",
-          "证券法",
-          "消费者权益保护法",
-          "著作权法",
-        ],
-      }),
-      categoryNavbarItem({
-        text: "行政法",
-        slug: "administrative",
-        featured: [
-          "行政处罚法",
-          "行政许可法",
-          "行政复议法",
-          "治安管理处罚法",
-          "道路交通安全法",
-        ],
-      }),
-      categoryNavbarItem({
-        text: "经济法",
-        slug: "economic",
-        featured: [
-          "个人所得税法",
-          "中国人民银行法",
-          "个人信息保护法",
-          "反垄断法",
-          "税收征收管理法",
-        ],
-      }),
-      categoryNavbarItem({
-        text: "社会法",
-        slug: "social",
-        featured: [
-          "劳动法",
-          "劳动合同法",
-          "社会保险法",
-          "未成年人保护法",
-          "安全生产法",
-        ],
-      }),
-      categoryNavbarItem({
-        text: "生态环境法",
-        slug: "ecological-environment",
-        featured: [
-          "生态环境法典",
-          "长江保护法",
-          "黄河保护法",
-          "森林法",
-          "野生动物保护法",
-        ],
-      }),
-      categoryNavbarItem({
-        text: "刑法",
-        slug: "criminal-law",
-        featured: [
-          "刑法",
-          "反恐怖主义法",
-          "反间谍法",
-          "反有组织犯罪法",
-          "反电信网络诈骗法",
-        ],
-      }),
-      categoryNavbarItem({
-        text: "程序法",
-        slug: "procedural",
-        featured: [
-          "刑事诉讼法",
-          "民事诉讼法",
-          "行政诉讼法",
-          "仲裁法",
-          "人民调解法",
-        ],
-      }),
-      {
-        text: "留言板",
-        link: "/MessageBoard/",
-      },
+      { text: "首页", link: "/" },
+      { text: "分类", link: "/category/" },
+      { text: "留言板", link: "/MessageBoard/" },
     ],
     sidebar: {
       "/ecological-environment/ecological-environment-code/": [
@@ -227,9 +131,8 @@ module.exports = {
     docsRepo: "https://github.com/ImCa0/just-laws",
     docsBranch: "master",
     docsDir: "docs",
-    editLinkText: "在 GitHub 上编辑此页",
-    lastUpdated: true,
-    lastUpdatedText: "上次更新",
+    editLink: false,
+    lastUpdated: false,
     contributors: false,
     notFound: ["页面未找到"],
     backToHome: "回到主页",
@@ -237,5 +140,8 @@ module.exports = {
     toggleSidebar: "切换侧边栏",
   }),
 
-  plugins: [lawVersionsPlugin({ docsDir: path.resolve(__dirname, "..") })],
+  plugins: [
+    lawVersionsPlugin({ docsDir: path.resolve(__dirname, "..") }),
+    lawCatalogPlugin({ docsDir: path.resolve(__dirname, "..") }),
+  ],
 };

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <title>Just Laws 法律文库</title>
+  <rect width="64" height="64" rx="14" fill="#B92419"/>
+  <path d="M14 18c7-2 13-1 18 3 5-4 11-5 18-3v29c-7-2-13-1-18 3-5-4-11-5-18-3V18Z" stroke="#FFF8F1" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M32 22v27M20 27l6 2m-6 6 6 2m12-8 6-2m-6 10 6-2" stroke="#FFF8F1" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

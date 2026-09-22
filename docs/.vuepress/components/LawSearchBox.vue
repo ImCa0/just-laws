@@ -9,6 +9,7 @@
       class="law-search-box__input"
       type="search"
       autocomplete="off"
+      aria-label="搜索法律或法条"
       :placeholder="placeholder"
       @focus="open"
       @input="open"
@@ -476,7 +477,7 @@ export default {
 }
 
 .law-search-box__title {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
 }
@@ -485,7 +486,7 @@ export default {
 .law-search-box__excerpt {
   margin-top: 0.2rem;
   color: var(--c-text-light);
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   line-height: 1.45;
 }
 
