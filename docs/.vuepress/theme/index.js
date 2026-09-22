@@ -7,6 +7,8 @@ function justLawsTheme(options) {
     extends: defaultTheme(options),
     alias: {
       "@theme/Page.vue": path.resolve(__dirname, "components/Page.vue"),
+      "@theme/Home.vue": path.resolve(__dirname, "components/Home.vue"),
+      "@theme/Navbar.vue": path.resolve(__dirname, "components/Navbar.vue"),
     },
   };
 }

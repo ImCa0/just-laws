@@ -2,6 +2,8 @@
 import { defineClientConfig } from "@vuepress/client";
 import LawSearchBox from "./components/LawSearchBox.vue";
 import TwikooMessageBoard from "./components/TwikooMessageBoard.vue";
+import "./styles/foundation.scss";
+import "./styles/reading.scss";
 
 let initialArticleHash =
   typeof window !== "undefined" && window.location.hash.startsWith("#article-")
@@ -51,6 +53,20 @@ export default defineClientConfig({
   enhance({ app, router }) {
     app.component("SearchBox", LawSearchBox);
     app.component("TwikooMessageBoard", TwikooMessageBoard);
+
+    // VuePress beta scrolls by coordinates, so headings need an explicit navbar offset.
+    const scrollBehavior = router.options.scrollBehavior;
+    router.options.scrollBehavior = async (to, from, savedPosition) => {
+      const position = await scrollBehavior?.(to, from, savedPosition);
+      if (
+        !savedPosition && position && "el" in position &&
+        typeof document !== "undefined" && document.querySelector(".law-reading")
+      ) {
+        const navbarHeight = document.querySelector(".navbar")?.getBoundingClientRect().height || 0;
+        return { ...position, top: navbarHeight + 16 };
+      }
+      return position;
+    };
 
     router.afterEach((to) => {
       if (typeof _hmt != "undefined") {
