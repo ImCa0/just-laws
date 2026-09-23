@@ -125,7 +125,7 @@
 }
 @media (max-width: 800px) {
   .message-board-layout { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
-  .message-board-aside { position: static; align-self: auto; margin-top: 0; padding: 0; }
+  .message-board-aside { order: -1; position: static; align-self: auto; margin-top: 0; padding: 0; }
   .message-board-donate { position: static; }
   .message-board-guide-item { margin-top: 1.25rem; }
 }
