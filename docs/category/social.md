@@ -58,6 +58,8 @@
 
 [无障碍环境建设法](../social/barrier-free-environment-construction-law/)
 
+[医疗保障法](../social/medical-security-law/)
+
 [预防未成年人犯罪法](../social/prevention-of-juvenile-delinquency/)
 
 [职业病防治法](../social/occupational-disease-prevention-and-control-law/)

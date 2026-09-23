@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lawId": "ecological-environment/cultivated-land-protection-and-quality-improvement-law",
+  "title": "中华人民共和国耕地保护和质量提升法",
+  "versions": [
+    {
+      "id": "2026-original",
+      "label": "2026年通过版",
+      "promulgatedOn": "2026-08-28",
+      "effectiveFrom": "2027-01-01",
+      "effectiveTo": null,
+      "entry": "README.md"
+    }
+  ]
+}

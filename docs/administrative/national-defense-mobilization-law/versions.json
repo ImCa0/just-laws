@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lawId": "administrative/national-defense-mobilization-law",
+  "title": "中华人民共和国国防动员法",
+  "versions": [
+    {
+      "id": "2010-original",
+      "label": "2010年通过版",
+      "promulgatedOn": "2010-02-26",
+      "effectiveFrom": "2010-07-01",
+      "effectiveTo": "2026-10-01",
+      "entry": "README.md"
+    },
+    {
+      "id": "2026-revision",
+      "label": "2026年修订版",
+      "promulgatedOn": "2026-08-28",
+      "effectiveFrom": "2026-10-01",
+      "effectiveTo": null,
+      "entry": "versions/2026-10-01/README.md"
+    }
+  ]
+}

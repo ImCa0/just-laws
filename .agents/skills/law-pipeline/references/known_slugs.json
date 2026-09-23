@@ -2095,5 +2095,19 @@
     "progress_title": "全国人民代表大会常务委员会关于批准《广东省经济特区条例》的决议",
     "slug": "fifth-npc-standing-committee-resolution-approving-guangdong-special-economic-zone-regulations",
     "slug_source": "translated-reviewed"
+  },
+  "中华人民共和国医疗保障法": {
+    "category": "social",
+    "docs_type": "B",
+    "mapping_source": "manual",
+    "slug": "medical-security-law",
+    "slug_source": "manual"
+  },
+  "中华人民共和国耕地保护和质量提升法": {
+    "category": "ecological-environment",
+    "docs_type": "B",
+    "mapping_source": "manual",
+    "slug": "cultivated-land-protection-and-quality-improvement-law",
+    "slug_source": "manual"
   }
 }

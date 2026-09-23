@@ -26,11 +26,36 @@ test("当前仓库的版本配置有效", () => {
     asOf: "2026-07-17",
   });
   const lawIds = records.map((record) => record.manifest.lawId);
-  assert.equal(records.length, 14);
+  assert.equal(records.length, 18);
   assert.ok(lawIds.includes("civil-and-commercial/trademark-law"));
   assert.ok(lawIds.includes("ecological-environment/ecological-environment-code"));
   assert.ok(lawIds.includes("administrative/prisons-law"));
   assert.ok(lawIds.includes("economic/certified-public-accountants-law"));
+});
+
+test("2026年8月四部法律在生效前保留正确入口和状态", () => {
+  const records = loadLawManifests(path.resolve(__dirname, "..", "docs"), {
+    asOf: "2026-09-23",
+  });
+  for (const [lawId, effectiveFrom, hasCurrent] of [
+    ["social/medical-security-law", "2027-01-01", false],
+    ["ecological-environment/cultivated-land-protection-and-quality-improvement-law", "2027-01-01", false],
+    ["administrative/national-defense-mobilization-law", "2026-10-01", true],
+    ["economic/agriculture-law", "2027-01-01", true],
+  ]) {
+    const { versions } = records.find(({ manifest }) => manifest.lawId === lawId).manifest;
+    const pending = versions.find((version) => version.promulgatedOn === "2026-08-28");
+    assert.equal(pending.effectiveFrom, effectiveFrom);
+    assert.equal(statusForDate(pending, "2026-09-23"), "pending");
+    assert.equal(statusForDate(pending, effectiveFrom), "current");
+    assert.equal(pending.entry, hasCurrent ? `versions/${effectiveFrom}/README.md` : "README.md");
+    if (hasCurrent) {
+      const current = versions.find((version) => version.entry === "README.md");
+      assert.equal(statusForDate(current, "2026-09-23"), "current");
+      assert.equal(statusForDate(current, effectiveFrom), "expired");
+      assert.equal(current.effectiveTo, effectiveFrom);
+    }
+  }
 });
 
 test("生态环境法典废止的十部法律由根路由展示最后有效正文", () => {
