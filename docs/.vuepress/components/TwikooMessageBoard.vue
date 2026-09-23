@@ -17,7 +17,6 @@
       <section class="message-board-conversation" aria-labelledby="message-board-write-title">
         <div class="message-board-section-heading">
           <h2 id="message-board-write-title">写下你的留言</h2>
-          <span>欢迎交流，感谢同行</span>
         </div>
         <div class="twikoo-message-board">
           <div v-if="status === 'loading'" class="twikoo-message-board__status" role="status">
@@ -38,6 +37,24 @@
             <p>感谢你对 Just Laws 的支持。</p>
             <figure><img :src="withBase('/images/ali.jpg')" alt="支付宝收款码" loading="lazy" /><figcaption>支付宝</figcaption></figure>
             <figure><img :src="withBase('/images/wechat.jpg')" alt="微信收款码" loading="lazy" /><figcaption>微信</figcaption></figure>
+            <section class="message-board-donate__thanks" aria-labelledby="message-board-donate-thanks-title">
+              <div class="message-board-donate__thanks-heading">
+                <h3 id="message-board-donate-thanks-title">支持者致谢</h3>
+                <span>{{ donationRecords.length }} 笔</span>
+              </div>
+              <p>感谢每一份支持，记录按时间倒序展示。</p>
+              <div v-if="donationRecords.length" class="message-board-donate__records">
+                <table aria-label="公开打赏记录">
+                  <thead><tr><th scope="col">昵称</th><th scope="col">金额</th><th scope="col">时间</th></tr></thead>
+                  <tbody>
+                    <tr v-for="record in donationRecords" :key="`${record.nickname}-${record.amount}-${record.time}`">
+                      <td><strong>{{ record.nickname }}</strong></td><td>{{ record.amount }}</td><td><time :datetime="record.datetime || record.time">{{ record.time }}</time></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p v-else class="message-board-donate__empty">暂无公开记录，收到支持后会在这里认真致谢。</p>
+            </section>
           </div>
         </details>
 
@@ -66,6 +83,12 @@ import "../styles/message-board.scss";
 const TWIKOO_ENV_ID = "https://www.justlaws.cn/twikoo-comment";
 const TWIKOO_PATH = "/MessageBoard/";
 const TWIKOO_SELECTOR = "#twikoo-message-board";
+
+// 新记录按收到时间倒序添加，格式：
+// { nickname: "昵称", amount: "¥10.00", time: "2026-09-23", datetime: "2026-09-23" }
+const donationRecords = [
+  { nickname: "*涛", amount: "¥1.00", time: "2026/09/22", datetime: "2026-09-22" },
+];
 
 const status = ref("loading");
 const twikooContainer = ref(null);

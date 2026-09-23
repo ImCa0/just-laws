@@ -21,17 +21,17 @@
 .message-board-section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.2rem; }
 .message-board-page .message-board-shell .message-board-section-heading h2 { margin: 0; font-size: 1.2rem; font-weight: 600; }
 .message-board-section-heading > span { font-size: 0.875rem; color: var(--jl-muted); }
-.message-board-aside { position: sticky; top: calc(var(--navbar-height) + 1.5rem); display: flex; flex-direction: column; gap: 1rem; padding-top: 2.8rem; }
-.message-board-guide { padding: 1.5rem; border: 1px solid var(--jl-line); border-radius: 10px; background: var(--jl-panel); }
+.message-board-aside { position: sticky; top: calc(var(--navbar-height) + 1rem); align-self: start; display: flex; flex-direction: column; gap: 0.75rem; margin-top: 2.7rem; padding-top: 0; }
+.message-board-guide { padding: 1rem; border: 1px solid var(--jl-line); border-radius: 10px; background: var(--jl-panel); }
 .message-board-guide-heading { display: flex; align-items: center; gap: 0.75rem; }
 .message-board-guide-heading svg { width: 24px; height: 24px; color: var(--jl-red); flex-shrink: 0; }
-.message-board-guide-heading h2 { margin: 0; font-family: var(--jl-serif); font-size: 1.2rem; }
-.message-board-guide-item { display: flex; gap: 0.75rem; margin-top: 1.6rem; }
+.message-board-guide-heading h2 { margin: 0; font-family: var(--jl-serif); font-size: 1.08rem; }
+.message-board-guide-item { display: flex; gap: 0.6rem; margin-top: 0.9rem; }
 .message-board-guide-item > span { padding-top: 0.2rem; color: var(--jl-red); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
-.message-board-page .message-board-shell .message-board-guide-item h3 { margin: 0; font-size: 1rem; font-weight: 500; line-height: 1.6; }
-.message-board-page .message-board-shell .message-board-guide-item p { margin: 0.5rem 0 0; font-size: 0.9375rem; color: var(--jl-muted); line-height: 1.85; }
-.message-board-privacy { margin: 1.5rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--jl-line); color: var(--jl-muted); font-size: 0.8125rem; line-height: 1.9; }
-.message-board-donate { margin: 0; border: 1px solid var(--jl-line); border-radius: 10px; background: var(--jl-tint); }
+.message-board-page .message-board-shell .message-board-guide-item h3 { margin: 0; font-size: 0.9375rem; font-weight: 500; line-height: 1.5; }
+.message-board-page .message-board-shell .message-board-guide-item p { margin: 0.3rem 0 0; font-size: 0.8125rem; color: var(--jl-muted); line-height: 1.65; }
+.message-board-privacy { margin: 0.9rem 0 0; padding-top: 0.8rem; border-top: 1px solid var(--jl-line); color: var(--jl-muted); font-size: 0.75rem; line-height: 1.65; }
+.message-board-donate { position: static; margin: 0; border: 1px solid var(--jl-line); border-radius: 10px; background: var(--jl-tint); }
 .message-board-donate summary { display: flex; align-items: center; gap: 0.75rem; padding: 1.25rem; list-style: none; cursor: pointer; }
 .message-board-donate summary::-webkit-details-marker { display: none; }
 .message-board-donate summary > svg { width: 25px; height: 25px; flex-shrink: 0; color: var(--jl-red); }
@@ -39,12 +39,28 @@
 .message-board-donate summary small { display: block; margin-top: 0.35rem; font-size: 0.75rem; color: var(--jl-muted); }
 .message-board-donate-toggle { margin-left: auto; color: var(--jl-red); font-size: 1.4rem; font-weight: 400; }
 .message-board-donate[open] .message-board-donate-toggle { transform: rotate(45deg); }
-.message-board-donate__content { padding: 0 1.25rem 1.25rem; border-top: 1px solid var(--jl-line); }
-.message-board-donate__content > p { margin: 1rem 0; color: var(--jl-muted); font-size: 0.875rem; }
-.message-board-donate figure { margin: 1rem 0 0; text-align: center; }
+.message-board-donate__content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding: 0 1.25rem 1.25rem; border-top: 1px solid var(--jl-line); }
+.message-board-donate__content > p { grid-column: 1 / -1; margin: 1rem 0 0; color: var(--jl-muted); font-size: 0.875rem; }
+.message-board-donate figure { margin: 0; text-align: center; }
 .message-board-donate img { display: block; width: 100%; max-width: 220px; height: auto; margin: 0 auto; border-radius: 6px; background: #fff; }
 .message-board-donate figcaption { margin-top: 0.5rem; color: var(--jl-muted); font-size: 0.875rem; }
-.message-board-back { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; padding: 1.25rem 0.25rem; color: var(--jl-muted); font-size: 0.875rem; }
+.message-board-donate__thanks { grid-column: 1 / -1; margin-top: 0.35rem; padding-top: 1.15rem; border-top: 1px solid var(--jl-line); }
+.message-board-donate__thanks-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.message-board-page .message-board-shell .message-board-donate__thanks h3 { margin: 0; font-family: var(--jl-serif); font-size: 1rem; font-weight: 600; }
+.message-board-donate__thanks-heading > span { color: var(--jl-red); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+.message-board-donate__thanks > p { margin: 0.55rem 0 0; color: var(--jl-muted); font-size: 0.75rem; line-height: 1.7; }
+.message-board-donate__records { margin-top: 0.85rem; border-top: 1px solid var(--jl-line); }
+.message-board-donate__records table { display: table; box-sizing: border-box; width: 100%; max-width: none; margin: 0; border: 0; border-collapse: collapse; table-layout: fixed; overflow: visible; font-size: 0.8125rem; }
+.message-board-donate__records th, .message-board-donate__records td { padding: 0.65rem 0; border: 0; border-bottom: 1px solid var(--jl-line); background: transparent; text-align: left; }
+.message-board-donate__records th { color: var(--jl-muted); font-size: 0.6875rem; font-weight: 400; }
+.message-board-donate__records th:nth-child(2), .message-board-donate__records td:nth-child(2) { width: 3.25rem; text-align: right; }
+.message-board-donate__records th:nth-child(3), .message-board-donate__records td:nth-child(3) { width: 4.75rem; text-align: right; }
+.message-board-donate__records td:first-child { padding-right: 0.5rem; overflow-wrap: anywhere; }
+.message-board-donate__records td strong { font-weight: 500; }
+.message-board-donate__records td:nth-child(2) { color: var(--jl-red); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.message-board-donate__records time { color: var(--jl-muted); font-size: 0.6875rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.message-board-donate__empty { padding: 0.8rem; border: 1px dashed var(--jl-line); border-radius: 6px; text-align: center; background: var(--jl-bg); }
+.message-board-back { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; padding: 0.8rem 0.25rem; color: var(--jl-muted); font-size: 0.8125rem; }
 .message-board-back:hover { color: var(--jl-red); }
 .message-board-back svg { width: 18px; height: 18px; }
 .message-board-footer { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; padding-top: 1.4rem; border-top: 1px solid var(--jl-line); color: var(--jl-muted); }
@@ -105,16 +121,13 @@
 
 @media (max-width: 1000px) {
   .message-board-layout { grid-template-columns: minmax(0, 1fr) 252px; gap: 1.5rem; }
-  .message-board-guide { padding: 1.2rem; }
   .message-board-page .twikoo-message-board .tk-meta-input { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 800px) {
   .message-board-layout { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
-  .message-board-aside { position: static; padding: 0; }
+  .message-board-aside { position: static; align-self: auto; margin-top: 0; padding: 0; }
+  .message-board-donate { position: static; }
   .message-board-guide-item { margin-top: 1.25rem; }
-  .message-board-donate__content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-  .message-board-donate__content > p { grid-column: 1 / -1; margin-bottom: 0; }
-  .message-board-donate figure { margin: 0; }
 }
 @media (max-width: 719px) {
   .theme-container.message-board-page .theme-default-content:not(.custom) { padding: 1.3rem 1rem 0; }
