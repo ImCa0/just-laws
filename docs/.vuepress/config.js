@@ -6,6 +6,7 @@ const { lawArticleAnchorsPlugin } = require("./markdown/lawArticleAnchors");
 const { lawArticleReferencesPlugin } = require("./markdown/lawArticleReferences");
 const { lawVersionsPlugin } = require("./plugins/lawVersions");
 const { lawCatalogPlugin } = require("./plugins/lawCatalog");
+const { lawReaderToolsPlugin } = require("./plugins/lawReaderTools");
 const { justLawsTheme } = require("./theme");
 
 module.exports = {
@@ -148,6 +149,7 @@ module.exports = {
   }),
 
   plugins: [
+    lawReaderToolsPlugin(),
     lawVersionsPlugin({ docsDir: path.resolve(__dirname, "..") }),
     lawCatalogPlugin({ docsDir: path.resolve(__dirname, "..") }),
   ],
