@@ -178,7 +178,7 @@ test("全部现行罪名定位都能落到当前刑法或骗购外汇决定页�
   }
 });
 
-test("刑法条号独立成行，款级罪名放在对应款之前", () => {
+test("刑法条号与正文同行，款级罪名嵌入对应段首", () => {
   const md = new MarkdownIt()
     .use(lawArticleAnchorsPlugin)
     .use(criminalOffenseAnnotationsPlugin);
@@ -189,8 +189,11 @@ test("刑法条号独立成行，款级罪名放在对应款之前", () => {
 
   assert.match(
     html,
-    /<p id="article-103" class="criminal-law-article-number"><strong>第一百零三条<\/strong><\/p>/
+    /<p id="article-103"><strong>第一百零三条<\/strong>　<span class="criminal-offense-note">/
   );
+  assert.equal((html.match(/<p[ >]/g) || []).length, 2);
+  assert.match(html, /<p><span class="criminal-offense-note">.*煽动分裂国家罪.*第二款正文。<\/p>/);
+  assert.doesNotMatch(html, /<div|<a |criminal-law-article-number/);
   assert.ok(html.indexOf("分裂国家罪") < html.indexOf("第一款正文"));
   assert.ok(html.indexOf("第一款正文") < html.indexOf("煽动分裂国家罪"));
   assert.ok(html.indexOf("煽动分裂国家罪") < html.indexOf("第二款正文"));
@@ -225,7 +228,7 @@ test("总则保持条号与正文同一行的原有版式", () => {
   assert.doesNotMatch(html, /criminal-offense-note/);
 });
 
-test("补充条文的条号同样独立成行", () => {
+test("补充条文保持条号、罪名和正文同行", () => {
   const md = new MarkdownIt()
     .use(lawArticleAnchorsPlugin)
     .use(criminalOffenseAnnotationsPlugin);
@@ -233,8 +236,82 @@ test("补充条文的条号同样独立成行", () => {
     filePathRelative: "criminal-law/criminal-law/02-specific-provisions.md",
   });
 
-  assert.match(html, /<strong>第一百二十条之一<\/strong>/);
-  assert.match(html, /class="criminal-law-paragraph">第一款正文。/);
+  assert.match(html, /<p id="article-120-1">第一百二十条之一　<span class="criminal-offense-note">/);
+  assert.match(html, /<\/span>第一款正文。<\/p>/);
+});
+
+test("四款罪名分别嵌入段首，项不计为款，保留正文行内格式", () => {
+  const md = new MarkdownIt()
+    .use(lawArticleAnchorsPlugin)
+    .use(criminalOffenseAnnotationsPlugin);
+  const html = md.render([
+    "第二百八十四条之一　第一款**加粗正文**。",
+    "（一）项正文。",
+    "第二款正文。",
+    "第三款正文。",
+    "第四款正文。",
+  ].join("\n\n"), {
+    filePathRelative: "criminal-law/criminal-law/02-specific-provisions.md",
+  });
+  assert.equal((html.match(/组织考试作弊罪/g) || []).length, 1);
+  assert.match(html, /<strong>加粗正文<\/strong>/);
+  assert.match(html, /<p>（一）项正文。<\/p>/);
+  assert.match(html, /<p>第二款正文。<\/p>/);
+  assert.match(html, /<p><span class="criminal-offense-note">.*非法出售、提供试题、答案罪.*第三款正文。<\/p>/);
+  assert.match(html, /<p><span class="criminal-offense-note">.*代替考试罪.*第四款正文。<\/p>/);
+});
+
+test("现行款序纠正不覆盖历史来源，两处罪名落在构成规定而非并罚段落", () => {
+  const result = loadCurrentCriminalOffenses();
+  const source = fs.readFileSync(SPECIFIC_PROVISIONS, "utf8");
+  const html = new MarkdownIt().use(lawArticleAnchorsPlugin)
+    .use(criminalOffenseAnnotationsPlugin).render(source, { filePath: SPECIFIC_PROVISIONS });
+  for (const [name, article, from, to, text] of [
+    ["包庇、纵容黑社会性质组织罪", 294, 4, 3, "国家机关工作人员包庇黑社会性质的组织"],
+    ["协助组织卖淫罪", 358, 3, 4, "为组织卖淫的人招募、运送人员"],
+  ]) {
+    const current = offense(result, name);
+    assert.equal(current.provisions[0].paragraph, to);
+    assert.equal(current.sourceProvisions[0].paragraph, from);
+    assert.equal(result.history.find((item) => item.id === current.id).provisions[0].paragraph, from);
+    const block = html.split(`<p id="article-${article}">`)[1].split('<p id="article-')[0];
+    const paragraphs = [...block.matchAll(/(?:^|<p>)(.*?)<\/p>/g)].map((match) => match[1]);
+    assert.ok(paragraphs[to - 1].includes(name));
+    assert.ok(paragraphs[to - 1].includes(text));
+    assert.ok(!paragraphs[from - 1].includes(name));
+    assert.ok(paragraphs[from - 1].includes("数罪并罚"));
+  }
+});
+
+test("三处第二款不再重复显示罪名，第一款及来源映射保留", () => {
+  const result = loadCurrentCriminalOffenses();
+  const html = new MarkdownIt().use(lawArticleAnchorsPlugin)
+    .use(criminalOffenseAnnotationsPlugin).render(
+      fs.readFileSync(SPECIFIC_PROVISIONS, "utf8"), { filePath: SPECIFIC_PROVISIONS }
+    );
+  for (const [anchor, name] of [
+    ["229", "提供虚假证明文件罪"],
+    ["237", "强制猥亵、侮辱罪"],
+    ["284-1", "组织考试作弊罪"],
+  ]) {
+    const block = html.split(`<p id="article-${anchor}">`)[1].split('<p id="article-')[0];
+    assert.equal(block.split(name).length - 1, 1);
+    assert.ok(block.split('</p>')[0].includes(name));
+    assert.ok(offense(result, name).provisions.some((value) => value.paragraph === 2));
+  }
+});
+
+test("全篇移除罪名标识后，正文格式、段落和锚点与原文一致", () => {
+  const source = fs.readFileSync(SPECIFIC_PROVISIONS, "utf8");
+  const env = { filePath: SPECIFIC_PROVISIONS };
+  const plain = new MarkdownIt().use(lawArticleAnchorsPlugin).render(source, env);
+  const annotated = new MarkdownIt().use(lawArticleAnchorsPlugin)
+    .use(criminalOffenseAnnotationsPlugin).render(source, env);
+  const withoutNotes = annotated.replace(
+    /<span class="criminal-offense-note"><span class="criminal-offense-note__items">(?:<span class="criminal-offense-note__item"><span>[^<]*<\/span><\/span>)+<\/span><\/span>/g,
+    ""
+  );
+  assert.equal(withoutNotes, plain);
 });
 
 test("搜索索引把罪名加入对应法条记录", () => {

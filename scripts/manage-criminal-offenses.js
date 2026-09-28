@@ -286,7 +286,31 @@ function validateCriminalOffenseData(data, { expectedCurrent = EXPECTED_CURRENT_
 
 function loadCurrentCriminalOffenses(options) {
   const data = loadCriminalOffenseData(options);
-  return validateCriminalOffenseData(data);
+  const result = validateCriminalOffenseData(data);
+  // The offense-name sources retain their historical paragraph numbers.
+  // Amendment VIII (2011-05-01) moved article 294 p4 to p3;
+  // Amendment IX (2015-11-01) moved article 358 p3 to p4.
+  // Correct current locators without rewriting source data or replay history.
+  const relocations = [
+    { name: "包庇、纵容黑社会性质组织罪", article: 294, from: 4, to: 3 },
+    { name: "协助组织卖淫罪", article: 358, from: 3, to: 4 },
+  ];
+  result.active = result.active.map((offense) => {
+    const move = relocations.find((item) => item.name === offense.name);
+    if (!move) return offense;
+    return {
+      ...offense,
+      sourceProvisions: clone(offense.provisions),
+      provisions: offense.provisions.map((provision) =>
+        provision.instrument === "criminal-law" &&
+        provision.article === move.article &&
+        provision.paragraph === move.from
+          ? { ...provision, paragraph: move.to }
+          : { ...provision }
+      ),
+    };
+  });
+  return result;
 }
 
 if (require.main === module) {
