@@ -1,6 +1,7 @@
 <script setup>
 import { usePageData } from "@vuepress/client";
-import { computed } from "vue";
+import { computed, ref, watch } from "vue";
+import LawReaderTools from "../../components/LawReaderTools.vue";
 import PageNav from "@theme/PageNav.vue";
 import LawVersionBanner from "../../components/LawVersionBanner.vue";
 import LawVersionTimeline from "../../components/LawVersionTimeline.vue";
@@ -10,10 +11,13 @@ const page = usePageData();
 const versionData = computed(() => page.value.lawVersions || null);
 const catalogData = computed(() => page.value.lawCatalog || null);
 const readingData = computed(() => page.value.lawReading || null);
+const showOffenses = ref(true);
+const isCriminalSpecific = computed(() => page.value.path === "/criminal-law/criminal-law/02-specific-provisions.html");
+watch(() => page.value.path, () => { showOffenses.value = true; });
 </script>
 
 <template>
-  <main class="page" :class="{ 'law-version-page': versionData, 'law-catalog': catalogData, 'law-reading': readingData }">
+  <main class="page" :class="{ 'law-version-page': versionData, 'law-catalog': catalogData, 'law-reading': readingData, 'law-offenses-hidden': isCriminalSpecific && !showOffenses }">
     <slot name="top" />
 
     <nav v-if="readingData" class="reader-breadcrumb" aria-label="阅读路径">
@@ -30,16 +34,12 @@ const readingData = computed(() => page.value.lawReading || null);
       <slot name="bottom" />
     </template>
 
-    <template v-else-if="versionData">
-      <div class="law-version-layout">
+    <template v-else-if="versionData || readingData">
+      <div class="law-version-layout reader-side-layout">
         <div class="law-version-main">
-          <div class="law-version-mobile">
-            <LawVersionTimeline :data="versionData" compact />
-          </div>
-
           <div class="theme-default-content">
             <slot name="content-top" />
-            <LawVersionBanner :data="versionData" />
+            <LawVersionBanner v-if="versionData" :data="versionData" />
             <Content />
             <slot name="content-bottom" />
           </div>
@@ -48,8 +48,14 @@ const readingData = computed(() => page.value.lawReading || null);
           <slot name="bottom" />
         </div>
 
-        <aside class="law-version-aside" aria-label="法律版本与立法沿革">
-          <LawVersionTimeline :data="versionData" />
+        <aside class="law-version-aside reader-side-aside" aria-label="法律版本与阅读工具">
+          <div v-if="versionData" class="reader-side-versions">
+            <LawVersionTimeline :data="versionData" />
+          </div>
+          <div v-if="versionData" class="reader-side-versions-compact">
+            <LawVersionTimeline :data="versionData" compact />
+          </div>
+          <LawReaderTools v-if="readingData" :key="page.path" v-model:showOffenses="showOffenses" :targets="page.articleTargets" :criminal="isCriminalSpecific" />
         </aside>
       </div>
     </template>

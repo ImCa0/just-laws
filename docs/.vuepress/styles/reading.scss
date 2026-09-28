@@ -42,8 +42,21 @@
   p, li { line-height: 1.95; }
   p { margin: 1.1em 0; }
   p[id^="article-"] { margin-top: 1.75em; scroll-margin-top: calc(var(--navbar-height) + 1.5rem); }
-  p[id^="article-"] > strong:first-child { color: var(--jl-red); font-weight: 650; }
-  p[id^="article-"]:target { background: var(--jl-tint); outline: 8px solid var(--jl-tint); border-radius: 2px; }
+  p[id^="article-"] > strong:first-child,
+  p[id^="article-"] a.law-article-permalink { color: var(--jl-red); font-weight: 650; }
+  .law-article-target { position: relative; isolation: isolate; }
+  .law-article-target::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: -8px;
+    right: -8px;
+    bottom: calc(-8px - var(--article-highlight-gap, 0px));
+    left: -8px;
+    background: var(--jl-tint);
+    border-radius: 2px;
+  }
   blockquote { padding: 0.25rem 1.25rem; border-left-color: var(--jl-line); background: var(--jl-bg); }
   table { font-size: 1rem; }
   img { max-width: 100%; }
@@ -102,7 +115,29 @@
   .law-reading .law-version-mobile { margin-top: 1.25rem; }
   .law-reading .law-version-banner { font-size: 0.94rem; }
 }
+.law-reading .reader-side-layout { display: flex; flex-direction: column; }
+.law-reading .reader-side-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  order: -1;
+  box-sizing: border-box;
+  width: calc(100% - 4rem);
+  max-width: 864px;
+  margin: 1.5rem auto 0;
+}
+.reader-side-versions { display: none; }
+@media (min-width: 1440px) {
+  .law-reading .reader-side-layout { display: grid; }
+  .law-reading .reader-side-aside { order: 0; width: 100%; margin: 1.5rem 0 0; }
+  .reader-side-versions { display: block; }
+  .reader-side-versions-compact { display: none; }
+}
+@media (max-width: 719px) {
+  .law-reading .reader-side-aside { width: calc(100% - 2rem); margin-top: 1.15rem; }
+}
 @media print {
+  .law-reading .reader-side-aside { display: none; }
   .navbar, .sidebar, .reader-breadcrumb, .law-version-aside, .law-version-mobile, .page-meta, .page-nav { display: none !important; }
   .page.law-reading { padding: 0; background: white; }
   .law-reading .theme-default-content:not(.custom) { width: 100%; max-width: none; padding: 0; margin: 0; border: 0; box-shadow: none; font-size: 12pt; color: black; background: white; }

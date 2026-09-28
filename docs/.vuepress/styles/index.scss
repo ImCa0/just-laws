@@ -1,3 +1,5 @@
+@use "./law-article-references";
+
 :root {
   --law-status-info: #2563eb;
   --law-status-warning: #b45309;
@@ -17,6 +19,36 @@ html.dark {
 
 .theme-default-content [id^="article-"] {
   scroll-margin-top: calc(var(--navbar-height) + 1rem);
+}
+
+.criminal-offense-note {
+  display: inline;
+}
+
+.criminal-offense-note__items {
+  display: inline;
+}
+
+.criminal-offense-note__item {
+  display: inline;
+  margin-inline-end: 0.35em;
+  color: #8f3028;
+  font-family: var(--jl-serif);
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.criminal-offense-note__item::before {
+  content: "〔";
+}
+
+.criminal-offense-note__item::after {
+  content: "〕";
+}
+
+html.dark .criminal-offense-note__item {
+  color: #f0b5ab;
 }
 
 .law-version-layout {

@@ -22,6 +22,10 @@ const UNIT_MAP = {
 
 const ARTICLE_RE =
   /^\u7b2c([\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341\u767e\u5343\u4e07\u96f6\u3007\u4e24]+)\u6761(?:\u4e4b([\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341\u767e\u5343\u4e07\u96f6\u3007\u4e24]+))?/;
+const DECISION_ITEM_RE =
+  /^([\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341\u767e\u5343\u4e07\u96f6\u3007\u4e24]+)\u3001/;
+const FOREIGN_EXCHANGE_DECISION =
+  "criminal-law/criminal-law/05-foreign-exchange-crimes-decision.md";
 
 function chineseNumberToArabic(input) {
   let total = 0;
@@ -80,6 +84,19 @@ function createArticleAnchor(text) {
     .join("-");
 }
 
+function createDecisionItemAnchor(text, env = {}) {
+  const filename = String(env.filePathRelative || env.filePath || "").replace(
+    /\\/g,
+    "/"
+  );
+  if (!filename.endsWith(FOREIGN_EXCHANGE_DECISION)) return null;
+
+  const match = DECISION_ITEM_RE.exec(text.trimStart());
+  if (!match) return null;
+  const itemNumber = chineseNumberToArabic(match[1]);
+  return itemNumber ? `article-${itemNumber}` : null;
+}
+
 function getInlineText(inline) {
   if (!Array.isArray(inline.children) || inline.children.length === 0) {
     return inline.content;
@@ -108,7 +125,10 @@ function lawArticleAnchorsPlugin(md) {
         continue;
       }
 
-      const baseAnchor = createArticleAnchor(getInlineText(inline));
+      const inlineText = getInlineText(inline);
+      const baseAnchor =
+        createArticleAnchor(inlineText) ||
+        createDecisionItemAnchor(inlineText, state.env);
 
       if (!baseAnchor) {
         continue;
@@ -127,6 +147,7 @@ function lawArticleAnchorsPlugin(md) {
 
 module.exports = {
   createArticleAnchor,
+  createDecisionItemAnchor,
   chineseNumberToArabic,
   getInlineText,
   lawArticleAnchorsPlugin,

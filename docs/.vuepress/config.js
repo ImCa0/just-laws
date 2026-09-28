@@ -1,8 +1,12 @@
 const path = require("node:path");
-
+const {
+  criminalOffenseAnnotationsPlugin,
+} = require("./markdown/criminalOffenseAnnotations");
 const { lawArticleAnchorsPlugin } = require("./markdown/lawArticleAnchors");
+const { lawArticleReferencesPlugin } = require("./markdown/lawArticleReferences");
 const { lawVersionsPlugin } = require("./plugins/lawVersions");
 const { lawCatalogPlugin } = require("./plugins/lawCatalog");
+const { lawReaderToolsPlugin } = require("./plugins/lawReaderTools");
 const { justLawsTheme } = require("./theme");
 
 module.exports = {
@@ -25,9 +29,13 @@ module.exports = {
   ],
   extendsMarkdown: (md) => {
     md.use(lawArticleAnchorsPlugin);
+    md.use(criminalOffenseAnnotationsPlugin);
+    md.use(lawArticleReferencesPlugin);
   },
 
   theme: justLawsTheme({
+    // Preserve explicit article URLs instead of replacing them with the nearest heading on scroll.
+    themePlugins: { activeHeaderLinks: false },
     logo: "/images/logo.svg",
     navbar: [
       { text: "首页", link: "/" },
@@ -141,6 +149,7 @@ module.exports = {
   }),
 
   plugins: [
+    lawReaderToolsPlugin(),
     lawVersionsPlugin({ docsDir: path.resolve(__dirname, "..") }),
     lawCatalogPlugin({ docsDir: path.resolve(__dirname, "..") }),
   ],
