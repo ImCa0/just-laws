@@ -1,0 +1,50 @@
+// Shared by article-reference links across all laws and versions.
+.theme-default-content a.law-article-reference {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: underline solid;
+  text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  padding-bottom: 0.15em;
+  background-image: repeating-linear-gradient(
+    to right,
+    currentColor 0 8px,
+    transparent 8px 12px
+  );
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  // Restore the solid underline only after the dashed underline retracts.
+  transition: background-size 160ms ease-out, color 160ms ease-out,
+    text-decoration-color 0s linear 160ms;
+}
+
+.theme-default-content a.law-article-permalink {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.theme-default-content a.law-article-permalink:hover {
+  color: var(--c-brand);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.theme-default-content a.law-article-reference:hover {
+  color: var(--c-brand);
+  text-decoration-color: transparent;
+  background-size: 100% 2px;
+  transition: background-size 140ms ease-out, color 160ms ease-out,
+    text-decoration-color 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-default-content a.law-article-reference,
+  .theme-default-content a.law-article-reference:hover {
+    transition: none;
+  }
+}

@@ -42,8 +42,21 @@
   p, li { line-height: 1.95; }
   p { margin: 1.1em 0; }
   p[id^="article-"] { margin-top: 1.75em; scroll-margin-top: calc(var(--navbar-height) + 1.5rem); }
-  p[id^="article-"] > strong:first-child { color: var(--jl-red); font-weight: 650; }
-  p[id^="article-"]:target { background: var(--jl-tint); outline: 8px solid var(--jl-tint); border-radius: 2px; }
+  p[id^="article-"] > strong:first-child,
+  p[id^="article-"] a.law-article-permalink { color: var(--jl-red); font-weight: 650; }
+  .law-article-target { position: relative; isolation: isolate; }
+  .law-article-target::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: -8px;
+    right: -8px;
+    bottom: calc(-8px - var(--article-highlight-gap, 0px));
+    left: -8px;
+    background: var(--jl-tint);
+    border-radius: 2px;
+  }
   blockquote { padding: 0.25rem 1.25rem; border-left-color: var(--jl-line); background: var(--jl-bg); }
   table { font-size: 1rem; }
   img { max-width: 100%; }
