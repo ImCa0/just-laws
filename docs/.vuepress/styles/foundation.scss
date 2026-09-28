@@ -98,6 +98,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .sidebar > .navbar-items { display: none; }
 
 @media (max-width: 719px) {
+  // Keep the entire scrollable drawer below the navbar, rather than relying
+  // on padding that reading-page styles override (and that scrolls away).
+  .theme-container:not(.no-navbar) .sidebar {
+    top: var(--navbar-height);
+    padding-top: 1.25rem;
+  }
   .navbar.jl-navbar { padding: 0 1rem; }
   .jl-navbar-inner { gap: 0.75rem; }
   .jl-navbar .site-name { font-size: 1.25rem; }
