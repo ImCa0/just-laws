@@ -93,7 +93,7 @@
 .law-reading-page p.sidebar-item { font-family: var(--jl-serif); font-size: 1.1rem; line-height: 1.7; }
 
 @media (min-width: 1440px) {
-  .law-reading.law-version-page .reader-breadcrumb { max-width: 1176px; }
+  .law-reading .reader-breadcrumb { max-width: 1176px; }
   .law-reading .law-version-layout { box-sizing: border-box; grid-template-columns: minmax(0, 864px) 232px; max-width: 1176px; padding: 0 2rem; gap: 1.5rem; }
   .law-reading .law-version-layout .theme-default-content,
   .law-reading .law-version-layout .page-meta,

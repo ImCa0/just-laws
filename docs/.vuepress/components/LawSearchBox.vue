@@ -5,6 +5,7 @@
     :class="{ 'law-search-box--home-route': isHomeRoute }"
   >
     <input
+      ref="input"
       v-model="query"
       class="law-search-box__input"
       type="search"
@@ -77,8 +78,9 @@
 </template>
 
 <script>
-import { computed, onBeforeUnmount, ref } from "vue";
+import { computed, nextTick, onBeforeUnmount, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import { recordRecentSearch } from "../recentSearches.mjs";
 
 const COMMON_PUNCTUATION_RE =
   /[\s,.;:!?()[\]{}<>"'`~@#$%^&*_+=|\\/，。、“”‘’；：？！【】（）《》〈〉〔〕［］｛｝—…·￥-]+/g;
@@ -196,10 +198,11 @@ async function loadIndexes() {
 
 export default {
   name: "LawSearchBox",
-  setup() {
+  setup(_props, { expose }) {
     const router = useRouter();
     const route = useRoute();
     const root = ref(null);
+    const input = ref(null);
     const query = ref("");
     const isOpen = ref(false);
     const isLoading = ref(false);
@@ -278,7 +281,18 @@ export default {
       isOpen.value = false;
     };
 
+    const search = async (value) => {
+      query.value = String(value || "").trim();
+      open();
+      await nextTick();
+      input.value?.focus();
+    };
+
     const go = async (path) => {
+      const searchQuery = query.value.trim();
+      if (searchQuery) {
+        recordRecentSearch({ query: searchQuery, path }, typeof window !== "undefined" ? window : null);
+      }
       close();
       query.value = "";
       await router.push(path);
@@ -313,6 +327,8 @@ export default {
       }
     });
 
+    expose({ search });
+
     return {
       articleResults,
       close,
@@ -322,6 +338,7 @@ export default {
       isLoading,
       isOpen,
       isHomeRoute,
+      input,
       normalizedQuery,
       open,
       openFirstResult,

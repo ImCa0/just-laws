@@ -41,8 +41,10 @@
 .jl-home .law-search-box.jl-home-search .law-search-box__state { font-family: var(--font-family); font-size: 17px; font-weight: 400; line-height: 1.5; }
 .jl-home-shortcuts { display: flex; flex-wrap: wrap; align-items: center; gap: 0.85rem; margin-top: 1rem; font-size: 0.875rem; }
 .jl-home-shortcuts > span { color: var(--jl-muted); }
-.jl-home-shortcuts a { border-bottom: 1px solid var(--jl-line); }
-.jl-home-shortcuts a:hover { color: var(--jl-red); border-color: currentColor; }
+.jl-home-shortcuts button { padding: 0; border: 0; border-bottom: 1px solid var(--jl-line); color: inherit; background: transparent; font: inherit; cursor: pointer; }
+.jl-home-shortcuts button:hover,
+.jl-home-shortcuts button:focus-visible { color: var(--jl-red); border-color: currentColor; outline: none; }
+.jl-home-shortcuts small { color: var(--jl-muted); font-size: inherit; opacity: 0.72; }
 .jl-home-browse { display: inline-flex; align-items: center; gap: 1rem; margin-top: 2rem; color: var(--jl-red) !important; font-size: 1rem; font-weight: 600; }
 .jl-home-browse svg { width: 20px; }
 .jl-home-feature { display: block; border: 1px solid var(--jl-line); border-radius: 10px; background: var(--jl-panel); transition: border-color 180ms; }
@@ -79,6 +81,10 @@
 .jl-home-section-head > span { color: var(--jl-muted); font-size: 0.9rem; }
 .jl-home-section-head > a { display: flex; align-items: center; gap: 0.6rem; color: var(--jl-red); font-size: 0.9rem; }
 .jl-home-section-head > a svg { width: 19px; }
+.jl-home-refresh { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.3rem 0; border: 0; color: var(--jl-muted); background: transparent; font: inherit; font-size: 0.9rem; cursor: pointer; }
+.jl-home-refresh svg { display: block; flex: 0 0 auto; width: 1rem; height: 1rem; color: var(--jl-red); transform-box: fill-box; transform-origin: center; transition: transform 180ms ease; }
+.jl-home-refresh:hover, .jl-home-refresh:focus-visible { color: var(--jl-red); outline: none; }
+.jl-home-refresh:hover svg, .jl-home-refresh:focus-visible svg { transform: rotate(180deg); }
 .jl-home-featured-grid, .jl-home-categories { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
 .jl-home-law-card { display: flex; flex-direction: column; min-width: 0; padding: 1.5rem; border: 1px solid var(--jl-line); border-radius: 8px; background: var(--jl-panel); transition: border-color 180ms, transform 180ms; }
 .jl-home-law-card:hover { border-color: var(--jl-red); transform: translateY(-3px); }
