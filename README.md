@@ -21,8 +21,12 @@
 
 <p align="center">
   <a href="https://github.com/ImCa0/just-laws"><img src="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fshieldcn.dev%2Fgithub%2FImCa0%2Fjust-laws%2Fstars.json&query=%24.value&prefix=%E2%98%85+&label=GitHub&logo=github&variant=outline&mode=light&color=505A75&labelTextColor=505A75&valueColor=343B4C&gradient=ffffff%2Cffffff&height=36&fontSize=12&iconSize=20&gap=8&labelGap=14&padX=17" alt="GitHub Stars" width="156" height="36"></a>
-  <a href="https://atomgit.com/ImCaO/just-laws"><img src="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fimg.shields.io%2Fbadge%2Fdynamic%2Fxml.json%3Furl%3Dhttps%253A%252F%252Fgitcode.com%252FImCaO%252Fjust-laws%252Fstar%252Fnew_badge.svg%26query%3Dsubstring-before%2528%252F%252F*%255Blocal-name%2528%2529%253D%2522text%2522%255D%252C%2522%2BStar%2522%2529%26label%3DAtomGit&query=%24.message&prefix=%E2%98%85+&label=AtomGit&logo=gitcode&variant=outline&mode=light&color=DA203E&labelTextColor=DA203E&valueColor=343B4C&gradient=ffffff%2Cffffff&height=36&fontSize=12&iconSize=20&gap=8&labelGap=14&padX=21" alt="AtomGit Stars" width="156" height="36"></a>
-</p>
+<img
+  src="https://atomgit.com/ImCaO/just-laws/star/new_badge.svg"
+  alt="AtomGit Stars"
+  height="36"
+  style="width: auto;"
+>
 
 <p align="center">
   <a href="https://www.justlaws.cn/">访问网站</a> ·
