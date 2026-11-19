@@ -4,6 +4,8 @@
 
 [海事诉讼特别程序法](../procedural/maritime-procedure-law/)
 
+[检察公益诉讼法](../procedural/procuratorial-public-interest-litigation-law/)
+
 [劳动争议调解仲裁法](../procedural/labor-dispute-mediation-and-arbitration-law/)
 
 [民事诉讼法](../procedural/civil-procedure/)

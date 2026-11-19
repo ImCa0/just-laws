@@ -22,6 +22,8 @@
 
 [反分裂国家法](../constitutional-relevance/anti-secession-law/)
 
+[反跨境腐败法](../constitutional-relevance/anti-cross-border-corruption-law/)
+
 [反外国制裁法](../constitutional-relevance/anti-foreign-sanctions-law/)
 
 [各级人民代表大会常务委员会监督法](../constitutional-relevance/npc-standing-committees-supervision-law/)

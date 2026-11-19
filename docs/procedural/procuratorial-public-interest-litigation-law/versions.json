@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lawId": "procedural/procuratorial-public-interest-litigation-law",
+  "title": "中华人民共和国检察公益诉讼法",
+  "versions": [
+    {
+      "id": "2026-original",
+      "label": "2026年通过版",
+      "promulgatedOn": "2026-11-06",
+      "effectiveFrom": "2027-01-01",
+      "effectiveTo": null,
+      "entry": "README.md"
+    }
+  ]
+}

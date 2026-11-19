@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lawId": "constitutional-relevance/anti-cross-border-corruption-law",
+  "title": "中华人民共和国反跨境腐败法",
+  "versions": [
+    {
+      "id": "2026-original",
+      "label": "2026年通过版",
+      "promulgatedOn": "2026-11-06",
+      "effectiveFrom": "2026-11-06",
+      "effectiveTo": null,
+      "entry": "README.md"
+    }
+  ]
+}

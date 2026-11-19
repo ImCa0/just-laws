@@ -2109,5 +2109,26 @@
     "mapping_source": "manual",
     "slug": "cultivated-land-protection-and-quality-improvement-law",
     "slug_source": "manual"
+  },
+  "中华人民共和国反跨境腐败法": {
+    "category": "constitutional-relevance",
+    "docs_type": "B",
+    "mapping_source": "manual",
+    "slug": "anti-cross-border-corruption-law",
+    "slug_source": "manual"
+  },
+  "中华人民共和国检察公益诉讼法": {
+    "category": "procedural",
+    "docs_type": "B",
+    "mapping_source": "manual",
+    "slug": "procuratorial-public-interest-litigation-law",
+    "slug_source": "manual"
+  },
+  "中华人民共和国南极活动与环境保护法": {
+    "category": "ecological-environment",
+    "docs_type": "B",
+    "mapping_source": "manual",
+    "slug": "antarctic-activities-and-environmental-protection-law",
+    "slug_source": "manual"
   }
 }

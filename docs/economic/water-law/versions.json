@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lawId": "economic/water-law",
+  "title": "中华人民共和国水法",
+  "versions": [
+    {
+      "id": "2016-amendment",
+      "label": "2016年修正版",
+      "promulgatedOn": "2016-07-02",
+      "effectiveFrom": "2016-07-02",
+      "effectiveTo": "2027-03-22",
+      "entry": "README.md"
+    },
+    {
+      "id": "2026-revision",
+      "label": "2026年修订版",
+      "promulgatedOn": "2026-11-06",
+      "effectiveFrom": "2027-03-22",
+      "effectiveTo": null,
+      "entry": "versions/2027-03-22/README.md"
+    }
+  ]
+}

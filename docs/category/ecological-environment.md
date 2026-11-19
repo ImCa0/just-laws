@@ -24,6 +24,8 @@
 
 [煤炭法](../economic/coal-law/)
 
+[南极活动与环境保护法](../ecological-environment/antarctic-activities-and-environmental-protection-law/)
+
 [能源法](../economic/energy-law/)
 
 [青藏高原生态保护法](../administrative/qinghai-tibet-plateau-ecological-protection-law/)
