@@ -12,6 +12,9 @@ const {
 const { buildIndexes } = require("../scripts/build-law-search-index");
 const { lawVersionsPlugin } = require("../docs/.vuepress/plugins/lawVersions");
 
+const DOCS_DIR = path.resolve(__dirname, "..", "docs");
+const JULY_FIXTURE = path.join(__dirname, "fixtures", "law-versions", "2026-07-17");
+
 test("商标法版本状态按有效期派生", () => {
   const current = { effectiveFrom: "2019-11-01", effectiveTo: "2027-01-01" };
   const pending = { effectiveFrom: "2027-01-01", effectiveTo: null };
@@ -22,46 +25,47 @@ test("商标法版本状态按有效期派生", () => {
 });
 
 test("当前仓库的版本配置有效", () => {
-  const records = loadLawManifests(path.resolve(__dirname, "..", "docs"), {
-    asOf: "2026-07-17",
-  });
+  const records = loadLawManifests(DOCS_DIR);
   const lawIds = records.map((record) => record.manifest.lawId);
-  assert.equal(records.length, 18);
   assert.ok(lawIds.includes("civil-and-commercial/trademark-law"));
   assert.ok(lawIds.includes("ecological-environment/ecological-environment-code"));
   assert.ok(lawIds.includes("administrative/prisons-law"));
   assert.ok(lawIds.includes("economic/certified-public-accountants-law"));
+  for (const { manifest } of records) {
+    for (const version of manifest.versions) {
+      if (version.entry !== "README.md") {
+        assert.equal(version.entry, `versions/${version.effectiveFrom}/README.md`, manifest.lawId);
+      }
+    }
+  }
 });
 
-test("2026年8月四部法律在生效前保留正确入口和状态", () => {
-  const records = loadLawManifests(path.resolve(__dirname, "..", "docs"), {
-    asOf: "2026-09-23",
-  });
-  for (const [lawId, effectiveFrom, hasCurrent] of [
+test("2026年8月公布的四部法律在施行日切换效力", () => {
+  const records = loadLawManifests(DOCS_DIR);
+  const asOf = "2026-09-23";
+  for (const [lawId, effectiveFrom, hasPredecessor] of [
     ["social/medical-security-law", "2027-01-01", false],
     ["ecological-environment/cultivated-land-protection-and-quality-improvement-law", "2027-01-01", false],
     ["administrative/national-defense-mobilization-law", "2026-10-01", true],
     ["economic/agriculture-law", "2027-01-01", true],
   ]) {
     const { versions } = records.find(({ manifest }) => manifest.lawId === lawId).manifest;
-    const pending = versions.find((version) => version.promulgatedOn === "2026-08-28");
-    assert.equal(pending.effectiveFrom, effectiveFrom);
-    assert.equal(statusForDate(pending, "2026-09-23"), "pending");
-    assert.equal(statusForDate(pending, effectiveFrom), "current");
-    assert.equal(pending.entry, hasCurrent ? `versions/${effectiveFrom}/README.md` : "README.md");
-    if (hasCurrent) {
-      const current = versions.find((version) => version.entry === "README.md");
-      assert.equal(statusForDate(current, "2026-09-23"), "current");
-      assert.equal(statusForDate(current, effectiveFrom), "expired");
-      assert.equal(current.effectiveTo, effectiveFrom);
+    const augustVersion = versions.find((version) => version.promulgatedOn === "2026-08-28");
+    assert.ok(augustVersion, lawId);
+    assert.equal(augustVersion.effectiveFrom, effectiveFrom);
+    assert.equal(statusForDate(augustVersion, asOf), "pending");
+    assert.equal(statusForDate(augustVersion, effectiveFrom), "current");
+    const previous = versions.find((version) => statusForDate(version, asOf) === "current");
+    assert.equal(Boolean(previous), hasPredecessor, lawId);
+    if (previous) {
+      assert.equal(previous.effectiveTo, effectiveFrom);
+      assert.equal(statusForDate(previous, effectiveFrom), "expired");
     }
   }
 });
 
 test("生态环境法典废止的十部法律由根路由展示最后有效正文", () => {
-  const records = loadLawManifests(path.resolve(__dirname, "..", "docs"), {
-    asOf: "2026-08-15",
-  });
+  const records = loadLawManifests(DOCS_DIR);
   const repealedRecords = records.filter(
     (record) =>
       record.manifest.repealedBy?.path ===
@@ -72,6 +76,7 @@ test("生态环境法典废止的十部法律由根路由展示最后有效正�
   for (const record of repealedRecords) {
     assert.equal(record.manifest.versions.length, 1);
     assert.equal(record.manifest.versions[0].entry, "README.md");
+    assert.equal(statusForDate(record.manifest.versions[0], "2026-08-14"), "current");
     assert.equal(statusForDate(record.manifest.versions[0], "2026-08-15"), "expired");
     assert.ok(fs.statSync(path.join(record.lawDir, "README.md")).size > 1000);
     assert.equal(
@@ -81,9 +86,9 @@ test("生态环境法典废止的十部法律由根路由展示最后有效正�
   }
 });
 
-test("页面数据只注入商标法的两个已登记版本", () => {
+test("版本插件为商标法两个版本和生态环境法典分编注入页面数据", () => {
   const plugin = lawVersionsPlugin({
-    docsDir: path.resolve(__dirname, "..", "docs"),
+    docsDir: JULY_FIXTURE,
     asOf: "2026-07-17",
   });
   const currentPage = {
@@ -215,36 +220,9 @@ test("轮换命令可预览并在临时目录完成提升", () => {
   const docsDir = path.join(tempRoot, "docs");
   const lawDir = path.join(docsDir, "civil-and-commercial", "trademark-law");
   const futureDir = path.join(lawDir, "versions", "2027-01-01");
-  fs.mkdirSync(futureDir, { recursive: true });
-  fs.writeFileSync(path.join(lawDir, "README.md"), "2019 current\n", "utf8");
-  fs.writeFileSync(path.join(futureDir, "README.md"), "2026 future\n", "utf8");
-  fs.writeFileSync(
-    path.join(lawDir, "versions.json"),
-    JSON.stringify({
-      schemaVersion: 1,
-      lawId: "civil-and-commercial/trademark-law",
-      title: "中华人民共和国商标法",
-      versions: [
-        {
-          id: "2019-amendment",
-          label: "2019年修正版",
-          promulgatedOn: "2019-04-23",
-          effectiveFrom: "2019-11-01",
-          effectiveTo: "2027-01-01",
-          entry: "README.md"
-        },
-        {
-          id: "2026-revision",
-          label: "2026年修订版",
-          promulgatedOn: "2026-06-26",
-          effectiveFrom: "2027-01-01",
-          effectiveTo: null,
-          entry: "versions/2027-01-01/README.md"
-        }
-      ]
-    }, null, 2) + "\n",
-    "utf8"
-  );
+  fs.cpSync(path.join(JULY_FIXTURE, "civil-and-commercial", "trademark-law"), lawDir, {
+    recursive: true,
+  });
 
   const messages = [];
   const dryRun = promoteVersion({
@@ -254,7 +232,7 @@ test("轮换命令可预览并在临时目录完成提升", () => {
     output: (message) => messages.push(message),
   });
   assert.equal(dryRun.dryRun, true);
-  assert.equal(fs.readFileSync(path.join(lawDir, "README.md"), "utf8"), "2019 current\n");
+  assert.equal(fs.readFileSync(path.join(lawDir, "README.md"), "utf8").trim(), "2019年修正版");
 
   promoteVersion({
     docsDir,
@@ -263,10 +241,10 @@ test("轮换命令可预览并在临时目录完成提升", () => {
     apply: true,
     output: () => {},
   });
-  assert.equal(fs.readFileSync(path.join(lawDir, "README.md"), "utf8"), "2026 future\n");
+  assert.equal(fs.readFileSync(path.join(lawDir, "README.md"), "utf8").trim(), "2026年修订版");
   assert.equal(
-    fs.readFileSync(path.join(lawDir, "versions", "2019-11-01", "README.md"), "utf8"),
-    "2019 current\n"
+    fs.readFileSync(path.join(lawDir, "versions", "2019-11-01", "README.md"), "utf8").trim(),
+    "2019年修正版"
   );
   assert.equal(fs.existsSync(futureDir), false);
   loadLawManifests(docsDir, { asOf: "2027-01-01" });

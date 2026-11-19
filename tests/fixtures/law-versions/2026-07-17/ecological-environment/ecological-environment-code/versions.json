@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lawId": "ecological-environment/ecological-environment-code",
+  "title": "中华人民共和国生态环境法典",
+  "versions": [
+    {
+      "id": "2026-code",
+      "label": "2026年通过版",
+      "promulgatedOn": "2026-03-12",
+      "effectiveFrom": "2026-08-15",
+      "effectiveTo": null,
+      "entry": "README.md"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lawId": "civil-and-commercial/trademark-law",
+  "title": "中华人民共和国商标法",
+  "versions": [
+    {
+      "id": "2019-amendment",
+      "label": "2019年修正版",
+      "promulgatedOn": "2019-04-23",
+      "effectiveFrom": "2019-11-01",
+      "effectiveTo": "2027-01-01",
+      "entry": "README.md"
+    },
+    {
+      "id": "2026-revision",
+      "label": "2026年修订版",
+      "promulgatedOn": "2026-06-26",
+      "effectiveFrom": "2027-01-01",
+      "effectiveTo": null,
+      "entry": "versions/2027-01-01/README.md"
+    }
+  ]
+}
